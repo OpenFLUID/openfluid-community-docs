@@ -1,17 +1,118 @@
+!!! note "OpenFLUID Versions"
+    The following instructions are for OpenFLUID versions 2.0.x and later.  
+    As older versions are deprecated, we do not provide instructions for these older versions. However, you can contact us for that using the [support tools](../start/support)
+
+!!! note "ROpenFLUID"
+    For installation notes about the ROpenFLUID package for R, please report to the [R OpenFLUID dedicated page](../external/ropenfluid.md)
+
+
 
 ## Linux
 
-!!! danger "TODO"
-    To be written
+### OpenFLUID 2.1.0 and later versions
+
+#### Ubuntu 14.04+ and Debian Jessie
+
+1) Install required libraries and development tools  :
+```
+sudo apt-get install g++ cmake debhelper pkg-config doxygen \
+                     libboost-all-dev libqt4-dev libgdal1-dev libgeos++-dev \
+                     gnuplot p7zip-full graphviz
+```
+2) Download the [OpenFLUID package](http://www.openfluid-project.org/index.php?page=dloads) corresponding to the Ubuntu version you are using and install it
+```sh
+sudo dpkg -i </path/to/openfluid/debfile>
+# where </path/to/openfluid/debfile> is the path to the downloaded deb file for OpenFLUID.
+```
+
+3) Check the installation by typing the following command in a terminal
+```sh
+openfluid --version
+```
+
+
+#### Linux Fedora 21+
+
+1) Install required libraries and development tools  :
+```sh
+sudo yum install -y gcc-c++ gcc-gfortran make cmake git \
+                    boost-devel qt-devel gdal-devel geos-devel \
+                    p7zip gnuplot graphviz doxygen rpm-build redhat-lsb
+# use dnf instead of yum on recent Fedora versions
+```
+2) Download the [OpenFLUID package](http://www.openfluid-project.org/index.php?page=dloads) corresponding to the Fedora version you are using and install it
+```sh
+sudo rpm -i </path/to/openfluid/rpmfile>
+# where </path/to/openfluid/rpmfile> is the path to the downloaded rpm file for OpenFLUID.
+```
+3) Check the installation by typing the following command in a terminal
+```sh
+openfluid --version
+```
+
+### OpenFLUID 2.0.x
+
+#### Ubuntu
+
+Preliminary configuration step **on Ubuntu 12.04 only**, for more recent versions of CMake, GDAL and GEOS libraries
+```sh
+sudo add-apt-repository ppa:ubuntugis/ppa
+sudo add-apt-repository ppa:czchen/travis-ci
+sudo apt-get update
+```
+
+1) Install required libraries and development tools  :
+```sh
+sudo apt-get install g++ cmake debhelper pkg-config doxygen \
+                     libboost-all-dev libqt4-dev libgdal1-dev libgeos++-dev \
+                     gnuplot p7zip-full graphviz
+```
+
+2) Download the [http://www.umr-lisah.fr/openfluid/index.php?page=dloads OpenFLUID package] corresponding to the Ubuntu version you are using and install it
+```sh
+sudo dpkg -i </path/to/openfluid/debfile>
+# where </path/to/openfluid/debfile> is the path to the downloaded deb file for OpenFLUID.
+```
+
+3) Check the installation by typing the following command in a terminal
+```
+openfluid --version
+```
+
+#### Debian
+
+Jonathan Vanhouteghem has written an [article on his blog]([http://vanhouteghem-jonathan.fr/2014/05/installation-prise-en-main-du-logiciel-openfluid-umr-lisah-sur-debian/) (in english and french) about installation of OpenFLUID from source on a Debian 7 distribution.<br/>
+Thanks to Jonathan for these detailed instructions.
 
 
 ## MacOS
 
-!!! danger "TODO"
-    To be written
+!!! warning
+    The OSX installer is only available for OpenFLUID 2.1.3 and later versions.  
+    It is still an early preview release, and has been only tested on macOS 10.11
+
+1) Download the [OpenFLUID .dmg file](http://www.openfluid-project.org/index.php?page=dloads) and mount it in the Finder.  
+
+2) Read installation instructions. Notice brew dependencies.  
+
+3) Install the OpenFLUID package  
+
+4) If you plan to develop your own simulators, you have to install Xcode and Xcode Command line Tools  
 
 
 ## Windows
 
-!!! danger "TODO"
-    To be written
+1) Download [OpenFLUID for Windows](http://www.openfluid-project.org/index.php?page=dloads) and install it using the automatic installer. This installer includes the required libraries and sets the required environment variables for OpenFLUID.  
+
+2) Check the installation by typing the following command in a command prompt
+```sh
+ openfluid --version
+```
+
+3) If you plan to develop your own simulators, you have to install
+
+* [Qt5.4.2 + MinGW package](http://download.qt.io/archive/qt/5.4/5.4.2/qt-opensource-windows-x86-mingw491_opengl-5.4.2.exe) available from the [qt-project.org website](http://qt-project.org)
+* [CMake tool](http://www.cmake.org/download/)
+
+
+4) Some OpenFLUID observers require supplementary external tools to produce the output files. In order to take benefit from these observers, you are really encouraged to download and install these additional support tools for Windows, available from the [OpenFLUID downloads page](http://www.openfluid-project.org/index.php?page=dloads).

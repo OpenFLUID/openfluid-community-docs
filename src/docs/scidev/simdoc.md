@@ -1,6 +1,6 @@
 !!! danger "TODO"
-    To be reviewed
-    To add : run from make command
+    To be reviewed  
+    To add : from command line, run make command using specific doc target 
 
 The writing of a simulator documentation is an important part of the development process.  
 In order to help simulators designers and developers, the **sim2doc** tool can interpret the source code of the main .cpp file to generate documentation. This documentation is built using the simulator signature and free text located as comments in the text.  
