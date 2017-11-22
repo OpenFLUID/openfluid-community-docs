@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+docker-compose -f docker-compose-builder.yml run --user=`id -u $USERNAME` builder /bin/bash

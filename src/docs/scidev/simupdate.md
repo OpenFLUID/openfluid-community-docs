@@ -1,0 +1,989 @@
+
+This page deals with the upgrade of your code and data formats according to a specific version of the OpenFLUID API. As the API is updated, code based on previous versions may not work. Follow the instructions below to get your code to work.  
+<br/>
+
+!!! danger "Important"
+    As a general advice, it is strongly recommended to remove any binary build from the previous version of the simulators before compiling and using them with the new version of OpenFLUID. This includes
+
+    * remove any simulator binary file (`*.so`, `*.dll`, `*.dylib` and for very old versions `*.sompi`, `*.dllmpi`, `*.dylibmpi`) from the directories where OpenFLUID searches for simulators (_e.g. /home/${USER}/.openfluid/simulators on Linux/Unix systems_)
+    * delete any compilation information (e.g. the \_build directories of simulators)
+    * run a CMake command in the build directories of simulators (e.g. \_build) to reset the compilation context
+
+    If you use the OpenFLUID-Devstudio application, clicking the Configure button then the Build button will do the job.
+
+
+
+## From 2.0.x to 2.1.x
+
+### Mandatory updates
+
+#### CMake build system
+
+The CMake modules for OpenFLUID has been updated for better usability.
+
+The `FIND_PACKAGE` command in the `CMakeLists.txt` file should be modified from:
+
+```cmake
+FIND_PACKAGE(OpenFLUID REQUIRED core base tools ware)
+```
+to:
+```cmake
+FIND_PACKAGE(OpenFLUIDHelpers REQUIRED)
+```
+
+
+By default, only the core, base and ware OpenFLUID libraries are linked to the simulator. If the simulator require others OpenFLUID libraries, you can list them using the `SIM_OPENFLUID_COMPONENTS` variable in the `CMake.in.config` file.
+
+Example for adding the openfluid-tools library:
+```cmake
+SET(SIM_OPENFLUID_COMPONENTS tools)
+```
+
+
+#### Include files
+
+The distribution of functions and classes in the `tools` namespace have been redistributed as follows:
+
+* `#include <openfluid/tools/DataHelpers.hpp>` for data operations such as `convertString`, `convertValue`, `splitString`,..
+* `#include <openfluid/tools/FileHelpers.hpp>` for high-level operations on file system
+* `#include <openfluid/scientific/FloatingPoint.hpp>` for floating point operations such as `isVeryClose` or `isCloseEnough` (see [below](#floating-point-operations))
+* `#include <openfluid/tools/MiscHelpers.hpp>` for other basic operations
+
+
+#### Floating point operations
+
+Functions for floating point operations are now grouped in the `openfluid::scientific` namespace. this namespace aims at grouping scientific tools that can be used in simulators, observers or builder-extensions.
+
+Description | Old | New
+--- | --- | ---
+Floating point comparison | openfluid::tools::IsCloseEnough<br/>openfluid::tools::IsVeryClose | openfluid::scientific::isCloseEnough<br/> openfluid::scientific::isVeryClose<br/> _(note the lower-case i for is...)_
+
+
+#### Log
+
+Description | Old | New
+--- | --- | ---
+Log informations and warnings<br/>to console and/or file | OPENFLUID_Logger | OPENFLUID_LogInfo<br/>OPENFLUID_DisplayInfo<br/>OPENFLUID_LogAndDisplayInfo<br/>OPENFLUID_LogWarning<br/>OPENFLUID_DisplayWarning<br/>OPENFLUID_LogAndDisplayWarning<br/>OPENFLUID_LogDebug<br/>OPENFLUID_DisplayDebug<br/>OPENFLUID_LogAndDisplayDebug
+
+
+### Recommended updates
+
+These recommended updates are for deprecated datatypes, methods, functions, or macros. Not doing these recommended updates will not prevent your simulators from building and running. You just get compiler warnings when you will build your simulators.
+However it is recommended to apply these updates as the deprecated items will be completely removed in a later version of OpenFLUID.  
+<br/>
+The recommendations below are for usual datatypes, methods, functions and macros. For others, consult the deprecated list in the [OpenFLUID API documentation](../start/manuals) for version 2.1.0.
+
+
+#### Simulator, observer and builder-extension signature
+
+Description | Old | New
+--- | --- | ---
+Plugin declaration | DECLARE_SIMULATOR_PLUGIN<br/>DECLARE_OBSERVER_PLUGIN<br/>DECLARE_BUILDEREXT_PLUGIN | *(not needed anymore,should be completely removed)*
+Declaration of produced variable | DECLARE_PRODUCED_VAR | DECLARE_PRODUCED_VARIABLE
+Declaration of updated variable | DECLARE_UPDATED_VAR | DECLARE_UPDATED_VARIABLE
+Declaration of required variable | DECLARE_REQUIRED_VAR | DECLARE_REQUIRED_VARIABLE
+Declaration of used variable | DECLARE_USED_VAR | DECLARE_USED_VARIABLE
+
+
+#### Types
+
+Description | Old | New
+--- | --- | ---
+Spatial unit | openfluid::core::Unit | openfluid::core::SpatialUnit
+Units class name | openfluid::core::UnitClass_t  | openfluid::core::UnitsClass_t
+
+
+#### Methods
+
+Description | Old | New
+--- | --- | ---
+Spatial units connected to | openfluid::core::Unit::getToUnits | openfluid::core::SpatialUnit::toSpatialUnits
+Spatial units connected from | openfluid::core::Unit::getFromUnits | openfluid::core::SpatialUnit::fromSpatialUnits
+Spatial units connected as children | openfluid::core::Unit::getChildrenUnits | openfluid::core::SpatialUnit::childSpatialUnits
+Spatial units connected as parents | openfluid::core::Unit::getParentUnits | openfluid::core::SpatialUnit::parentSpatialUnits
+Value of an IndexedValue | openfluid::core::IndexedValue::getValue | openfluid::core::IndexedValue::value
+Raise error | OpenFLUID_RaiseError(source, message) | OpenFLUID_RaiseError(message)<br/>_(The source of the message is automatically determined)_
+Raise warning | OpenFLUID_RaiseWarning(source, message) | OpenFLUID_RaiseWarning(message)<br/>OPENFLUID_LogWarning
+Test if a units class exists | OpenFLUID_IsUnitClassExist | OpenFLUID_IsUnitsClassExist<br/>_(Note the lower-case s at Units)_
+
+
+#### Filesystem operations
+
+OpenFLUID now provides basic filesystem operations, such as creating and removing directories, copying files, ...<br/>
+In order to limit dependencies to multiple libraries such as Boost, Qt in OpenFLUID plugins, it is recommended to use these provided methods as much as possible for filesystem operations.<br/>
+
+They can be accessed by including the Filesystem.hpp header from the tools namespace:<br>
+`#include <openfluid/tools/Filesystem.hpp>`<br>
+
+More information about the methods can be found in the [OpenFLUID API documentation](../start/manuals) for version 2.1.0.
+
+
+#### Parameters of provided observers
+
+The term `unitclass` when present in parameters of observers has been replaced by `unitsclass` _(Note the lower-case s at units)_<br/>
+
+Examples:
+
+* `set.myset.unitclass` should be replaced by `set.myset.unitsclass`
+* `layers.3.unitclass` should be replaced by `layers.3.unitsclass`
+
+<br/>
+
+!!! danger "Important information about OpenFLUID values"
+    The format of string representations of OpenFLUID values has changed. These string representations are mainly used in input files for simulators parameters and spatial attributes, and also in output files when using the CSV output observer.  
+    These new formats are detailed in the appendix of the [documentation](../start/manuals).  
+    The formats modifications only affect the representation of VectorValue, MatrixValue, MapValue and in some case of StringValue (when quoted in output files)  
+    For input files, a compatibility has been kept with old deprecated formats, but you are encouraged to use the new formats from now.  
+    For output file, you may have to adapt your post-processing scripts if any.
+
+
+## From 1.7.x to 2.0.x
+
+### Preliminary informations
+
+The OpenFLUID 2.0 version brings many important enhancements to OpenFLUID. These enhancements involve many modifications into the simulators source codes.
+These modifications are described in the following parts. Note that the "simulation function" term is now obsolete, and is replaced by the "simulator" term that is commonly used in the modelling and simulation community.<br/>
+
+In order to successfully perform a migration from 1.7.x to 2.0.x simulators, it is recommended to follow these steps:
+1. Create an empty simulator with its CMake config
+1. Migrate and adapt general source code parts (include files, plugin macros, ...)
+1. Migrate and adapt signature
+1. Migrate and adapt each simulator method (initParams, prepareData, checkConsistency, initializeRun, runStep, finalizeRun)
+1. Adapt the migrated source code to be in line with the OpenFLUID 2.0 concepts and features
+
+### To replace in source code
+
+Description | Old | New
+--- | --- | ---
+**Include files** | `#include <openfluid/base.hpp>`<br/>`#include <openfluid/core.hpp>` | `#include <openfluid/ware/PluggableSimulator.hpp>`
+**Plugin hook** | DECLARE_PLUGIN_HOOKS | DECLARE_SIMULATOR_PLUGIN
+**Signature begin/end**<br/>now includes the simulator ID |  BEGIN_SIGNATURE_HOOK<br/>&nbsp;&nbsp;DECLARE_SIGNATURE_ID("the.simulator.id");<br/>END_SIGNATURE_HOOK | BEGIN_SIMULATOR_SIGNATURE("the.simulator.id")<br/>END_SIMULATOR_SIGNATURE
+**Signature information**<br/>the _SIGNATURE_ word in declaration macros are removed<br/>the ID and SDK declaration are removed | DECLARE_SIGNATURE_NAME<br/>DECLARE_SIGNATURE_DESCRIPTION<br/>DECLARE_SIGNATURE_VERSION<br/>DECLARE_SIGNATURE_STATUS<br/>DECLARE_SIGNATURE_DOMAIN<br/>DECLARE_SIGNATURE_PROCESS<br/>DECLARE_SIGNATURE_METHOD | DECLARE_NAME<br/>DECLARE_DESCRIPTION<br/>DECLARE_VERSION<br/>DECLARE_STATUS<br/>DECLARE_DOMAIN<br/>DECLARE_PROCESS<br/>DECLARE_METHOD
+**Signature declaration of data** | DECLARE_FUNCTION_PARAM<br/>DECLARE_USED_INPUTDATA<br/>DECLARE_REQUIRED_INPUTDATA | DECLARE_SIMULATOR_PARAM<br/>DECLARE_USED_ATTRIBUTE<br/>DECLARE_REQUIRED_ATTRIBUTE
+**Signature authors**<br/>is now defined as a list of couple name/email | DECLARE_SIGNATURE_AUTHORNAME("Moussa R., Fabre J.-C.");<br/>DECLARE_SIGNATURE_AUTHOREMAIL("moussa@supagro.inra.fr, fabrejc@supagro.inra.fr); | DECLARE_AUTHOR("Moussa R.","moussa@supagro.inra.fr");<br/>DECLARE_AUTHOR("Fabre J.-C.","fabrejc@supagro.inra.fr");
+**Simulateur class hook** | DEFINE_FUNCTION_HOOK(MySimulator); | DEFINE_SIMULATOR_CLASS(MySimulator);
+**Simulateur class declaration**<br/>now inherits from openfluid::ware::PluggableSimulator | class MySimulator : public openfluid::base::PluggableFunction | class MySimulator : public openfluid::ware::PluggableSimulator
+**initParams method**<br/>has changed parameters and returns void | bool initParams(openfluid::core::FuncParamsMap_t Params) | void initParams(const openfluid::ware::WareParams_t& Params)
+**prepareData method**<br/>returns void | bool prepareData() | void prepareData()
+**checkConsistency method**<br/>returns void | bool checkConsistency() | void checkConsistency()
+**initializeRun method**<br/>has changed parameters and returns a scheduling request | bool initializeRun(const openfluid::base::SimulationInfo* SimInfo) | openfluid::base::SchedulingRequest initializeRun()
+**runStep method**<br/>has changed parameters and returns a scheduling request | bool runStep(const openfluid::base::SimulationStatus* SimStatus) | openfluid::base::SchedulingRequest runStep()
+**finalizeRun method**<br/>has changed parameters and returns void | bool finalizeRun(const openfluid::base::SimulationInfo* SimInfo) | void finalizeRun()
+**Loops**<br/>former notation is now deprecated | DECLARE_UNITS_ORDERED_LOOP(1);<br/>BEGIN_UNITS_ORDERED_LOOP(1,"TU",TU)<br/>&nbsp;&nbsp;// ...<br/>END_LOOP | OPENFLUID_UNITS_ORDERED_LOOP("SU",SU)<br/>{<br/>&nbsp;&nbsp;// ...<br/>}
+**Warning and errors**<br/>are simplified with automatic sender and source informations | OPENFLUID_RaiseError("the.simulator.id","initParams","error in the code");<br/>OPENFLUID_RaiseWarning("the.simulator.id","initParams","warning in the code"); | OPENFLUID_RaiseError("error in the code");<br/>OPENFLUID_RaiseWarning("warning in the code");
+**Simulation time information**<br/>is now based on a time index from the beginning of the simulation | given by the SimInfo and SimStatus parameters | OPENFLUID_GetCurrentTimeIndex()<br/>OPENFLUID_GetPreviousRunTimeIndex()<br/>OPENFLUID_GetSimulationDuration()<br/>OPENFLUID_GetBeginDate()<br/>OPENFLUID_GetEndDate()<br/>OPENFLUID_GetCurrentDate()<br/>OPENFLUID_GetDefaultDeltaT()
+**Data type for scalar values**<br/>openfluid::core::ScalarValue does not exist anymore | openfluid::core::ScalarValue MyVal; | openfluid::core::DoubleValue MyVal;
+**Get simulators parameters** | OPENFLUID_GetFunctionParameter | OPENFLUID_GetSimulatorParameter
+ **Get variables values**<br/>does not pass-by-pointer values anymore, uses pass-by-reference instead | openfluid::core::ScalarValue MyVal;<br/>OPENFLUID_GetVariable(TU,"my.var",&Val); | openfluid::core::DoubleValue MyVal;<br/>OPENFLUID_GetVariable(TU,"my.var",Val);
+**Inpudata**<br/>are renamed into attributes | OPENFLUID_GetInputData()<br/>OPENFLUID_SetInputData() | OPENFLUID_GetAttribute()<br/>OPENFLUID_SetAttribute()
+
+
+### To add in source code
+
+#### Initialization of variables
+
+**TODO**
+
+
+### To remove from source code
+
+**TODO**
+
+
+### Build system
+
+OpenFLUID 2.0 provides macros for make the simulator build easier. These macros are used in the example below.
+
+### Complete example for an empty simulator
+
+#### Source code
+
+
+
+File MySimulator.cpp:
+```
+/*
+<sim2doc>
+  insert documentation here
+</sim2doc>
+*/
+
+#include <openfluid/ware/PluggableSimulator.hpp>
+
+
+DECLARE_SIMULATOR_PLUGIN
+
+
+// ===========================================================
+// ===========================================================
+
+
+BEGIN_SIMULATOR_SIGNATURE("my.simulator")
+
+  DECLARE_NAME("");
+  DECLARE_DESCRIPTION("");
+
+  DECLARE_VERSION("13.05");
+  DECLARE_STATUS(openfluid::ware::EXPERIMENTAL);
+
+  DECLARE_AUTHOR("","");
+
+END_SIMULATOR_SIGNATURE
+
+
+// ===========================================================
+// ===========================================================
+
+
+class MySimulator : public openfluid::ware::PluggableSimulator
+{
+  private:
+
+
+  public:
+
+
+    MySimulator(): PluggableSimulator()
+    {
+
+    }
+
+
+    // ===========================================================
+    // ===========================================================
+
+
+    ~MySimulator()
+    {
+
+    }
+
+
+    // ===========================================================
+    // ===========================================================
+
+
+    void initParams(const openfluid::ware::WareParams_t& /*Params*/)
+    {
+
+    }
+
+
+    // ===========================================================
+    // ===========================================================
+
+
+    void prepareData()
+    {
+
+    }
+
+
+    // ===========================================================
+    // ===========================================================
+
+
+    void checkConsistency()
+    {
+
+    }
+
+
+    // ===========================================================
+    // ===========================================================
+
+
+    openfluid::base::SchedulingRequest initializeRun()
+    {  
+
+      return DefaultDeltaT();
+    }
+
+
+    // ===========================================================
+    // ===========================================================
+
+
+    openfluid::base::SchedulingRequest runStep()
+    {
+
+      return DefaultDeltaT();
+    }
+
+
+    // ===========================================================
+    // ===========================================================
+
+
+    void finalizeRun()
+    {
+
+    }
+};
+
+
+// ===========================================================
+// ===========================================================
+
+
+DEFINE_SIMULATOR_CLASS(MySimulator);
+```
+
+
+#### CMake files
+
+File CMake.in.config:
+```cmake
+# Simulator ID
+# ex: SET(SIM_ID "simulator.id")
+SET(SIM_ID my.simulator)
+
+
+# list of CPP files, the sim2doc tag must be contained in the first one
+# ex: SET(SIM_CPP MySim.cpp)
+SET(SIM_CPP MySimulator.cpp)
+
+# list of Fortran files, if any
+# ex: SET(SIM_FORTRAN Calc.f)
+#SET(SIM_FORTRAN )
+
+
+# set this to add include directories
+# ex: SET(SIM_INCLUDE_DIRS /path/to/include/A/ /path/to/include/B/)
+#SET(SIM_INCLUDE_DIRS )
+
+# set this to add libraries directories
+# ex: SET(SIM_INCLUDE_DIRS /path/to/libA/ /path/to/libB/)
+#SET(SIM_LIBRARY_DIRS )
+
+# set this to add linked libraries
+# ex: SET(SIM_LINK_LIBS libA libB)
+#SET(SIM_LINK_LIBS )
+
+# set this to add definitions
+# ex: SET(SIM_DEFINITIONS "-DDebug")
+#SET(SIM_DEFINITIONS )
+
+
+# set this to force an install path to replace the default one
+#SET(SIM_INSTALL_PATH "/my/install/path/")
+
+
+# set this to 1 if you do not want automatic build of sim2doc documentation
+SET(SIM_SIM2DOC_DISABLED 1)
+
+#set to 1 to disable installation of sim2doc built documentation
+#SET (SIM_SIM2DOC_INSTALL_DISABLED 1)
+
+# set this if you want to use a specific sim2doc template
+#SET(SIM_SIM2DOC_TPL "/path/to/template")
+
+
+# set this if you want to add tests
+# given tests names must be datasets placed in a subdir named "tests"
+# each dataset in the subdir must be names using the test name and suffixed by .IN
+# ex for tests/test01.IN and tests/test02.IN: SET(SIM_TESTS_DATASETS test01 test02)
+#SET(SIM_TESTS_DATASETS )
+```
+
+
+file CMakeLists.txt:
+```cmake
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+
+INCLUDE(CMake.in.config)
+
+FIND_PACKAGE(OpenFLUID REQUIRED core base tools ware)
+
+OPENFLUID_ADD_SIMULATOR(SIM)
+```
+
+
+### Dataset files modifications
+
+#### <model> section
+
+The definition of the coupled model has evolved: the `<function>` tag is replaced by the `<simulator>` tag, the `fileID` attribute is replaced by the `ID` attribute.
+
+
+Example of a coupled model for OpenFLUID 2.0, with simulators sim.a and sim.b:
+```xml
+<?xml version="1.0" standalone="yes"?>
+<openfluid>
+  <model>
+
+    <simulator ID="sim.a" />
+
+    <simulator ID="sim.b" />
+      <param name="p1" value="1.0" />          
+    </simulator>    
+
+  </model>
+</openfluid>
+```
+
+#### <domain> section
+
+
+
+As the inpudata are replaced by attributes, the `<domain>` section can now include an `<attributes>` section. The structure of the `<attributes>` section is the same than the former `<inputdata>` section. The `<inputdata>` section is now ignored by OpenFLUID.
+
+```xml
+<?xml version="1.0" standalone="yes"?>
+<openfluid>
+  <domain>
+    <attributes unitclass="TestUnits" colorder="adbl;along;abool;aString;aVector;aMatrix;aMap">
+
+1 1.1 1 0 CODE1 1.1;1.2;1.3 10.0;10.1;10.2|11.0;11.1;11.2 key1=1.1;key2=aString
+2 1.1 1 1 CODE2 2.1;2.2;2.3 20.0;20.1;20.2|21.0;21.1;21.2 key1=1.1;key2=aString
+3 1.1 1 0 CODE3 3.1;3.2;3.3 30.0;30.1;30.2|31.0;31.1;31.2 key1=1.1;key2=aString
+4 1.1 1 1 CODE4 4.1;4.2;4.3 40.0;40.1;40.2|41.0;41.1;41.2 key1=1.1;key2=aString
+5 1.1 1 0 CODE5 5.1;5.2;5.3 50.0;50.1;50.2|51.0;51.1;51.2 key1=1.1;key2=aString
+7 1.1 1 0 CODE7 7.1;7.2;7.3 70.0;70.1;70.2|71.0;71.1;71.2 key1=1.1;key2=aString
+11 1.1 1 0 CODE11 11.1;11.2;11.3 110.0;110.1;110.2|111.0;111.1;111.2 key1=1.1;key2=aString
+12 1.1 1 1 CODE12 12.1;12.2;12.3 120.0;120.1;120.2|121.0;121.1;121.2 key1=1.1;key2=aString
+
+    </attributes>
+  </domain>
+</openfluid>
+```
+
+### <run> section
+
+The definition of the run configuration has evolved: the `<deltat>` tag is replaced by the `deltat` attribute of the `<scheduling>` tag.<br/>
+The `steps` attribute of the `<valuesbuffer>` tag is renamed to `size`
+
+
+Example of a run configuration for a default DeltaT set to 60:
+```xml
+<?xml version="1.0" standalone="yes"?>
+<openfluid>
+  <run>
+
+    <scheduling deltat="60" />
+
+    <period begin="1997-06-05 04:04:00"	end="1997-06-05 16:16:00" />
+
+  </run>
+</openfluid>
+```
+
+
+Example of a run configuration for a default DeltaT set to 60 and a values buffer size set to 10:
+```xml
+<?xml version="1.0" standalone="yes"?>
+<openfluid>
+  <run>
+
+    <scheduling deltat="60" />
+
+    <period begin="1997-06-05 04:04:00"	end="1997-06-05 16:16:00" />
+
+    <valuesbuffer size="10" />
+
+  </run>
+</openfluid>
+```
+
+#### outputs
+
+The `<output>` section does not longer exist. The outputs are now managed by observers in the `<monitoring>` section. In order to export simulation results in text files as the former output system used to do, you should use the export.vars.files.csv observer.
+
+
+## From 1.6.2 to 1.7.x
+
+###Mandatory modifications
+
+OPENFLUID_IsScalarVariableExist and OPENFLUID_IsVectorVariableExist methods are not available anymore. Instead you can use the following methods:
+* OPENFLUID_IsVariableExist for testing the type of a value of a variable
+* OPENFLUID_IsTypedVariableExist for testing the type of a variable
+
+
+### Recommended modifications
+
+* You should use the DoubleValue type instead of the ScalarValue type (deprecated).  
+* You should use the getInfoAsDoubleValue method (Event class) instead of the getInfoAsScalarValue (deprecated).
+
+
+In function signatures, you should use the `myvectorvariable[vector]` syntax for VectorValue variables, instead of the `myvectorvariable[]` syntax (notice the word "vector" between square brackets).
+
+
+In outputs definitions (section output of .fluidX files), you should remove the brackets following the variables names.
+
+
+As a general recommendation, prefer passing arguments of methods by reference instead of passing arguments by pointer, wherever it is possible. Many methods has been added or modified in the 1.7.0 API to allow passing arguments by reference.
+
+
+
+## From 1.6.x to 1.6.2
+
+Events lists in events collections are not lists of pointers anymore. A dedicated type is available : openfluid::core::EventsList_t.
+openfluid::core::EventCollection now returns openfluid::core::EventsList_t instead of std::list<openfluid::core::Event*>.
+
+example:
+```cpp
+openfluid::core::Unit *CurrentUnit;
+openfluid::core::EventsCollection EvColl;
+openfluid::core::EventsList_t *EvList;
+openfluid::core::DateTime BeginTime, EndTime;
+
+// set BeginTime and EndTime values
+
+BEGIN_UNITS_ORDERED_LOOP(1,"SU",CurrentUnit);
+
+  OPENFLUID_GetEvents(CurrentUnit,BeginTime,EndTime,&EvColl);
+  EvList = EvColl.getEventsList();
+
+  // do domething with events lists
+
+END_LOOP
+```
+
+
+
+## From 1.5.x to 1.6.x
+
+### API
+
+#### #include files
+
+
+
+Header files to include in the main source file of the simulation function are now <openfluid/core.hpp> and <openfluid/base.hpp> (and also the optional <openfluid/tools.hpp>) instead of "openfluid-core.h" and "openfluid-base.h" (and also the optional "openfluid-tools.h")
+
+```cpp
+#include <openfluid/core.hpp>
+#include <openfluid/base.hpp>
+```
+
+
+### OPENFLUID_xxx methods
+
+
+Some OPENFLUID_XXX methods have been slighly modified, in particular for parameters passing. This affects:
+
+* OPENFLUID_GetUnitsCount()
+
+See [API documentation](http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.0/sdk/index.html) for details.
+
+
+### Run configuration in input dataset
+
+The progressive output mode does not exist anymore, replaced by a buffering system for memory and files. See [for parameterization of this buffering system.
+
+## From 1.4.2 to 1.5.0
+
+### Events in input dataset
+
+The calendar section of input dataset must be placed into a domain section
+```xml
+<?xml version="1.0" standalone="yes"?>
+<openfluid>
+  <domain>
+    <calendar>
+
+      <event name="" category="test" unitclass="TestUnits" unitID="1" date="1999-12-31 23:59:59">
+        <info key="when" value="before"/>
+        <info key="where" value="1"/>
+        <info key="numeric" value="1.13"/>
+        <info key="string" value="EADGBE"/>
+      </event>
+      <event name="" category="test" unitclass="TestUnits" unitID="1" date="1999-12-01 12:00:00">
+        <info key="when" value="before"/>
+        <info key="where" value="1"/>
+        <info key="numeric" value="1.13"/>
+        <info key="string" value="EADG"/>
+      </event>        
+
+    </calendar>
+  </domain>  
+</openfluid>
+```
+
+
+### Input data format
+
+**TODO**
+
+
+
+
+## From 1.4.1 to 1.4.2
+
+No change!
+
+
+
+## From 1.4.0 to 1.4.1
+
+### Events
+
+The name of the openfluid::core::DistributedEvent class is now openfluid::core::Event.
+
+
+### Signature macros
+
+The SU, RS and GU (DECLARE_SU_PRODUCED_VAR, DECLARE_RS_REQUIRED_VAR, ...) based macros are no longer available. Use new macros (see "From 1.3.x to 1.4.0").
+
+
+### API
+
+The name of some methods attached to API classes has been modified for correct spelling.
+
+
+
+
+## From 1.3.x to 1.4.0
+
+### Input files
+
+The input files formats have changed:
+
+* Spatial domain definition files are now XML
+* Tags in input data files are slighly different
+* New options are available in run.xml file (mainly for progressive output configuration)
+* Output configuration file format has changed. See documentation.
+
+Refer to user manual for description of these file formats
+
+### Signature
+
+The declaration of handled data in signature has changed in order to take into account generic units features.
+Old declaration macros are still available but are now deprecated. You are really encouraged to use new declaration macros.
+The wxT macro around strings (for wxString) are no longer needed and must be removed.
+
+Old macros | New macros
+--- | ---
+DECLARE_SU_REQUIRED_VAR("name","description","data unit") <br> DECLARE_RS_REQUIRED_VAR("name","description","data unit") <br> DECLARE_GU_REQUIRED_VAR("name","description","data unit") | DECLARE_REQUIRED_VAR("name","domain unit class","description","data unit")
+DECLARE_SU_USED_VAR("name","description","data unit") <br> DECLARE_RS_USED_VAR("name","description","data unit") <br> DECLARE_GU_USED_VAR("name","description","data unit") | DECLARE_USED_VAR("name","domain unit class","description","data unit")
+DECLARE_SU_PRODUCED_VAR("name","description","data unit") <br> DECLARE_RS_PRODUCED_VAR("name","description","data unit") <br> DECLARE_GU_PRODUCED_VAR("name","description","data unit") | DECLARE_PRODUCED_VAR("name","domain unit class","description","data unit")
+DECLARE_SU_UPDATED_VAR("name","description","data unit") <br> DECLARE_RS_UPDATED_VAR("name","description","data unit") <br> DECLARE_GU_UPDATED_VAR("name","description","data unit") | DECLARE_UPDATED_VAR("name","domain unit class","description","data unit")
+DECLARE_SU_REQUIRED_PREVVAR("name","description","data unit") <br> DECLARE_RS_REQUIRED_PREVVAR("name","description","data unit") <br> DECLARE_GU_REQUIRED_PREVVAR("name","description","data unit") | DECLARE_REQUIRED_PREVVAR("name","domain unit class","description","data unit")
+DECLARE_SU_USED_PREVVAR("name","description","data unit") <br> DECLARE_RS_USED_PREVVAR("name","description","data unit") <br> DECLARE_GU_USED_PREVVAR("name","description","data unit") | DECLARE_USED_PREVVAR("name","domain unit class","description","data unit")
+DECLARE_SU_REQUIRED_INICOND("name","description","data unit") <br> DECLARE_RS_REQUIRED_INICOND("name","description","data unit") <br> DECLARE_GU_REQUIRED_INICOND("name","description","data unit") <br> DECLARE_SU_REQUIRED_PROPERTY("name","description","data unit") <br> DECLARE_RS_REQUIRED_PROPERTY("name","description","data unit") <br> DECLARE_GU_REQUIRED_PROPERTY("name","description","data unit") | DECLARE_REQUIRED_INPUTDATA("name","domain unit class","description","data unit")
+DECLARE_SU_USED_INICOND("name","description","data unit") <br> DECLARE_RS_USED_INICOND("name","description","data unit") <br> DECLARE_GU_USED_INICOND("name","description","data unit") <br> DECLARE_SU_USED_PROPERTY("name","description","data unit") <br> DECLARE_RS_USED_PROPERTY("name","description","data unit") <br> DECLARE_GU_USED_PROPERTY("name","description","data unit") | DECLARE_USED_INPUTDATA("name","domain unit class","description","data unit")
+DECLARE_USED_SU_EVENTS <br> DECLARE_USED_RS_EVENTS <br> DECLARE_USED_GU_EVENTS | DECLARE_USED_EVENTS("domain unit class")
+
+As examples:
+
+* DECLARE_SU_PRODUCED_VAR("water.atm-surf.H.rain","rainfall height on each SU by time step","m") becomes DECLARE_PRODUCED_VAR("water.atm-surf.H.rain","SU","rainfall height on each SU by time step","m")
+* DECLARE_RS_REQUIRED_PROPERTY("nmanning","Manning roughness coefficient","s/m^(-1/3)") becomes DECLARE_REQUIRED_INPUTDATA("nmanning","RS","Manning roughness coefficient","s/m^(-1/3)")
+* DECLARE_USED_SU_EVENTS becomes DECLARE_USED_EVENTS("SU")
+
+
+Refer to API reference guide for available and deprecated signature declarations
+
+### Type of domain units
+
+The types for domain units openfluid::core::SurfaceUnit,  openfluid::core::ReachSegment, openfluid::core::GroundwaterUnit does not exist anymore. Now all units are openfluid::core::Unit.
+
+example:
+```cpp
+openfluid::core::Unit *RS;
+openfluid::core::Unit *SU;
+```
+
+
+### Access to input data
+
+Former "properties", "initial conditions", and "physical descriptions" are now gathered as "input data".<br>
+In order to access to these input data, use the OPENFLUID_GetInputData primitive instead of former OPENFLUID_GetProperty, OPENFLUID_GetIniCondition, or method of units for physical description (SU->getUsrSlope(), RS->getUsrLength(), ...)<br>
+<br>
+Primitive OPENFLUID_SetProperty is no longer available.
+
+example:
+```cpp
+openfluid::core::ScalarValue ThetaS, ThetaI, Slope;
+
+OPENFLUID_GetInputData(SU,"slope",&Slope);
+OPENFLUID_GetInputData(SU,"thetasat",&ThetaS);
+OPENFLUID_GetInputData(SU,"thetaisurf",&ThetaI);
+```
+
+
+
+### Access to connected units
+
+To access to connected units, linked using the defined oriented topology, use the getToUnits(UnitClass_t aClass) and getFromUnits(UnitClass_t aClass) methods of the processed unit.
+
+example:
+```cpp
+openfluid::core::UnitsPtrList_t* UpSUsList;
+openfluid::core::UnitsPtrList_t* DownRSsList;
+
+UpSUsList = SU->getFromUnits("SU");
+DownRSsList = SU->getToUnits("RS");
+```
+
+
+
+### initParams() method
+
+The type of the initParams method parameter named "Params" has changed. The new correct type is openfluid::core::FuncParamsMap_t.
+
+example:
+```cpp
+bool ExFunc::initParams(openfluid::core::FuncParamsMap_t Params)
+{
+  // do params process here
+  return true;
+}
+```
+
+
+### Loops on units
+
+The loops on units have changed in order to take into account generic units features.
+Old loops on units are still available but are now deprecated. You are really encouraged to use new loops on units.
+
+Old loops | New loops
+--- | ---
+DECLARE_SU_ORDERED_LOOP <br> DECLARE_RS_ORDERED_LOOP <br> DECLARE_GU_ORDERED_LOOP | DECLARE_UNITS_ORDERED_LOOP(loopid)
+BEGIN_SU_ORDERED_LOOP(unitptr) <br> BEGIN_RS_ORDERED_LOOP(unitptr) <br> BEGIN_GU_ORDERED_LOOP(unitptr) | BEGIN_UNITS_ORDERED_LOOP(loopid,"unit class",unitptr)
+DECLARE_SU_LIST_LOOP <br> DECLARE_RS_LIST_LOOP <br> DECLARE_GU_LIST_LOOP | DECLARE_UNITS_LIST_LOOP(loopid)
+BEGIN_SU_LIST_LOOP(list,unitptr) <br> BEGIN_RS_LIST_LOOP(list,unitptr) <br> BEGIN_GU_LIST_LOOP(list,unitptr) | BEGIN_UNITS_LIST_LOOP(loopid,list,unitptr)
+END_LOOP | END_LOOP
+
+
+example:
+```cpp
+openfluid::core::Unit TU;
+DECLARE_UNITS_ORDERED_LOOP(1)
+
+// loop on the TestUnits class
+BEGIN_UNITS_ORDERED_LOOP(1,"TestUnits",TU)
+  // do some stuff here
+END_LOOP
+```
+
+## From 1.2 to 1.3.x
+
+### Data files format
+
+The changes in data files format is the replacement of the <mhydas> tag by the <openfluid> tag in XML files.
+
+### Names and identifiers
+
+The following table presents the corresponding names from the 1.2 version (left) to 1.3 version (right). You have to do the modifications in your source code to match the new names.
+
+Old | New
+--- | ---
+ mhydasdk-core.h | openfluid-core.h
+ mhydasdk-base.h | openfluid-base.h
+ mhydasdk-tools.h | openfluid-tools.h
+ mhydasdk::core | openfluid::core
+ mhydasdk::base | openfluid::base
+ mhydasdk::tools | openfluid::tools
+ MHYDAS_GetDistributedVarValue | OPENFLUID_GetVariable
+ MHYDAS_GetDistributedProperty | OPENFLUID_GetProperty
+ MHYDAS_SetDistributedProperty | OPENFLUID_SetProperty
+ MHYDAS_IsDistributedPropertyExists | OPENFLUID_IsPropertyExists
+ MHYDAS_GetDistributedIniCondition | OPENFLUID_GetIniCondition
+ MHYDAS_IsDistributedIniConditionExists | OPENFLUID_IsIniConditionExists
+ MHYDAS_IsDistributedVarExists | OPENFLUID_IsVariableExists
+ MHYDAS_IsDistributedScalarVarExists | OPENFLUID_IsScalarVariableExists
+ MHYDAS_IsDistributedVectorVarExists | OPENFLUID_IsVectorVariableExists
+ MHYDAS_IsDistributedVarValueExists | OPENFLUID_IsVariableValueExists
+ MHYDAS_IsDistributedScalarVarValueExists | OPENFLUID_IsVariableScalarValueExists
+ MHYDAS_IsDistributedVectorVarValueExists | OPENFLUID_IsVariableVectorValueExists
+ MHYDAS_AppendDistributedVarValue | OPENFLUID_AppendVariable
+ MHYDAS_SetDistributedVarValue | OPENFLUID_SetVariable
+ MHYDAS_GetFunctionParam | OPENFLUID_GetFunctionParameter
+ MHYDAS_RaiseWarning | OPENFLUID_RaiseWarning
+ MHYDAS_RaiseError | OPENFLUID_RaiseError
+ MHYDAS_GetEnvironmentInputDir | OPENFLUID_GetRunEnvironment
+ MHYDAS_GetEnvironmentOutputDir | OPENFLUID_GetRunEnvironment
+ MHYDASScalarValue | ScalarValue
+ MHYDASVectorValue | VectorValue
+ IDMHYDASValueMap | IDScalarValueMap
+ IDVectOfMHYDASValueMap | IDVectorValueMap
+ HOID | UnitID
+ $HOME/.mhydas/engine/ | $HOME/.openfluid/engine/
+ MHYDAS.IN | OPENFLUID.IN
+ MHYDAS.OUT | OPENFLUID.OUT
+ MHYDAS.TRACE | OPENFLUID.TRACE
+
+
+To use the OPENFLUID_GetRunEnvironment with the correct parameters, please read the simulation function developer (see [manuals](../start/manuals).
+
+### Vector values
+
+Because of lack of performance, the management class for vectors has been modified. The std::vector class has been abandonned and has been replaced by the openfluid::core::Array class. All necessary information about the openfluid::core::Array class is available through the simulation function development [
+
+### Date and time management
+Due to a daylight saving time bug, the use of wxDateTime for time representation and management has been abandonned.
+
+Date and time are now managed and available through openfluid::core::DateTime objects.
+
+### Makefiles
+The name of the config tool used to give the correct compilation options has changed. It is now called ofelib-config. Modify you makefiles to use the new name. If you have generated your makefiles through the eclipse plug-in, the modification have to be done in the top part of the makefile.
+
+
+## From 1.1 to 1.2
+
+### Model and run configuration
+
+
+* The simulation period is now defined with begin and end dates. This period has to be given in the run.xml file. The time step is also given through this file.
+
+```xml
+<?xml version="1.0" standalone="yes"?>
+<mhydas>
+  <run>
+    <deltat>60</deltat>
+    <period begin="1997-06-05 04:00:00" end="1997-06-05 16:23:00" />
+  </run>
+</mhydas>
+```
+
+* The runparams section has to be removed from the model.xml file
+
+### Removing explicit rain access
+
+Access to rain using the MHYDAS_GetDistributedRainValue(...) primitives is not allowed anymore. You have to remove calls to this primitive from your source code.
+
+### Get access to rain through simulation variables
+
+To get rain values on SU and RS  as forcing data, you can use two simulation functions : water.atm-surf.rain-su.files and water.atm-surf.rain-rs.files. These functions use rainfall files and spatial distribution files for prodution of rain values on units.
+**Note that the rain values are now given in m by timestep, instead of former m/s by timestep. You may adapt your simulation functions to take into account the new values unit.**
+
+These functions use a rainsources.xml file (see below), defining the rain sources. The rain distribution file for SU has to be named SUraindistri.dat. The rain distribution file for RS has to be named RSraindistri.dat. The formats of these files are the same as the previous version of MHYDAS-engine (when rain was managed by the kernel and not by simulation functions).
+
+```xml
+<?xml version="1.0" standalone="yes"?>
+<mhydas>
+  <datasources>
+    <filesource ID="3" file="rainfile3.txt" />
+    <filesource ID="4" file="rainfile4.txt" />
+    <filesource ID="5" file="rainfile5.txt" />
+  </datasources>
+</mhydas>
+```
+
+### Date and time management
+
+Dates and times are now managed by the [wxDateTime](http://docs.wxwidgets.org/2.6/wx_wxdatetime.html) class. Remove all references and calls to the deprecated mhydasdk::core::DateTime class.
+
+
+## From 1.0 to 1.1
+
+### Plugin hooks
+
+The plugin hooks have been modified. The signature has been detached from the simulation function for better versions handling. the declaration have to be done in the .h file, the definitions of the signature hook and the simulation function hook have to be done in the .cpp file.
+
+* The declaration have to be placed in the end of the .h file. This is done using the DECLARE_PLUGIN_HOOKS macro.
+```cpp
+DECLARE_PLUGIN_HOOKS;
+```
+
+* The following code has to be removed, as it is replaced by the previous code.
+```c
+extern "C"
+{
+  DLLIMPORT mhydasdk::base::PluggableFunction* GetMHYDASPluggableFunction();
+};
+```
+
+### Signature
+
+* The signature has to be declared <u>outside</u> the simulation function class
+```cpp
+BEGIN_SIGNATURE_HOOK
+  DECLARE_SIGNATURE_ID(wxT("example"));
+  DECLARE_SIGNATURE_NAME(wxT("Example simulation function"));
+  DECLARE_SIGNATURE_DOMAIN(wxT("dummy"));
+  DECLARE_SIGNATURE_STATUS(mhydasdk::base::BETA);
+
+  // here the rest of the signature using classic macros
+
+END_SIGNATURE_HOOK
+```
+
+* Every macro used to define the signature has to be removed from the simulation function class constructor
+
+
+### Simulation function
+
+
+
+* The simulation function hook is defined in the .cpp file, using the DEFINE_FUNCTION_HOOK macro with the name of the class as argument.
+```cpp
+DEFINE_FUNCTION_HOOK(MyFunc);
+```
+
+* The following code has to be removed, as it is replaced by the previous code.
+```cpp
+mhydasdk::base::PluggableFunction* GetMHYDASPluggableFunction()
+{
+  return new MyFunc();
+}
+```
+
+
+### Input data files
+
+#### Rain
+
+* The file containing the rain data references has to be renamed from rainevent.xml to rainsources.xml.  
+* The format of the file rainsources.xml has been changed. The new format must look like this
+```xml
+<?xml version="1.0" standalone="yes"?>
+<mhydas>
+  <rainsources>
+    <raindata ID="4" file="pluvio4.dat" />
+    <raindata ID="5" file="pluvio5.dat" />
+    <raindata ID="3" file="pluvio3.dat" />
+  </rainsources>
+</mhydas>
+```
+
+#### Distributed data
+
+Initial conditions and properties files are now considered distributed data files.
+
+* These files have to be renamed with the whatyouwant.ddata.xml file name pattern, where whatyouwant is a name which means something for you. _Example: SUini.xml could be renamed as SUini.ddata.xml_
+
+* The format has changed too. The file for distributed initial conditions on SU should look like this:
+```xml
+<?xml version="1.0" standalone="yes"?>
+<mhydas>
+  <distridata unitclass="SU" datacat="ini">
+    <columns order="thetaisurf;thetains" />
+    <data>
+
+1	0.3	0.2
+2	0.3	0.2
+3	0.3	0.2
+4	0.3	0.2
+5	0.3	0.2
+6	0.3	0.2
+7	0.3	0.2
+
+    </data>
+  </distridata>
+</mhydas>
+```
+The unitclass attribute could be "SU", "RS", or "GU" (I really don't know why ...:-))
+
+The datacat attribute could be "ini" for initial conditions, or "param" for parameters (aka properties)
+
+### MHYDAS data types
+
+* For scalar data, MHYDASValue has been renamed to MHYDASScalarValue
+* For vector data, VectorizedMHYDASvalue has been renamed to MHYDASVectorValue
+
+These two types are defined into the namespace mhydasdk::core
+
+example:
+```cpp
+mhydasdk::core::MHYDASScalarValue TmpScalarValue;
+mhydasdk::core::MHYDASVectorValue TmpVectorValue;
+```
+
+### Simulation infos and status
+
+* Simulation informations and status are now passed to the simulation functions as const pointers. This avoids modification of simulation infos and status from inside simulation functions
+
+* `initializeRun(mhydasdk::base::SimulationInfo* SimInfo)` has to be replaced by `initializeRun(const mhydasdk::base::SimulationInfo* SimInfo)`,  `runStep(mhydasdk::base::SimulationStatus* SimStatus)` by `runStep(const mhydasdk::base::SimulationStatus* SimStatus)`, and `finalizeRun(mhydasdk::base::SimulationInfo* SimInfo)` by `initializeRun(const mhydasdk::base::SimulationInfo* SimInfo)`. Note the `const` keyword added.
+
+* Those replacements have to be done in both header and implementation files (.h and .cpp).

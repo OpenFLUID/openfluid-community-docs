@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+
+import shutil
+
+import Helpers
+
+shutil.rmtree(Helpers.BuildDir,True)
+
+Cmd = ["mkdocs","build","--site-dir",Helpers.BuildDir]
+Helpers.execCommand(Cmd,Helpers.SrcDir)

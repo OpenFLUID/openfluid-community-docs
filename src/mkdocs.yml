@@ -1,0 +1,56 @@
+site_name: OpenFLUID community
+theme:
+  name : readthedocs
+  custom_dir: theme_readthedocs_custom
+extra_css:
+  - css/custom.css
+
+extra:
+    production: False
+
+google_analytics: ['UA-10058595-1', 'openfluid-project.org']
+
+copyright: 'Copyright INRA-Montpellier SupAgro - <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>'
+site_favicon: img/favicon.png
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: True
+  - markdown_include.include:
+      base_path: docs
+
+pages:
+  - index.md
+  - Getting started :
+    - Installation : 'start/install.md'
+    - Manuals : 'start/manuals.md'
+    - Training sessions : 'start/trainings.md'
+    - Support : 'start/support.md'
+  - General information :
+    - Used terms and acronyms: 'general/terms.md'
+    - FAQ : 'general/faq.md'
+    - Releases notes : 'general/changelog.md'
+  - Simulators development :
+    - Development environment : 'scidev/scidevenv.md'
+    - Create and build a simulator : 'scidev/simbuild.md'
+    - Conventions for naming simulators and data : 'scidev/simdatanaming.md'
+    - Coding style : 'scidev/codestyle.md'
+    - Good practices for simulators development : 'scidev/simgood.md'
+    - Documentation : 'scidev/simdoc.md'
+    - Requirements for simulators release : 'scidev/simrelease.md'
+    - Updating the source code of simulators : 'scidev/simupdate.md'
+  - OpenFLUID and R :
+    - ROpenFLUID package : 'external/ropenfluid.md'
+    - Example of simulation analyses : 'external/ranalysis.md'
+  - Platform development :
+    - Development environment : 'coredev/devenv.md'
+    - Building from sources : 'coredev/build.md'
+    - Coding style : 'coredev/codestyle.md'
+    - Working with source code : 'coredev/srccodework.md'
+    - Good practices for commits : 'coredev/commitsgood.md'
+    - Process for OpenFLUID releases : 'coredev/releasepcs.md'
+    - FluidHub API : 'coredev/fluidhub.md'
+    - Bugs and feature requests : 'coredev/issues.md'
+  - Notes about models :
+    - MHYDAS : 'models/mhydas.md'

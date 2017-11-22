@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  builder:
+    build:
+      context: ./builder
+    image: openfluid-web/builder
+    volumes:
+      - .:/workdir
+    ports:
+      - 8000:8000
+      - 1313:1313

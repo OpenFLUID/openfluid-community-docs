@@ -1,0 +1,80 @@
+
+li.toctree-l1 hr {
+  margin : 12px 0;
+  border-top: 1px solid #777777;
+}
+
+h2 {
+  margin-top : 50px;
+  border-bottom : 1px solid #d0d0d0;
+}
+
+h3 {
+  margin-top : 40px;
+}
+
+h4 {
+  margin-top : 30px;
+}
+
+p {
+  margin-bottom : 3px;
+}
+
+
+footer {
+  margin-top: 30px;
+}
+footer p {
+  font-size: 80%;
+  margin-bottom : 0;
+}
+
+.wy-nav-content {
+    max-width: none;
+}
+
+.wy-side-nav-search {
+  background-color: #f0ede7;
+}
+
+.wy-side-nav-search input[type=text] {
+  border-color: #49617a;
+}
+
+.wy-side-nav-search > img.community-img {
+  width: 158px;
+  height: 114px;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.wy-menu-vertical span {
+  font-weight: bold;
+}
+
+.wy-menu-vertical a,
+.wy-menu-vertical li ul li a {
+  color: #d0d0d0;
+}
+
+.home-container {
+  width : 100%;
+}
+
+.home-container div {
+  display: inline-block;
+  text-align:center;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 15px;
+}
+
+.home-container div h2 {
+  margin-top : 10px;
+  border: 0;
+}
+
+.home-container div img {
+  width : 112px;
+}
