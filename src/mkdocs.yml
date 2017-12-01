@@ -30,6 +30,8 @@ pages:
   - General information :
     - Used terms and acronyms: 'general/terms.md'
     - FAQ : 'general/faq.md'
+    - License : 'general/license.md'
+    - References : 'general/references.md'
     - Releases notes : 'general/changelog.md'
     - Misc. ressources : 'general/miscress.md'
   - Simulators development :
