@@ -1,5 +1,4 @@
-!!! danger "TODO"
-    To be reviewed
+<!-- #TODO review -->
 
 The ROpenFLUID package allows to use OpenFLUID within the GNU [R environment](http://www.r-project.org/) environment. This package is available for OpenFLUID 1.7.2 and later versions. Only linux and windows system are currently supported.
 

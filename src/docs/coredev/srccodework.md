@@ -1,6 +1,4 @@
-!!! danger "TODO"
-    To be reviewed
-
+<!-- #TODO review -->
 
 The OpenFLUID source code is hosted on [GitHub](https://github.com/OpenFLUID), and is made of several Git repositories. They can be cloned with read/write access for registered developers, at the following adresses using either https or ssh protocols (replace username by you registered user name in the following adresses):
 

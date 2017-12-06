@@ -71,16 +71,14 @@ The best coding style for your simulators development is the coding style you ar
 
 ### How can I log information, warnings and errors messages during simulations?
 
-!!! danger "TODO"
-    To be reviewed
+<!-- #TODO review -->
 
 You can log informations from your simulators using the OpenFLUID Logging system. This is the recommended way to log messages. Please avoid using std::cout or std::cerr.  
 For details, see the [manuals](../start/manuals), and go to the "Development of the simulator source code" of the manual.
 
 ### How can I store data and status from one time step to the next time step?
 
-!!! danger "TODO"
-    To be reviewed
+<!-- #TODO review -->
 
 In this case, you can use "ID-maps" structures as attribute of your simulator C++ class.  
 For details, see the see the [manuals](../start/manuals), and go to the "Development of the simulator source code" of the manual.
@@ -101,8 +99,7 @@ On linux systems, this limitation can be disabled by adding the following lines 
 
 ### I installed a new OpenFLUID version and OpenFLUID doesn't start anymore, why?
 
-!!! danger "TODO"
-    To be reviewed
+<!-- #TODO review -->
 
 When installing a new version of OpenFLUID, you may experience problems such as OpenFLUID-builder does not start anymore.
 In this case, you have to update the installed simulators.

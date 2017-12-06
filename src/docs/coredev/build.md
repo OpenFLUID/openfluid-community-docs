@@ -1,5 +1,7 @@
 ## Getting the sources
 
+<!-- #TODO how to get the sources, see working with source code -->
+
 !!! danger "TODO"
     To be written
 
@@ -100,11 +102,15 @@ cpack
 
 ## Building on MacOS
 
+<!-- #TODO build on macOS -->
+
 !!! danger "TODO"
     To be written
 
 
 ## Building on Windows
+
+<!-- #TODO build on windows -->
 
 !!! danger "TODO"
     To be written
