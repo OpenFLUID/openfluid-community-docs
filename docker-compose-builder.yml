@@ -3,7 +3,7 @@ version: "2"
 services:
   builder:
     build:
-      context: ./builder
+      context: ./scripts
     image: openfluid-web/builder
     volumes:
       - .:/workdir

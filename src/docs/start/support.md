@@ -15,7 +15,7 @@ Follow us on Twitter: [https://twitter.com/OpenFLUID](https://twitter.com/OpenFL
 <a href="https://twitter.com/OpenFLUID?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @OpenFLUID</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-## IRC
+## Chat - IRC channel
 
 An IRC channel is registered on the freenode network for live discussion with OpenFLUID users and developers, asking questions or just hanging out and "socializing".
 You can join the openfluid [IRC](http://en.wikipedia.org/wiki/Internet_Relay_Chat) channel using your favorite IRC client.

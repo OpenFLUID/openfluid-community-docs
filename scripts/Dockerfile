@@ -12,6 +12,8 @@ RUN pip install --upgrade pip
 
 RUN pip install mkdocs
 RUN pip install markdown-include
+RUN pip install bibtexparser
+RUN pip install Jinja2
 
 
 WORKDIR /workdir

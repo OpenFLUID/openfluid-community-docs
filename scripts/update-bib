@@ -1,0 +1,57 @@
+#!/usr/bin/env python
+
+#TODO references generator from bib
+
+
+import os
+import jinja2
+import bibtexparser
+import pprint #TODO to remove
+
+import Helpers
+
+
+##############################################################################
+##############################################################################
+
+
+Vars = dict()
+
+
+##############################################################################
+
+
+CitingFile = open(os.path.join(Helpers.RessDir,"OpenFLUIDCiting.bib"))
+CitingStr = CitingFile.read()
+CitingFile.close()
+CitingDB = bibtexparser.loads(CitingStr)
+
+Vars['CitingBib'] = unicode(CitingStr,'utf8')
+Vars['CitingRef'] = CitingDB.entries[0]
+
+
+##############################################################################
+
+
+RefsFile = open(os.path.join(Helpers.RessDir,"OpenFLUIDRefs.bib"))
+RefsStr = RefsFile.read()
+RefsFile.close()
+RefsDB = bibtexparser.loads(RefsStr)
+
+for Ref in RefsDB.entries:
+  if not 'Refs'+Ref['ENTRYTYPE'] in Vars :
+    Vars['Refs'+Ref['ENTRYTYPE']] = list()
+  Vars['Refs'+Ref['ENTRYTYPE']].append(Ref)
+
+
+
+##############################################################################
+
+
+TplPath, TplFilename = os.path.split(os.path.join(Helpers.RessDir,"references.tpl.md"))
+GeneratedContent = jinja2.Environment(loader=jinja2.FileSystemLoader(TplPath)).get_template(TplFilename).render(**Vars)
+
+
+OutFile = open(os.path.join(Helpers.SrcDir,"docs","general","references.md"),"w")
+OutFile.write(GeneratedContent.encode('utf8'))
+OutFile.close()

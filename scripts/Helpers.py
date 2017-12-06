@@ -2,16 +2,18 @@ import os
 import errno
 import subprocess
 
-###################################################
+
+##############################################################################
 
 
 BaseDir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+RessDir = os.path.join(BaseDir,'resources')
 SrcDir = os.path.join(BaseDir,'src')
 BuildDir = os.path.join(BaseDir,'_build')
 
 
-###################################################
+##############################################################################
 
 
 def makedirs(Path):
@@ -24,7 +26,7 @@ def makedirs(Path):
       raise
 
 
-###################################################
+##############################################################################
 
 
 def execCommand(Cmd,Cwdir):
