@@ -7,6 +7,9 @@ theme:
 extra_css:
   - css/custom.css
 
+repo_url: https://github.com/OpenFLUID/openfluid-community-docs
+edit_uri: blob/master/src/docs
+
 extra:
     production: False
 

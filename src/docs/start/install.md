@@ -1,6 +1,6 @@
 !!! note "OpenFLUID Versions"
     The following instructions are for OpenFLUID versions 2.0.x and later.  
-    As older versions are deprecated, we do not provide instructions for these older versions. However, you can contact us for that using the [support tools](../start/support)
+    As older versions are deprecated, we do not provide online instructions for these older versions. However, you can contact us for that using the [support tools](../start/support)
 
 !!! note "ROpenFLUID"
     For installation notes about the ROpenFLUID package for R, please report to the [R OpenFLUID dedicated page](../external/ropenfluid.md)
