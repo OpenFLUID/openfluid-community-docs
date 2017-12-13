@@ -1,0 +1,35 @@
+#!/usr/bin/env python
+
+import os
+from string import Template
+
+import Helpers
+
+
+##############################################################################
+##############################################################################
+
+
+FileConfigs = dict()
+
+FileConfigs['mkdocs-prod.yml'] = {
+  'production' : "True"
+}
+
+FileConfigs['mkdocs.yml'] = {
+  'production' : "False"
+}
+
+
+##############################################################################
+
+
+TplFile = open(os.path.join(Helpers.RessDir,"mkdocs.tpl.yml"), 'r')
+TplContent = TplFile.read()
+TplFile.close()
+
+
+for Filename, Config in FileConfigs.iteritems():
+  DestFile = open(os.path.join(Helpers.SrcDir,Filename),'w')
+  DestFile.write(Template(TplContent).substitute(Config))
+  DestFile.close()

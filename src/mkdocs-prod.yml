@@ -10,7 +10,7 @@ repo_url: https://github.com/OpenFLUID/openfluid-community-docs
 edit_uri: blob/master/src/docs
 
 extra:
-    production: False
+    production: True
 
 google_analytics: ['UA-10058595-1', 'openfluid-project.org']
 
