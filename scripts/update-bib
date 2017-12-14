@@ -1,12 +1,8 @@
 #!/usr/bin/env python
 
-#TODO references generator from bib
-
-
 import os
 import jinja2
 import bibtexparser
-import pprint #TODO to remove
 
 import Helpers
 
