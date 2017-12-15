@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{%- block htmltitle %}
+  <title>{{ config.site_name }}</title>
+{%- endblock %}
+
 {%- block site_name %}
    <img class="community-img" src="{{ base_url }}/img/ofcommunity.png"></img>
    <!--<a href="{{ nav.homepage.url }}" class="icon icon-home"> {{ config.site_name }}</a>-->

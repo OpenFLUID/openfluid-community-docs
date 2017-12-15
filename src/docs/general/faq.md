@@ -71,16 +71,12 @@ The best coding style for your simulators development is the coding style you ar
 
 ### How can I log information, warnings and errors messages during simulations?
 
-<!-- #TODO review -->
-
-You can log informations from your simulators using the OpenFLUID Logging system. This is the recommended way to log messages. Please avoid using std::cout or std::cerr.  
+You can log informations from your simulators using the OpenFLUID logging feature. This is the recommended way to log messages. Avoid using std::cout or std::cerr as the output to screen is not guaranteed on all systems.  
 For details, see the [manuals](../start/manuals), and go to the "Development of the simulator source code" of the manual.
 
 ### How can I store data and status from one time step to the next time step?
 
-<!-- #TODO review -->
-
-In this case, you can use "ID-maps" structures as attribute of your simulator C++ class.  
+In this case, you can use "ID-maps" structures as attribute of the C++ class of your simulator .  
 For details, see the see the [manuals](../start/manuals), and go to the "Development of the simulator source code" of the manual.
 
 ## Troubleshooting
@@ -99,14 +95,11 @@ On linux systems, this limitation can be disabled by adding the following lines 
 
 ### I installed a new OpenFLUID version and OpenFLUID doesn't start anymore, why?
 
-<!-- #TODO review -->
+When installing a new version of OpenFLUID, you may experience problems such as OpenFLUID-Builder does not start anymore. In this case, you have to update the installed simulators.
 
-When installing a new version of OpenFLUID, you may experience problems such as OpenFLUID-builder does not start anymore.
-In this case, you have to update the installed simulators.
+For downloaded simulators (such as the MHYDAS model), reinstall the new version of the simulators, corresponding to the OpenFLUID version you have just installed.  
 
-For downloaded simulators (such as the MHYSDAS model), reinstall the new version of the simulators, corresponding to the OpenFLUID version you have just installed.  
-
-For your own simulators, you have to rebuild them for linking with new OpenFLUID framework, folowing these instructions. See the [build a simulator](../scidev/simbuild) page for more details.
+For your own simulators, you have to rebuild them for linking with new OpenFLUID framework. See the [build a simulator](../scidev/simbuild) page for more details about building simulators from source code.
 
 ### I installed a new OpenFLUID version on Linux and the OpenFLUID-Builder icon does not show, what should I do?
 
