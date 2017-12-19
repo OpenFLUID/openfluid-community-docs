@@ -5,7 +5,7 @@ The coding style conventions are often designed for a specific language. The fol
     **The major recommendation is to know and apply the following recommendations.**
 
 !!! note "Note for Eclipse IDE users"
-    The coding style can be automatically used in Eclipse IDE through the coding style configuration (_Window > Preferences, C/C++ > Coding style_). You can automatically set up this configuration using this [Eclipse coding style configuration file](http://www.umr-lisah.fr/openfluid/resources/eclipsepi/LISAH_eclipse_coding_style.xml) (_Right-click on link, Save As..._)  
+    The coding style can be automatically used in Eclipse IDE through the coding style configuration (_Window > Preferences, C/C++ > Coding style_). You can automatically set up this configuration using this [Eclipse coding style configuration file](http://www.openfluid-project.org/resources/eclipsepi/LISAH_eclipse_coding_style.xml) (_Right-click on link, Save As..._)  
 
 
 ## Naming conventions

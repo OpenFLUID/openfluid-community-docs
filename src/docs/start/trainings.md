@@ -227,36 +227,36 @@ The 2012 session is based on OpenFLUID 1.7.2. The schedule is available [here](h
 
 ### Slides
 
-* [Quick C++ course](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/cplusplus_fr.pdf) (in french)
-* [OpenFLUID - Overview](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/openfluid-overview_fr.pdf) (in french)
-* [OpenFLUID - Simulation functions dévelopment](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/openfluid-simfuncdev_fr.pdf) (in french)
+* [Quick C++ course](http://www.openfluid-project.org/resources/docs/trainings/2012/cplusplus_fr.pdf) (in french)
+* [OpenFLUID - Overview](http://www.openfluid-project.org/resources/docs/trainings/2012/openfluid-overview_fr.pdf) (in french)
+* [OpenFLUID - Simulation functions development](http://www.openfluid-project.org/resources/docs/trainings/2012/openfluid-simfuncdev_fr.pdf) (in french)
 
-* [MHYDAS - Digital landscape representation](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/mhydas-rnp_fr.pdf) (in french)
+* [MHYDAS - Digital landscape representation](http://www.openfluid-project.org/resources/docs/trainings/2012/mhydas-rnp_fr.pdf) (in french)
 
 
 ### Practical works
 
-* [PW0 - Documentation and tools overview](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/pw0-basics.pdf) (in french)
-* [PW1 - Creation of a simulation function](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/pw1-function.pdf) (in french)
-* [PW2 - Production of variables](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/pw2-prodvar.pdf) (in french)
-* [PW3 - Use of variables](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/pw3-usevar.pdf) (in french)
-* [PW4 - Use of function parameters](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/pw4-funcparams.pdf) (in french)
-* [PW5 - Use of distributed input data](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/pw5-usedata.pdf) (in french)
-* [PW7 - Use of spatial units connections](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/pw7-connect.pdf) (in french)
-* [PW8 - Encapsulation of existing code](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/pw8-encapsulation.pdf) (in french)
-* [PW9 - Traffic in the streets of Manhattan](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/pw9-traffic.pdf) (in french)
+* [PW0 - Documentation and tools overview](http://www.openfluid-project.org/resources/docs/trainings/2012/pw0-basics.pdf) (in french)
+* [PW1 - Creation of a simulation function](http://www.openfluid-project.org/resources/docs/trainings/2012/pw1-function.pdf) (in french)
+* [PW2 - Production of variables](http://www.openfluid-project.org/resources/docs/trainings/2012/pw2-prodvar.pdf) (in french)
+* [PW3 - Use of variables](http://www.openfluid-project.org/resources/docs/trainings/2012/pw3-usevar.pdf) (in french)
+* [PW4 - Use of function parameters](http://www.openfluid-project.org/resources/docs/trainings/2012/pw4-funcparams.pdf) (in french)
+* [PW5 - Use of distributed input data](http://www.openfluid-project.org/resources/docs/trainings/2012/pw5-usedata.pdf) (in french)
+* [PW7 - Use of spatial units connections](http://www.openfluid-project.org/resources/docs/trainings/2012/pw7-connect.pdf) (in french)
+* [PW8 - Encapsulation of existing code](http://www.openfluid-project.org/resources/docs/trainings/2012/pw8-encapsulation.pdf) (in french)
+* [PW9 - Traffic in the streets of Manhattan](http://www.openfluid-project.org/resources/docs/trainings/2012/pw9-traffic.pdf) (in french)
 
 
-* [Tutorial for data visualization with Google Earth](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/tuto-ge.pdf) (in french)
+* [Tutorial for data visualization with Google Earth](http://www.openfluid-project.org/resources/docs/trainings/2012/tuto-ge.pdf) (in french)
 
 
 ### MHYDAS practical works
 
-* [PW MHYDAS](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/pw-mhydas.pdf) (in french)
+* [PW MHYDAS](http://www.openfluid-project.org/resources/docs/trainings/2012/pw-mhydas.pdf) (in french)
 
 
 ### Datasets for practical works
-* [Datasets for practical works 1 to 9 and MHYDAS](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2012/full_dataset.zip)
+* [Datasets for practical works 1 to 9 and MHYDAS](http://www.openfluid-project.org/resources/docs/trainings/2012/full_dataset.zip)
 
 
 ## 2011
@@ -264,54 +264,54 @@ The schedule is available [here](http://www.openfluid-project.org/resources/docs
 
 ### Slides
 
-* [Quick C++ course](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/cplusplus_fr.pdf) (in french)
-* [OpenFLUID - Overview](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/openfluid-overview_fr.pdf) (in french)
-* [OpenFLUID - Simulation functions dévelopment](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/openfluid-simfuncdev_fr.pdf) (in french)
+* [Quick C++ course](http://www.openfluid-project.org/resources/docs/trainings/2011/cplusplus_fr.pdf) (in french)
+* [OpenFLUID - Overview](http://www.openfluid-project.org/resources/docs/trainings/2011/openfluid-overview_fr.pdf) (in french)
+* [OpenFLUID - Simulation functions dévelopment](http://www.openfluid-project.org/resources/docs/trainings/2011/openfluid-simfuncdev_fr.pdf) (in french)
 
 
 ### Practical works
 
-* [PW0 - Documentation and tools overview](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/pw0-basics.pdf) (in french)
-* [PW1 - Creation of a simulation function](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/pw1-function.pdf) (in french)
-* [PW2 - Production of variables](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/pw2-prodvar.pdf) (in french)
-* [PW3 - Use of variables](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/pw3-usevar.pdf) (in french)
-* [PW4 - Use of function parameters](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/pw4-funcparams.pdf) (in french)
-* [PW5 - Use of distributed input data](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/pw5-usedata.pdf) (in french)
-* [PW8 - Encapsulation of existing code](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/pw8-encapsulation.pdf) (in french)
+* [PW0 - Documentation and tools overview](http://www.openfluid-project.org/resources/docs/trainings/2011/pw0-basics.pdf) (in french)
+* [PW1 - Creation of a simulation function](http://www.openfluid-project.org/resources/docs/trainings/2011/pw1-function.pdf) (in french)
+* [PW2 - Production of variables](http://www.openfluid-project.org/resources/docs/trainings/2011/pw2-prodvar.pdf) (in french)
+* [PW3 - Use of variables](http://www.openfluid-project.org/resources/docs/trainings/2011/pw3-usevar.pdf) (in french)
+* [PW4 - Use of function parameters](http://www.openfluid-project.org/resources/docs/trainings/2011/pw4-funcparams.pdf) (in french)
+* [PW5 - Use of distributed input data](http://www.openfluid-project.org/resources/docs/trainings/2011/pw5-usedata.pdf) (in french)
+* [PW8 - Encapsulation of existing code](http://www.openfluid-project.org/resources/docs/trainings/2011/pw8-encapsulation.pdf) (in french)
 
 
-* [Tutorial for data visualization with VisIt](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/tuto-visit.pdf) (in french)
+* [Tutorial for data visualization with VisIt](http://www.openfluid-project.org/resources/docs/trainings/2011/tuto-visit.pdf) (in french)
 
-* [Dataset for practical works 1 to 5](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/dataset_pw1-5_start.zip)
-* [Dataset and source code for practical work 8](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/dataset_pw8_start.zip)
-* [A possible solution for practical work 8](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/formation.reservoir.zip)
+* [Dataset for practical works 1 to 5](http://www.openfluid-project.org/resources/docs/trainings/2011/dataset_pw1-5_start.zip)
+* [Dataset and source code for practical work 8](http://www.openfluid-project.org/resources/docs/trainings/2011/dataset_pw8_start.zip)
+* [A possible solution for practical work 8](http://www.openfluid-project.org/resources/docs/trainings/2011/formation.reservoir.zip)
 
 
 ### MHYDAS practical works
-* [PW MHYDAS](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/pw-mhydas.pdf) (in french)
-* [Dataset for MHYDAS practical works](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2011/dataset_mhydas.zip)
+* [PW MHYDAS](http://www.openfluid-project.org/resources/docs/trainings/2011/pw-mhydas.pdf) (in french)
+* [Dataset for MHYDAS practical works](http://www.openfluid-project.org/resources/docs/trainings/2011/dataset_mhydas.zip)
 
 ## Session 2010
 
 ### Slides
 
-* [Quick C++ course](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2010/cplusplus_fr.pdf) (in french)
-* [OpenFLUID - Overview](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2010/openfluid-overview_fr.pdf) (in french)
-* [OpenFLUID - Simulation functions dévelopment](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2010/openfluid-simfuncdev_fr.pdf) (in french)
+* [Quick C++ course](http://www.openfluid-project.org/resources/docs/trainings/2010/cplusplus_fr.pdf) (in french)
+* [OpenFLUID - Overview](http://www.openfluid-project.org/resources/docs/trainings/2010/openfluid-overview_fr.pdf) (in french)
+* [OpenFLUID - Simulation functions dévelopment](http://www.openfluid-project.org/resources/docs/trainings/2010/openfluid-simfuncdev_fr.pdf) (in french)
 
 ### Practical works
 
-* [PW0 - Documentation and tools overview](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2010/pw0-basics.pdf) (in french)
-* [PW1 - Creation of a simulation function](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2010/pw1-function.pdf) (in french)
-* [PW2 - Production of variables](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2010/pw2-prodvar.pdf) (in french)
-* [PW3 - Use of variables](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2010/pw3-usevar.pdf) (in french)
-* [PW4 - Use of function parameters](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2010/pw4-funcparams.pdf) (in french)
-* [PW5 - Use of distributed input data](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2010/pw5-usedata.pdf) (in french)
+* [PW0 - Documentation and tools overview](http://www.openfluid-project.org/resources/docs/trainings/2010/pw0-basics.pdf) (in french)
+* [PW1 - Creation of a simulation function](http://www.openfluid-project.org/resources/docs/trainings/2010/pw1-function.pdf) (in french)
+* [PW2 - Production of variables](http://www.openfluid-project.org/resources/docs/trainings/2010/pw2-prodvar.pdf) (in french)
+* [PW3 - Use of variables](http://www.openfluid-project.org/resources/docs/trainings/2010/pw3-usevar.pdf) (in french)
+* [PW4 - Use of function parameters](http://www.openfluid-project.org/resources/docs/trainings/2010/pw4-funcparams.pdf) (in french)
+* [PW5 - Use of distributed input data](http://www.openfluid-project.org/resources/docs/trainings/2010/pw5-usedata.pdf) (in french)
 
 
-* [Basic dataset](http://www.umr-lisah.fr/openfluid/resources/docs/trainings/2010/pw-dataset-start.zip) for practical works
+* [Basic dataset](http://www.openfluid-project.org/resources/docs/trainings/2010/pw-dataset-start.zip) for practical works
 
-* [Quick'n'dirty R script for visualization of output files](http://www.umr-lisah.fr/openfluid/resources/scripts/plotdata.R). Use the following OpenFLUID output configuration (in output.xml file) for compatibility with this script:
+* [Quick'n'dirty R script for visualization of output files](http://www.openfluid-project.org/resources/scripts/plotdata.R). Use the following OpenFLUID output configuration (in output.xml file) for compatibility with this script:
     * date format: "%Y-%m-%dT%H:%M:%S"
     * column separator : " " (space)
     * comment character : "%"

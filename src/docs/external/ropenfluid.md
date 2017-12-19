@@ -13,7 +13,7 @@ install.packages('RUnit')
 
 ## Installation of the ROpenFLUID package
 
-* Download the [ROpenFLUID package](http://www.umr-lisah.fr/openfluid/index.php?page=dloads) corresponding to your OpenFLUID version
+* Download the [ROpenFLUID package](http://www.openfluid-project.org/downloads/) corresponding to your OpenFLUID version
 * Install the ROpenFLUID package within the [R](http://www.r-project.org/) environment. Open an [R](http://www.r-project.org/) session and run the following command:
 ```R
 install.packages('ROpenFLUID_x.x.x-x.tar.gz',repos=NULL)

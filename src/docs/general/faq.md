@@ -3,23 +3,23 @@
 ### What is OpenFLUID?
 
 OpenFLUID is a software environment for modelling landscapes functionning, mainly focused on spatialized fluxes. It is made of the OpenFLUID framework, OpenFLUID software applications, and uses simulators for spatialized dynamics.  
-See the [OpenFLUID overview](http://www.openfluid-project.org/index.php?page=about) for more details.
+See the [OpenFLUID overview](http://www.openfluid-project.org/about) for more details.
 
 ### What are OpenFLUID simulators?
 
 OpenFLUID simulators are computational codes which can be dynamically plugged to the OpenFLUID framework in order to build coupled models adapted to the modelling context and objectives, and then run simulations based on these coupled models.  
-See the [framework and simulators overview](http://www.openfluid-project.org/index.php?page=about#softdesign) for more details.
+See the [framework and simulators overview](http://www.openfluid-project.org/about/) for more details.
 
 ### What is the OpenFLUID license?
 
 OpenFLUID is distributed online under the GPLv3 license, but can be licensed with different terms if needed  
-See the [OpenFLUID license](http://www.openfluid-project.org/index.php?page=license) page for license text.
+See the [OpenFLUID license](../general/license) page for license text.
 
 ### On which operating systems OpenFLUID is available?
 
-OpenFLUID works on Linux, Windows and MacOSX systems. It is developed on linux system, and has been tested under Linux 64 bits for Ubuntu, Debian and Fedora distributions, Windows 7 and Windows 8 (32bits). It should run on other compatibles operating systems. It is regularly rebuild on MacOSX, but not packaged and distributed for this system  
+OpenFLUID works on Linux, Windows and MacOS systems. It is developed on linux system, and has been tested under Linux 64 bits for Ubuntu, Debian and Fedora distributions, Windows 7 and Windows 8 (32bits). It should run on other compatibles operating systems. It is regularly rebuild on MacOSX, but not packaged and distributed for this system  
 As far as possible, we recommend to run OpenFLUID on linux systems as it is our development system.  
-See the [Downloads](http://www.openfluid-project.org/index.php?page=dloads) page for a list of available packages and installers.
+See the [Downloads](http://www.openfluid-project.org/downloads/) page for a list of available packages and installers.
 
 ### I need help about OpenFLUID, what can I do?
 
@@ -34,7 +34,7 @@ You can report a bug or suggest a new feature by filling a New Issue on the [Iss
 
 ### How do I get the latest OpenFLUID packages for installation?
 
-The latest OpenFLUID packages are available from the [OpenFLUID downloads page](http://www.openfluid-project.org/index.php?page=dloads)
+The latest OpenFLUID packages are available from the [OpenFLUID downloads page](http://www.openfluid-project.org/downloads/)
 
 ### How do I get the current source code and build OpenFLUID?
 

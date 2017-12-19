@@ -12,9 +12,9 @@
 ## Development tools
 
 * [CMake](http://www.cmake.org/)
-* [Doxygen](http://)
-* [cppcheck](http://)
-* [Eclipse CDT](http://)
+* [Doxygen](http://www.doxygen.org)
+* [cppcheck](http://cppcheck.sourceforge.net/)
+* [Eclipse CDT](https://www.eclipse.org/cdt/)
 
 
 ## C/C++
