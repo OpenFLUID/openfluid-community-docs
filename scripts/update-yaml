@@ -13,10 +13,12 @@ import Helpers
 FileConfigs = dict()
 
 FileConfigs['mkdocs-prod.yml'] = {
+  'siteURL' : "http://community.openfluid-project.org",
   'production' : "True"
 }
 
 FileConfigs['mkdocs.yml'] = {
+  'siteURL' : "http://127.0.0.1:8000",
   'production' : "False"
 }
 
