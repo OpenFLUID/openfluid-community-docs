@@ -1,11 +1,11 @@
 
 ## Mailing-list
 
-The openfluid mailing-list is available for asking questions about OpenFLUID usages and applications, plug-ins development, etc...
+The [OpenFLUID mailing-list](https://groupes.renater.fr/sympa/info/openfluid) is available for asking questions about OpenFLUID usages and applications, simulators development, etc...
 
-* To subscribe to the list, send an email to [sympa@listes.inra.fr](mailto:sympa@listes.inra.fr?subject=subscribe%20openfluid) with the subject "subscribe openfluid"
-* To unsubscribe from the list, send an email to [sympa@listes.inra.fr](mailto:sympa@listes.inra.fr?subject=unsubscribe%20openfluid) with the subject "unsubscribe openfluid"
-* To post messages to the list, just send an email to [openfluid@listes.inra.fr](mailto:openfluid@listes.inra.fr). You must have subscribed to the list before posting messages.
+* To subscribe to the list, send an email to [sympa@groupes.renater.fr](mailto:sympa@groupes.renater.fr?subject=subscribe%20openfluid) with the subject "subscribe openfluid"
+* To unsubscribe from the list, send an email to [sympa@groupes.renater.fr](mailto:sympa@groupes.renater.fr?subject=unsubscribe%20openfluid) with the subject "unsubscribe openfluid"
+* To post messages to the list, just send an email to [openfluid@groupes.renater.fr](mailto:openfluid@groupes.renater.fr). You must have subscribed to the list before posting messages.
 
 
 ## Twitter
