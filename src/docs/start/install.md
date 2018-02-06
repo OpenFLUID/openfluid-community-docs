@@ -9,7 +9,53 @@
 
 ## Linux
 
-### OpenFLUID 2.1.0 and later versions
+### OpenFLUID 2.1.5+
+
+_Since OpenFLUID 2.1.5, OpenFLUID for Linux systems also relies on Qt5_
+
+#### Ubuntu 14.04+ and Debian 8+
+
+1) Install required libraries and development tools  :
+```sh
+sudo apt-get install g++ cmake debhelper pkg-config doxygen \
+                     libboost-all-dev libgdal1-dev libgeos++-dev \
+                     qt5-default qtbase5-dev-tools qttools5-dev-tools libqt5svg5-dev \
+                     gnuplot p7zip-full graphviz
+```
+2) Download the [OpenFLUID package](http://www.openfluid-project.org/downloads/) corresponding to the Ubuntu version you are using and install it
+```sh
+sudo dpkg -i </path/to/openfluid/debfile>
+# where </path/to/openfluid/debfile> is the path to the downloaded deb file for OpenFLUID.
+```
+
+3) Check the installation by typing the following command in a terminal
+```sh
+openfluid --version
+```
+
+
+#### Linux Fedora 25+
+
+1) Install required libraries and development tools  :
+```sh
+sudo dnf install -y gcc-c++ gcc-gfortran make cmake git \
+                    boost-devel gdal-devel geos-devel \
+                    qt5-qttools-devel qt5-qtbase-devel qt5-qtsvg-devel qt5-qtwebkit-devel qt5-qtsvg-devel \
+                    p7zip gnuplot graphviz doxygen rpm-build redhat-lsb
+# use dnf instead of yum on recent Fedora versions
+```
+2) Download the [OpenFLUID package](http://www.openfluid-project.org/downloads/) corresponding to the Fedora version you are using and install it
+```sh
+sudo rpm -i </path/to/openfluid/rpmfile>
+# where </path/to/openfluid/rpmfile> is the path to the downloaded rpm file for OpenFLUID.
+```
+3) Check the installation by typing the following command in a terminal
+```sh
+openfluid --version
+```
+
+
+### OpenFLUID 2.1.0 - 2.1.4
 
 #### Ubuntu 14.04+ and Debian Jessie
 
@@ -87,9 +133,34 @@ Thanks to Jonathan for these detailed instructions.
 
 ## MacOS
 
+### OpenFLUID 2.1.5+
+
+!!! warning
+    Since OpenFLUID 2.1.5, the macOS installation relies on the [Brew packaging tool](https://brew.sh/).  
+    It is still an preview release, and has only been tested on macOS 10.13
+
+
+Install Brew (_Task to perform only once, see also [https://brew.sh/](https://brew.sh/)_)
+```sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Add OpenFLUID tap for Brew _(Task to perform only once)_
+```sh
+brew tap OpenFLUID/openfluid
+```
+
+Install OpenFLUID using Brew
+```sh
+brew cask install openfluid
+```
+
+
+### OpenFLUID 2.1.3 - 2.1.4
+
 !!! warning
     The OSX installer is only available for OpenFLUID 2.1.3 and later versions.  
-    It is still an early preview release, and has been only tested on macOS 10.11
+    It is still an early preview release, and has only been tested on macOS 10.11
 
 1) Download the [OpenFLUID .dmg file](http://www.openfluid-project.org/downloads/) and mount it in the Finder.  
 

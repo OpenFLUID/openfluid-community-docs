@@ -11,18 +11,20 @@ You may clone the repositories to work with the source code. More information ar
 
 Install the required libraries and tools using the following command:
 
-Ubuntu 13.10 and higher, Debian Jessie and higher
+Ubuntu 14.04 and higher, Debian Jessie and higher
 ```sh
 sudo apt-get install build-essential lsb-release g++ gfortran git cmake \
                      texlive-latex-extra texlive-fonts-extra latex2html doxygen \
-                     libboost-all-dev libqt4-dev libgdal1-dev libgeos++-dev \
+                     libboost-all-dev libgdal1-dev libgeos++-dev \
+                     qt5-default qtbase5-dev-tools qttools5-dev-tools libqt5svg5-dev \
                      p7zip-full gnuplot graphviz python2.7
 ```
 
-Fedora 21 and higher
+Fedora 25 and higher
 ```sh
-sudo yum install gcc-c++ gcc-gfortran make cmake git \
-                 boost-devel qt-devel gdal-devel geos-devel \
+sudo dnf install gcc-c++ gcc-gfortran make cmake git \
+                 boost-devel gdal-devel geos-devel \
+                 qt5-qttools-devel qt5-qtbase-devel qt5-qtsvg-devel qt5-qtwebkit-devel qt5-qtsvg-devel \
                  p7zip gnuplot graphviz doxygen rpm-build redhat-lsb
 ```
 
@@ -102,22 +104,18 @@ cpack
 ## Building on MacOS
 
 !!! note
-    These instructions are for OpenFLUID 2.1.1 and later versions.
+    These instructions are for OpenFLUID 2.1.5+.
 
-There are two options to build OpenFLUID on Mac OSX : with Qt4 (simpler) or Qt5 (trickier). The two options mainly differ on tools and libraries the build depends on.
-
-### Option 1 : with Qt4
-
-#### Prerequisites
+### Prerequisites
 
 **XCode**
 
 * Install the latest version of [XCode](https://developer.apple.com/xcode/) with command line tools.
 
 
-**Qt4 + Boost + GDAL + GEOS + Doxygen**
+**Dependencies**
 
-* Install brew package manager if not already installed ([http://brew.sh/](http://brew.sh))
+* Open a Terminal and install brew package manager if not already installed ([http://brew.sh/](http://brew.sh))
 ```sh
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
@@ -127,24 +125,28 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 ```
 
-* Install Qt4, CMake, Boost, GEOS, GDAL and Doxygen packages using brew
+* Install dependencies packages using brew
 ```sh
-brew install qt4 cmake boost geos gdal doxygen
+brew install cmake qt boost geos gdal rapidjson doxygen p7zip gnuplot
 ```
 
-#### Configure the build
+### Configure the build
 
 1. Open a Terminal, and go into the OpenFLUID sources directory
-1. Add the Qt bin path to the PATH environment variable (example below with Qt installed in /Users/&lt;username&gt;/Qt)
+1. Add the Qt bin path to the PATH environment variable (example below with Qt 5.10 installed in /usr/local/Cellar/qt/5.10.0_1/bin)
 1. Create a build directory in your source directory ( e.g. "\_build")
 1. Go into this  directory
 1. Run the cmake command, for development or release build
 
+```sh
+export PATH=$PATH:/usr/local/Cellar/qt/5.10.0_1/bin/
+```
+
 _Example for release build_
 ```sh
 mkdir _build
 cd _build
-cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
+cmake .. -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt/5.10.0_1/lib/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
 ```
 
 
@@ -152,88 +154,23 @@ _Example for development build_
 ```sh
 mkdir _build
 cd _build
-cmake ..
+cmake .. -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt/5.10.0_1/lib/cmake
 ```
 
 
-#### Build
+### Build
 
 Run the make command from the \_build directory
 ```sh
 make
 ```
 
+### Packaging
 
-### Option 2 : with Qt5 (trickier)
-
-#### Prerequisites
-
-**XCode**
-
-* Install the latest version of [XCode](https://developer.apple.com/xcode/) with command line tools.
-
-
-**CMake**
-
-* Download and install the latest version of [CMake](http://www.cmake.org/cmake/resources/software.html).
-
-
-**Qt**
-
-* Download and install [Qt version 5.4.2](http://download.qt.io/archive/qt/) in the /Users/&lt;username&gt;/Qt directory (where &lt;username&gt; is your user name).
-
-
-**Boost + GDAL + GEOS + Doxygen**
-
-* Install brew package manager if not already installed ([http://brew.sh](http://brew.sh/))
+After having built OpenFLUID in release mode, run the following command from the build directory
 ```sh
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+cmake -P ofpack-osx-brewcask.cmake
 ```
-
-* Update brew to be sure to have the latest version installed
-```sh
-brew update
-```
-
-* Install Boost, GEOS, GDAL and Doxygen packages using brew
-```sh
-brew install boost geos gdal doxygen
-```
-
-#### Configure the build
-
-1. Open a Terminal, and go into the OpenFLUID sources directory
-1. Add the Qt bin path to the PATH environment variable (example below with Qt installed in /Users/&lt;username&gt;/Qt)
-1. Create a build directory in your source directory ( e.g. "\_build")
-1. Go into this  directory
-1. Run the cmake command, for development or release build, adding the Qt cmake path in CMAKE_PREFIX_PATH (example below with Qt installed in /Users/&lt;username&gt;)
-
-_Example for release build_
-```sh
-export PATH=$PATH:/Users/<username>/Qt/5.4.2/clang_64/bin
-mkdir _build
-cd _build
-cmake .. -DCMAKE_PREFIX_PATH=/Users/<username>/Qt/5.4.2/clang_64/lib/cmake/ \
-         -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
-```
-
-
-_Example for development build_
-```sh
-export PATH=$PATH:/Users/<username>/Qt/5.4.2/clang_64/bin
-mkdir _build
-cd _build
-cmake .. -DCMAKE_PREFIX_PATH=/Users/<username>/Qt/5.4.2/clang_64/lib/cmake/
-```
-
-
-#### Build
-
-Run the make command from the \_build directory
-```sh
-make
-```
-
 
 ## Building on Windows
 

@@ -7,8 +7,19 @@
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td><p><b><u>v2.1.5</u></b></p></td>
+<td><ul>
+<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.5/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
+<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.5/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
+</ul></td>
+<td><ul>
+<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.5/main/openfluid_manual_2.1.5.pdf">OpenFLUID manual for users and simulators developers</a></li>
+<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.5/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
+</ul></td>
+</tr>
 <tr class="odd">
-<td><p><b><u>v2.1.4</u></b></p></td>
+<td><p><b>v2.1.4</b></p></td>
 <td><ul>
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.4/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.4/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
