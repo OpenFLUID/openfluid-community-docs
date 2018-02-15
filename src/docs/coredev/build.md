@@ -127,26 +127,26 @@ brew update
 
 * Install dependencies packages using brew
 ```sh
-brew install cmake qt boost geos gdal rapidjson doxygen p7zip gnuplot
+brew install cmake qt5 boost geos gdal rapidjson doxygen p7zip gnuplot
 ```
 
 ### Configure the build
 
 1. Open a Terminal, and go into the OpenFLUID sources directory
-1. Add the Qt bin path to the PATH environment variable (example below with Qt 5.10 installed in /usr/local/Cellar/qt/5.10.0_1/bin)
+1. Add the Qt bin path to the PATH environment variable
 1. Create a build directory in your source directory ( e.g. "\_build")
 1. Go into this  directory
 1. Run the cmake command, for development or release build
 
 ```sh
-export PATH=$PATH:/usr/local/Cellar/qt/5.10.0_1/bin/
+export PATH=$PATH:$(brew --prefix qt5)
 ```
 
 _Example for release build_
 ```sh
 mkdir _build
 cd _build
-cmake .. -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt/5.10.0_1/lib/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
+cmake .. -DCMAKE_PREFIX_PATH=$(brew --prefix qt5)/lib/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local
 ```
 
 
@@ -154,7 +154,7 @@ _Example for development build_
 ```sh
 mkdir _build
 cd _build
-cmake .. -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt/5.10.0_1/lib/cmake
+cmake .. -DCMAKE_PREFIX_PATH=$(brew --prefix qt5)/lib/cmake
 ```
 
 
