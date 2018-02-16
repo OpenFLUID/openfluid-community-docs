@@ -139,7 +139,7 @@ brew install cmake qt5 boost geos gdal rapidjson doxygen p7zip gnuplot
 1. Run the cmake command, for development or release build
 
 ```sh
-export PATH=$PATH:$(brew --prefix qt5)
+export PATH=$PATH:$(brew --prefix qt5)/bin
 ```
 
 _Example for release build_
