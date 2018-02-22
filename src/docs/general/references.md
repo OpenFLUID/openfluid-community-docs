@@ -27,7 +27,9 @@ BibTex entry:
 
 ### Articles
 
-* Hould-Gosselin, Gabriel and Rousseau, Alain N. and Gumiere, Silvio J. and Hallema, Dennis W. and Ratté-Fortin, Claudie and Thériault, Georges and van Bochove, Eric, 2016. &nbsp;&nbsp;**<a href="http://dx.doi.org/10.1002/hyp.10817" target=_blank>Modeling the sediment yield and the impact of vegetated filters using an event-based soil erosion model—a case study of a small Canadian watershed</a>**. _Hydrological Processes_, 30, 2835--2850.
+* Biarnes, A. and Andrieux, P. and Barbier, J-M. and Bonnefoy, A. and Compagnone, C. and Delpuech, X. and Gary, C. and Metay, A. and Rellier, J-P. and Voltz, M., 2017. &nbsp;&nbsp;**<a href="http://dx.doi.org/10.15454/1.5137823967929834E12" target=_blank>Evaluer par modélisation des stratégies de réduction des usages d'herbicides dans les bassins versants viticoles</a>**. _Innovations Agronomiques_, 57, 141-152.
+
+* Hould-Gosselin, G., and Rousseau, A. N. and Gumiere, Silvio J. and Hallema, Dennis W. and Ratté-Fortin, Claudie and Thériault, Georges and van Bochove, Eric, 2016. &nbsp;&nbsp;**<a href="http://dx.doi.org/10.1002/hyp.10817" target=_blank>Modeling the sediment yield and the impact of vegetated filters using an event-based soil erosion model—a case study of a small Canadian watershed</a>**. _Hydrological Processes_, 30, 2835--2850.
 
 * Gumiere, S. and Bailly, J. and Cheviron, B. and Raclot, D. and Bissonnais, Y., and Rousseau, A., 2014. &nbsp;&nbsp;**<a href="http://dx.doi.org/10.1061/(ASCE)HE.1943-5584.0001076" target=_blank>Evaluating the Impact of the Spatial Distribution of Land Management Practices on Water Erosion: Case Study of a Mediterranean Catchment</a>**. _Journal of Hydrologic Engineering_, 20, online.
 
@@ -91,6 +93,10 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 
 ### PhD Thesis
 
+* Lebon, N., 2020 (work in progress). **Modélisation des agro-hydrologique des retenues collinaires dans un paysage agricole**. _Montpellier SupAgro_.
+
+* Rudi, G., 2019 (work in progress). **Exploration numérique multiscalaire de processus spatio-temporels couplés biotiques-abiotiques : application aux services et disservices écosystémiques des réseaux de canaux et fossés d'agrosystèmes méditerranéens**. _Montpellier SupAgro_.
+
 * Dollinger, J., 2016. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Dollinger_J_These.pdf" target=_blank>Analyse et modélisation des transferts et de la rétention de pesticides dans les fossés agricoles infiltrants en lien avec les stratégies d’entretien</a>**. _Montpellier SupAgro_.
 
 * Inoubli, N., 2016. **Ruissellement et érosion hydrique en milieu méditerranéen vertique : approche expérimentale et modélisation**. _Montpellier SupAgro, INAT (Tunisie)_.
@@ -107,6 +113,10 @@ hydrique des sols à l'échelle des petits bassins versants cultivés**. _SupAgr
 
 
 ### Masters Thesis
+
+* Campan, P., 2018 (work in progress). **Modélisation des transferts de pesticides en parcelle bananière en milieu volcanique tropical**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
+
+* Bankhwal, P., 2017. **Atmospheric dispersion and dissipation of pesticides used in agriculture: Modeling at the landscape scale**. _AgrosParisTech, Université Paris-Saclay_.
 
 * Berkaoui, M. A., 2015. **Vers une modélisation spatialisée pour la simulation du fonctionnement hydrologique de surface du plateau de Saclay: Mise en oeuvre de la plate-forme OpenFLUID**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
 
@@ -128,13 +138,13 @@ hydrique des sols à l'échelle des petits bassins versants cultivés**. _SupAgr
 (MHYDAS) pour le développement d'un outil de diagnostic des pollutions
 diffuses**. _Polytech'Montpellier_.
 
-* Lalauze, S., 2009. **Modélisation des transferts d'eau et de produits phytosanitaires
-en bassins versants cultivés méditerranéens avec MHYDAS - Application
-au projet LIFE Aware**. _Centre d'Hydrogéologie de Neuchâtel, Université de Neuchâtel_.
-
 * Jacob, L., 2010. **Evaluation de différents niveaux de représentation des pratiques
 d'entretien du sol en vue d’une modélisation hydrologique dans un
 bassin versant viticole méditerranéen**. _Faculté des Sciences et Techniques, Université de Tours_.
+
+* Lalauze, S., 2009. **Modélisation des transferts d'eau et de produits phytosanitaires
+en bassins versants cultivés méditerranéens avec MHYDAS - Application
+au projet LIFE Aware**. _Centre d'Hydrogéologie de Neuchâtel, Université de Neuchâtel_.
 
 * Tarrou, E., 2007. **OpenFLUID-Builder : Création d'une interface graphique pour la plateforme de modélisation OpenFLUID**. _Université Montpellier 2_.
 
