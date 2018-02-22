@@ -176,7 +176,7 @@ The november 2013 session is based on OpenFLUID 2.0.0~beta12. The schedule is av
 * [Example of ROpenFLUID usage](http://www.openfluid-project.org/resources/docs/trainings/2013-11/tuto-ropenfluid.pdf) (in french)
 
 
-## Spring 2013
+## June 2013
 
 The 2013 session is based on OpenFLUID 2.0.0~beta1. The schedule is available [here](http://www.openfluid-project.org/resources/docs/misc/OPENFLUID_Formation2013_programme.pdf) (in french).
 
@@ -221,7 +221,7 @@ The 2013 session is based on OpenFLUID 2.0.0~beta1. The schedule is available [h
 * [Example of ROpenFLUID usage](http://www.openfluid-project.org/resources/docs/trainings/2013/tuto-ropenfluid.pdf) (in french)
 
 
-## 2012
+## March 2012
 
 The 2012 session is based on OpenFLUID 1.7.2. The schedule is available [here](http://www.openfluid-project.org/resources/docs/misc/OPENFLUID_Formation2012_programme.pdf) (in french).
 
@@ -259,7 +259,7 @@ The 2012 session is based on OpenFLUID 1.7.2. The schedule is available [here](h
 * [Datasets for practical works 1 to 9 and MHYDAS](http://www.openfluid-project.org/resources/docs/trainings/2012/full_dataset.zip)
 
 
-## 2011
+## May 2011
 The schedule is available [here](http://www.openfluid-project.org/resources/docs/misc/OPENFLUID_Formation2011_programme.pdf) (in french).
 
 ### Slides
@@ -291,7 +291,7 @@ The schedule is available [here](http://www.openfluid-project.org/resources/docs
 * [PW MHYDAS](http://www.openfluid-project.org/resources/docs/trainings/2011/pw-mhydas.pdf) (in french)
 * [Dataset for MHYDAS practical works](http://www.openfluid-project.org/resources/docs/trainings/2011/dataset_mhydas.zip)
 
-## Session 2010
+## March 2010
 
 ### Slides
 
