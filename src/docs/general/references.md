@@ -59,6 +59,10 @@ modeling of cultivated areas**. _Computers & Geosciences_, 36, 1021 - 1032.
 
 * Voltz M., Bedos C., Fabre J.C ., Loubet B., Chataigner M ., Bankwal P ., Barriuso E., Benoit P ., Brunet Y ., Casellas E ., Chabrier P ., Chambon C ., Crevoisier D ., Dagès C ., Douzals J.P ., Drouet J.L ., Lafolie F ., Mamy L ., Moitrier N ., Personne E ., Pot V ., Raynal H ., Ruelle B ., Samouelian A ., Saudreau M ., 2017. &nbsp;&nbsp;**<a href="https://prodinra.inra.fr/record/421395" target=_blank>Modélisation intégrée du devenir des pesticides</a>**. _Colloque PAYOTE 2017_, Paris (France).
 
+* Dages, C and Bailly, J S and Dollinger, J and Lanoix, M. and Crevoisier, D and Voltz, M, 2016. **Impact of soil management in ditches on water related ecosystem services**. _International Soil Modelling Consortium Workshop_, Austin (Texas, USA).
+
+* Voltz, M and Pak, L T and Cattan, P and Colin, F and Crevoisier, D and Dages, C, 2016. **Modelling the hydrologic impact of intense rainfall redistribution by canopies at field and catchment scales in volcanic soils in the French Indies**. _International Soil Modelling Consortium Workshop_, Austin (Texas, USA).
+
 * Andrieux P., Biarnès A., Barbier J-M., Compagnone C.4, Delpuech X., Gary C., Metay A., Voltz M., 2015. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/FSD5_2pages_Andrieux et al_Vdef.pdf" target=_blank>Agronomic, environmental and social assessment of soil management strategies limiting herbicide application in Mediterranean vineyards, at the catchment scale</a>**. _5th International Symposium for Farming Systems Design_, Montpellier (France).
 
 * Fabre, J.-C. and Rabotin, M. and Crevoisier, D. and Libres, A. and Dagès, C. and Moussa, R. and Lagacherie, Ph. and Raclot, D. and Voltz, M., 2013. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Fabre_OpenFLUID_EGU2013_CC.pdf" target=_blank>OpenFLUID: an open-source software environment for modelling fluxes in landscapes</a>**. _Vol. 15, EGU2013-8821-1, EGU General Assembly 2013_, Vienna (Austria).
@@ -93,7 +97,8 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 
 ### PhD Thesis
 
-* Lebon, N., 2020 (work in progress). **Modélisation des agro-hydrologique des retenues collinaires dans un paysage agricole**. _Montpellier SupAgro_.
+* Lebon, N., 2020 (work in progress). **Modélisation des agro-hydrologiScreenshots
+que des retenues collinaires dans un paysage agricole**. _Montpellier SupAgro_.
 
 * Rudi, G., 2019 (work in progress). **Exploration numérique multiscalaire de processus spatio-temporels couplés biotiques-abiotiques : application aux services et disservices écosystémiques des réseaux de canaux et fossés d'agrosystèmes méditerranéens**. _Montpellier SupAgro_.
 
