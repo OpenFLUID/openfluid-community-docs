@@ -51,6 +51,8 @@ modeling of cultivated areas**. _Computers & Geosciences_, 36, 1021 - 1032.
 
 ### Communications
 
+* Fabre, J.-C. and Rabotin, M. and Crevoisier, D. and Libres, A. and Dagès, C. and Moussa, R. and Lagacherie, Ph. and Raclot, D. and Voltz, M., 2018. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Fabre_OpenFLUID_EGU2013_CC.pdf" target=_blank>OpenFLUID: an open-source software environment for modelling fluxes in landscapes</a>**. _Rencontre utilisateurs du centre de calcul MESO@LR - Université Montpellier_, Montpellier (France).
+
 * Voltz M., Bedos C., Fabre J.C ., Loubet B., Chataigner M ., Bankwal P ., Barriuso E., Benoit P ., Brunet Y ., Casellas E ., Chabrier P ., Chambon C ., Crevoisier D ., Dagès C ., Douzals J.P ., Drouet J.L ., Lafolie F ., Mamy L ., Moitrier N ., Personne E ., Pot V ., Raynal H ., Ruelle B ., Samouelian A ., Saudreau M ., 2017. &nbsp;&nbsp;**<a href="https://www.york.ac.uk/media/environment/documents/pesticides2017/platformpresentationsencrypted/P-21.pdf" target=_blank>Integrated Modelling of pesticide fate in agricultural landscapes</a>**. _International Conference on Pesticide Behaviour in Soils, Water and Air_, York (United Kingdom).
 
 * Lebon N., Leenhardt, D., Molénat J., Chataigner C., Dagès C., Fabre J.-C., Lardy R., Murgue C., Therond O., Zadonina E., 2017. **Modélisation du fonctionnement agrohydrologique des retenues dans un territoire agricole**. _Colloque PAYOTE 2017_, Paris (France).
@@ -97,10 +99,10 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 
 ### PhD Thesis
 
-* Lebon, N., 2020 (work in progress). **Modélisation des agro-hydrologiScreenshots
+* Lebon, N., (in progress). **Modélisation des agro-hydrologiScreenshots
 que des retenues collinaires dans un paysage agricole**. _Montpellier SupAgro_.
 
-* Rudi, G., 2019 (work in progress). **Exploration numérique multiscalaire de processus spatio-temporels couplés biotiques-abiotiques : application aux services et disservices écosystémiques des réseaux de canaux et fossés d'agrosystèmes méditerranéens**. _Montpellier SupAgro_.
+* Rudi, G., (in progress). **Exploration numérique multiscalaire de processus spatio-temporels couplés biotiques-abiotiques : application aux services et disservices écosystémiques des réseaux de canaux et fossés d'agrosystèmes méditerranéens**. _Montpellier SupAgro_.
 
 * Dollinger, J., 2016. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Dollinger_J_These.pdf" target=_blank>Analyse et modélisation des transferts et de la rétention de pesticides dans les fossés agricoles infiltrants en lien avec les stratégies d’entretien</a>**. _Montpellier SupAgro_.
 
@@ -119,7 +121,9 @@ hydrique des sols à l'échelle des petits bassins versants cultivés**. _SupAgr
 
 ### Masters Thesis
 
-* Campan, P., 2018 (work in progress). **Modélisation des transferts de pesticides en parcelle bananière en milieu volcanique tropical**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
+* Ibariouen, Y., 2018 (in progress). **Mise en oeuvre d'une architecture d'interopérabilité en modélisation spatialisée et déploiement par conteneurisation sur un cluster de calcul haute performance**. _Université Paris-Saclay_.
+
+* Campan, P., 2018 (in progress). **Modélisation des transferts de pesticides en parcelle bananière en milieu volcanique tropical**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
 
 * Bankhwal, P., 2017. **Atmospheric dispersion and dissipation of pesticides used in agriculture: Modeling at the landscape scale**. _AgrosParisTech, Université Paris-Saclay_.
 
@@ -156,11 +160,13 @@ au projet LIFE Aware**. _Centre d'Hydrogéologie de Neuchâtel, Université de N
 
 ### Reports
 
-* Equipe-projet OpenFLUID. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/OpenFLUID_RapportActivite2015_final.pdf" target=_blank>Rapport d'activité 2015</a>**. _INRA_.
+* Equipe-projet OpenFLUID., 2016 &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/OpenFLUID_RapportActivite2015_final.pdf" target=_blank>Rapport d'activité 2015</a>**. _INRA_.
 
-* Equipe-projet OpenFLUID. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/OpenFLUID_RapportActivite2014_final.pdf" target=_blank>Rapport d'activité 2014</a>**. _INRA_.
+* Equipe-projet OpenFLUID., 2015 &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/OpenFLUID_RapportActivite2014_final.pdf" target=_blank>Rapport d'activité 2014</a>**. _INRA_.
 
-* SEVE, Coll. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/SEVE2006.pdf" target=_blank>SEVE -Sol Eau Végétation Energie- : Propositions pour la construction
+* Agropolis international, 2018 (to be published) &nbsp;&nbsp;**<a href="https://www.agropolis.fr/publications/dossiers-thematiques-agropolis.php" target=_blank>Systèmes complexes, de la biologie aux territoires</a>**. _Les dossiers d'Agropolis international_.
+
+* Agropolis international, 2012 &nbsp;&nbsp;**<a href="https://www.agropolis.fr/pdf/publications/dossier-thematique-ressources-en-eau-preservation-et-gestion.pdf" target=_blank>Ressources en eau, Préservation et gestion</a>**. _Les dossiers d'Agropolis international_.
+
+* SEVE, Coll., 2006 &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/SEVE2006.pdf" target=_blank>SEVE -Sol Eau Végétation Energie- : Propositions pour la construction
 d’un système de modélisation du fonctionnement des surfaces continentales</a>**. _CNES, CNRS, CNRM, CEMAGREF, INRA, IRD_.
-
-* Agropolis Fondation. &nbsp;&nbsp;**<a href="https://www.agropolis.fr/pdf/publications/dossier-thematique-ressources-en-eau-preservation-et-gestion.pdf" target=_blank>Ressources en eau, Préservation et gestion</a>**. _Agropolis Fondation_.

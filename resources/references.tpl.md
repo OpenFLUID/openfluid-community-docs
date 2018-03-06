@@ -44,5 +44,5 @@ BibTex entry:
 
 ### Reports
 {% for item in Refstechreport %}
-* {{ item.author }} {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.institution }}_.
+* {{ item.author }}, {{ item.year }} {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.institution }}_.
 {% endfor %}
