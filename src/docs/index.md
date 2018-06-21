@@ -3,7 +3,7 @@ OpenFLUID-Community proposes resources to help the users in their works with the
 It also contains reference documentation for the platform core developers.  
 **
 
-### Quick access:
+<p class='quick'>Quick access:</p>
 <div class="home-container">
   <div>
     <a href='start/install'>

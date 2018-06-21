@@ -14,11 +14,13 @@ FileConfigs = dict()
 
 FileConfigs['mkdocs-prod.yml'] = {
   'siteURL' : "https://community.openfluid-project.org",
+  'ofWebURL' : "https://www.openfluid-project.org",
   'production' : "True"
 }
 
 FileConfigs['mkdocs.yml'] = {
   'siteURL' : "http://127.0.0.1:8000",
+  'ofWebURL' : "http://127.0.0.1:1313/",
   'production' : "False"
 }
 

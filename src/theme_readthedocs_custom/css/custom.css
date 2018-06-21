@@ -39,6 +39,12 @@ footer p {
   margin-bottom : 0;
 }
 
+.quick {
+  margin-top : 25px;
+  font-weight: bold;
+  font-size: 125%;
+}
+
 .wy-nav-side {
   background-color: #303e4d;
 }
@@ -60,6 +66,19 @@ footer p {
   height: 114px;
   border-radius: 0;
   background-color: transparent;
+}
+
+a.ofweb:link,
+a.ofweb:hover,
+a.ofweb:visited,
+a.ofweb:active {
+  color: #3091d1;
+  font-size : 85%;
+  font-weight : none;
+}
+
+.wy-breadcrumbs-aside {
+  font-size: 85%;
 }
 
 .wy-menu-vertical span {
