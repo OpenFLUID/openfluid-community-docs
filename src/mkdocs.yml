@@ -63,4 +63,5 @@ pages:
     - FluidHub API : 'coredev/fluidhub.md'
     - Bugs and feature requests : 'coredev/issues.md'
   - Notes about models :
+    - WaresHub repository : 'models/wareshub.md'
     - MHYDAS : 'models/mhydas.md'
