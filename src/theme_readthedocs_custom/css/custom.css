@@ -5,16 +5,16 @@ li.toctree-l1 hr {
 }
 
 h2 {
-  margin-top : 50px;
+  margin-top : 40px;
   border-bottom : 1px solid #d0d0d0;
 }
 
 h3 {
-  margin-top : 40px;
+  margin-top : 30px;
 }
 
 h4 {
-  margin-top : 30px;
+  margin-top : 22px;
   margin-left : 1.5em;
 }
 
@@ -93,6 +93,26 @@ a.ofweb:active {
 
 .wy-menu-vertical a:hover {
   background-color: #516a83;
+}
+
+.rst-content div[role=navigation] {
+  margin-bottom : 20px;
+  border : 1px solid #e1e4e5;
+  border-radius : 6px;
+  padding : 10px;
+}
+
+.rst-content div.rst-footer-buttons[role="navigation"] {
+  border : 0;
+  padding : 0px;
+}
+
+.rst-content div[role=contentinfo] {
+  margin-top : 20px;
+  border : 1px solid #e1e4e5;
+  border-radius : 6px;
+  padding : 10px;
+
 }
 
 .home-container {
