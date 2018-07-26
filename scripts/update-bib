@@ -35,10 +35,14 @@ RefsFile.close()
 RefsDB = bibtexparser.loads(RefsStr)
 
 for Ref in RefsDB.entries:
-  if not 'Refs'+Ref['ENTRYTYPE'] in Vars :
-    Vars['Refs'+Ref['ENTRYTYPE']] = list()
-  Vars['Refs'+Ref['ENTRYTYPE']].append(Ref)
+  UpdRef = Ref;
+  if "url" in UpdRef.keys():
+    UpdRef["link"] = UpdRef.pop("url")
 
+  if not 'Refs'+UpdRef['ENTRYTYPE'] in Vars :
+    Vars['Refs'+UpdRef['ENTRYTYPE']] = list()
+
+  Vars['Refs'+UpdRef['ENTRYTYPE']].append(UpdRef)
 
 
 ##############################################################################

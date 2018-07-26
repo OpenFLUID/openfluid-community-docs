@@ -5,7 +5,7 @@
 If you wish to cite OpenFLUID, please use the following reference:
 
 * Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M.
-and Raclot, D. and Lagacherie, P. and Voltz M. &nbsp;&nbsp;**<a href="http://www.umr-lisah.fr/rtra-projects/LANDMOD2010-proceedings/articles/632-article.htm" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes</a>**. _LANDMOD2010_.
+and Raclot, D. and Lagacherie, P. and Voltz M. **OpenFLUID: a software environment for modelling fluxes in landscapes**. _LANDMOD2010_.
 
 BibTex entry:
 ```tex
@@ -45,8 +45,8 @@ BibTex entry:
 
 * Cheviron, B. and Gumiere, S. and Le Bissonnais, Y. and Moussa, R. and Raclot, D., 2010. **Sensitivity analysis of distributed erosion models: Framework**. _Water Resources Research_, 46.
 
-* Lagacherie, P. and Rabotin, M. and Colin, F. and Moussa, R. and Voltz, M., 2010. **Geo-MHYDAS: A landscape discretization tool for distributed hydrological
-modeling of cultivated areas**. _Computers & Geosciences_, 36, 1021 - 1032.
+* Lagacherie, P. and Rabotin, M. and Colin, F. and Moussa, R. and Voltz, M., 2010. &nbsp;&nbsp;**<a href="http://www.sciencedirect.com/science/article/B6V7D-4YWYYWC-1/2/a7d5b1d93f24af23b63dd66964eb059c" target=_blank>Geo-MHYDAS: A landscape discretization tool for distributed hydrological
+modeling of cultivated areas</a>**. _Computers & Geosciences_, 36, 1021 - 1032.
 
 
 ### Communications
@@ -73,17 +73,19 @@ modeling of cultivated areas**. _Computers & Geosciences_, 36, 1021 - 1032.
 
 * Hajji, O. and Habaieb, H. and Hermassi, T. and Mahjoub, M.R., 2013. &nbsp;&nbsp;**<a href="http://dx.doi.org/10.1109/ICMSAO.2013.6552599" target=_blank>Influence of spatio-temporal variability of soil surface states on the watershed hydrology behaviour Case study of El hnach watershed in Tunisian semi-arid zone</a>**. _Modeling, Simulation and Applied Optimization (ICMSAO), 2013 5th International Conference_, Hammamet.
 
-* Bouvet, L. and Louchart, X. and Barès, M. and Lalauze, S. and Moussa, R. and Voltz, M., 2010. **Modélisation intégrée des agro-hydrosystèmes avec MHYDAS : exemple
+* Bouvet, L. and Louchart, X. and Barès, M. and Lalauze, S. and Moussa,
+R. and Voltz, M., 2010. **Modélisation intégrée des agro-hydrosystèmes avec MHYDAS : exemple
 des transferts de pesticides en milieu viticole méditerranéen**. _Séminaire "Modélisation intégrée des Hydrosystèmes"_, Ecole des Mines, Paris.
 
-* Bouvet, L. and Louchart, X. and Barès, M. and Lalauze, S. and Voltz, M., 2010. **Modélisation intégrée des agro-hydrosystèmes avec MHYDAS : exemple
+* Bouvet, L. and Louchart, X. and Barès, M. and Lalauze, S. and Voltz,
+M., 2010. **Modélisation intégrée des agro-hydrosystèmes avec MHYDAS : exemple
 des transferts de pesticides en milieu viticole méditerranéen**. _40ème congrès scientifique du Groupe Français des Pesticides_, Banyuls sur Mer.
 
 * Levavasseur, F and Bailly, JS and Lagacherie, P and Rabotin, M and Colin, F and others, 2010. **Uncertainties of cultivated landscape drainage network mapping and its consequences on hydrological fluxes estimations**. _Accuracy2010_, Leicester (England).
 
 * Fabre, J.C. and Louchart, X., 2010. **OpenFLUID : un exemple de plate-forme de modélisation et de simulation des paysages cultivés - Applications avec le modèle MHYDAS**. _Colloque Gestion de l'Eau et des sols_, Hammamet (Tunisie).
 
-* Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M. and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Water2010_Quebec_05.pdf" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes	- Applications on distributed hydrological modelling of farmed catchments</a>**. _Water2010 conference_, Quebec, Canada.
+* Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M. and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Water2010_Quebec_05.pdf" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes - Applications on distributed hydrological modelling of farmed catchments</a>**. _Water2010 conference_, Quebec, Canada.
 
 * Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M. and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="http://www.umr-lisah.fr/rtra-projects/LANDMOD2010-proceedings/articles/632-article.htm" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes</a>**. _LANDMOD2010_, Montpellier, France.
 
@@ -92,9 +94,10 @@ des transferts de pesticides en milieu viticole méditerranéen**. _40ème congr
 * Rabotin, M. and Floure, C., 2009. **Moving landscape discretization GIS toolbox to open source**. _International Opensource Geospatial Research Symposium 2009_, Paris.
 
 * Rabotin, M. and Lagacherie, P. and Colin, F. and Moussa, R. and Voltz, M., 2009. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/poster_rabotin_lisah_final.pdf" target=_blank>Geo-MHYDAS: A discretization procedure of cultivated landscapes for
-distributed hydrological modelling</a>**. _European Geosciences Union, 5th General Assembly, Vienna, Austria, 20-24 April 2009_, .
+distributed hydrological modelling</a>**. _European Geosciences Union, 5th General Assembly, Vienna, Austria,
+20-24 April 2009_, .
 
-* Fabre, J.C. and Louchart, X., 2008. **OpenFLUID: a software environment for modelling FLUxes In Landscapes	- Application with the MHYDAS model for simulating hydrologicalpollutant and erosive processes**. _13th IWRA World Water Congress_, Montpellier, France.
+* Fabre, J.C. and Louchart, X., 2008. **OpenFLUID: a software environment for modelling FLUxes In Landscapes - Application with the MHYDAS model for simulating hydrologicalpollutant and erosive processes**. _13th IWRA World Water Congress_, Montpellier, France.
 
 
 ### PhD Thesis
@@ -121,9 +124,9 @@ hydrique des sols à l'échelle des petits bassins versants cultivés**. _SupAgr
 
 ### Masters Thesis
 
-* Ibariouen, Y., 2018 (in progress). **Mise en oeuvre d'une architecture d'interopérabilité en modélisation spatialisée et déploiement par conteneurisation sur un cluster de calcul haute performance**. _Université Paris-Saclay_.
+* Ibariouen, Y., 2018 (in progress). **Mise en oeuvre d'une architecture d'interopérabilité en modélisation spatialisée et déploiement par conteneurisation sur un cluster de calcul haute performance**. __.
 
-* Campan, P., 2018 (in progress). **Modélisation des transferts de pesticides en parcelle bananière en milieu volcanique tropical**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
+* Campan, P., 2018 (in progress). **Modélisation des transferts de pesticides en parcelle bananière en milieu volcanique tropical**. __.
 
 * Bankhwal, P., 2017. **Atmospheric dispersion and dissipation of pesticides used in agriculture: Modeling at the landscape scale**. _AgrosParisTech, Université Paris-Saclay_.
 
@@ -149,7 +152,7 @@ diffuses**. _Polytech'Montpellier_.
 
 * Jacob, L., 2010. **Evaluation de différents niveaux de représentation des pratiques
 d'entretien du sol en vue d’une modélisation hydrologique dans un
-bassin versant viticole méditerranéen**. _Faculté des Sciences et Techniques, Université de Tours_.
+bassin versant viticole méditerranéen **. _Faculté des Sciences et Techniques, Université de Tours_.
 
 * Lalauze, S., 2009. **Modélisation des transferts d'eau et de produits phytosanitaires
 en bassins versants cultivés méditerranéens avec MHYDAS - Application
@@ -160,13 +163,13 @@ au projet LIFE Aware**. _Centre d'Hydrogéologie de Neuchâtel, Université de N
 
 ### Reports
 
-* Equipe-projet OpenFLUID., 2016 &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/OpenFLUID_RapportActivite2015_final.pdf" target=_blank>Rapport d'activité 2015</a>**. _INRA_.
+* Agropolis international, 2018 &nbsp;&nbsp;**<a href="http://www.agropolis.fr/publications/systemes-complexes-dossier-thematique-agropolis-international.php" target=_blank>Systèmes complexes, de la biologie aux territoires</a>**. _Les dossiers d'Agropolis international_.
 
-* Equipe-projet OpenFLUID., 2015 &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/OpenFLUID_RapportActivite2014_final.pdf" target=_blank>Rapport d'activité 2014</a>**. _INRA_.
-
-* Agropolis international, 2018 (to be published) &nbsp;&nbsp;**<a href="https://www.agropolis.fr/publications/dossiers-thematiques-agropolis.php" target=_blank>Systèmes complexes, de la biologie aux territoires</a>**. _Les dossiers d'Agropolis international_.
-
-* Agropolis international, 2012 &nbsp;&nbsp;**<a href="https://www.agropolis.fr/pdf/publications/dossier-thematique-ressources-en-eau-preservation-et-gestion.pdf" target=_blank>Ressources en eau, Préservation et gestion</a>**. _Les dossiers d'Agropolis international_.
+* Agropolis international, 2012 &nbsp;&nbsp;**<a href="https://www.agropolis.fr/publications/ressources-en-eau-gestion-et-preservation-dossiers-thematiques-agropolis.php" target=_blank>Ressources en eau, Préservation et gestion</a>**. _Les dossiers d'Agropolis international_.
 
 * SEVE, Coll., 2006 &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/SEVE2006.pdf" target=_blank>SEVE -Sol Eau Végétation Energie- : Propositions pour la construction
 d’un système de modélisation du fonctionnement des surfaces continentales</a>**. _CNES, CNRS, CNRM, CEMAGREF, INRA, IRD_.
+
+* Equipe-projet OpenFLUID., 2016 &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/OpenFLUID_RapportActivite2015_final.pdf" target=_blank>Rapport d'activité 2015</a>**. _INRA_.
+
+* Equipe-projet OpenFLUID., 2015 &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/OpenFLUID_RapportActivite2014_final.pdf" target=_blank>Rapport d'activité 2014</a>**. _INRA_.
