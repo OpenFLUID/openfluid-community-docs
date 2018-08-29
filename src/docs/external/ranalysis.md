@@ -5,7 +5,7 @@
 ## Introduction
 
 **Here is a practical use of ROpenFLUID package for uncertainty and sensitivity analyses.**  
-It is illustrated on a MHYDAS model (see [notes](../models/mhydas)] for more details about the model and installation). The MHYDAS model is applied on a virtual catchment composed of 9 spatial units : 6 parcels (SUs) and 3 ditches (RSs) (see figure 1).
+It is illustrated on a MHYDAS model (see [notes](../models/mhydas.md)] for more details about the model and installation). The MHYDAS model is applied on a virtual catchment composed of 9 spatial units : 6 parcels (SUs) and 3 ditches (RSs) (see figure 1).
 
 <center>
 ![Spatial domain](Virtual6SU3RS.png)  

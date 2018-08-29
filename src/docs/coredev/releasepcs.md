@@ -35,7 +35,7 @@ ROpenFLUID:
 
 ### OpenFLUID framework and applications
 
-* Build and create packages in Release mode (see [how to build OpenFLUID](../coredev/build)) for the following platforms:
+* Build and create packages in Release mode (see [how to build OpenFLUID](../coredev/build.md)) for the following platforms:
     * Linux 64bits
     * Win 32bits
     * macOS 64bits

@@ -4,7 +4,7 @@
 ### Use coding style guidelines
 
 In order to produce clean code, read and apply coding style guidelines. Following these guidelines will increase the ability for others to understand and review your source code. The source code quality will be increased too.  
-You can adopt the [OpenFLUID coding style](../scidev/codestyle).
+You can adopt the [OpenFLUID coding style](../scidev/codestyle.md).
 
 
 ### Raise warnings an errors
@@ -41,7 +41,7 @@ Do not hesitate to view and review your source code to track errors, especially 
 
 ## Good documentation practices
 
-For easier production of scientific documentation, the sim2doc tool can extract documentation directly from the source code. See also [how to buil documentation from simulators source code](../scidev/simdoc).
+For easier production of scientific documentation, the sim2doc tool can extract documentation directly from the source code. See also [how to buil documentation from simulators source code](../scidev/simdoc.md).
 
 ### Give scientific information
 

@@ -125,7 +125,7 @@ Create your local branch for new feature, named new-plugin-manager in this examp
 git checkout -b new-plugin-manager develop
 ```
 
-Do your work, commit locally (following the [practices for commits](commitsgood)). You can also push to your public repository regularly. This can be done through your IDE (i.e. Eclipse) or using the command line.
+Do your work, commit locally (following the [practices for commits](commitsgood.md)). You can also push to your public repository regularly. This can be done through your IDE (i.e. Eclipse) or using the command line.
 
 For commiting your work:
 ```
@@ -181,7 +181,7 @@ git checkout -b johndoe-new-plugin-manager
 git pull https://github.com/johndoe/openfluid.git new-plugin-manager
 ```
 
-* Check the merged source code in order to accept or reject it: review code, [and run tests](build)
+* Check the merged source code in order to accept or reject it: review code, [and run tests](build.md)
 
 
 * If accepted, merge it in the develop branch and push the merged develop branch to the OpenFLUID reference repository

@@ -4,7 +4,7 @@
 
 ## Documentation sources
 
-The documentation sources are located in the `src` directory. It is made of a set of simple pages, written in markdown and powered by [MkDocs](www.mkdocs.org).  
+The documentation sources are located in the `src` directory. It is made of a set of simple pages, written in markdown and powered by [MkDocs](www.mkdocs.org). MkDocs 1.0 or higher is required.  
 The [main page](src/docs/index.md) of this documentation is the `src/docs/index.md` file.
 
 

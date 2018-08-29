@@ -71,7 +71,7 @@ Log informations and warnings<br/>to console and/or file | OPENFLUID_Logger | OP
 These recommended updates are for deprecated datatypes, methods, functions, or macros. Not doing these recommended updates will not prevent your simulators from building and running. You just get compiler warnings when you will build your simulators.
 However it is recommended to apply these updates as the deprecated items will be completely removed in a later version of OpenFLUID.  
 <br/>
-The recommendations below are for usual datatypes, methods, functions and macros. For others, consult the deprecated list in the [OpenFLUID API documentation](../start/manuals) for version 2.1.0.
+The recommendations below are for usual datatypes, methods, functions and macros. For others, consult the deprecated list in the [OpenFLUID API documentation](../start/manuals.md) for version 2.1.0.
 
 
 #### Simulator, observer and builder-extension signature
@@ -115,7 +115,7 @@ In order to limit dependencies to multiple libraries such as Boost, Qt in OpenFL
 They can be accessed by including the Filesystem.hpp header from the tools namespace:<br>
 `#include <openfluid/tools/Filesystem.hpp>`<br>
 
-More information about the methods can be found in the [OpenFLUID API documentation](../start/manuals) for version 2.1.0.
+More information about the methods can be found in the [OpenFLUID API documentation](../start/manuals.md) for version 2.1.0.
 
 
 #### Parameters of provided observers
@@ -131,7 +131,7 @@ Examples:
 
 !!! danger "Important information about OpenFLUID values"
     The format of string representations of OpenFLUID values has changed. These string representations are mainly used in input files for simulators parameters and spatial attributes, and also in output files when using the CSV output observer.  
-    These new formats are detailed in the appendix of the [documentation](../start/manuals).  
+    These new formats are detailed in the appendix of the [documentation](../start/manuals.md).  
     The formats modifications only affect the representation of VectorValue, MatrixValue, MapValue and in some case of StringValue (when quoted in output files)  
     For input files, a compatibility has been kept with old deprecated formats, but you are encouraged to use the new formats from now.  
     For output file, you may have to adapt your post-processing scripts if any.
@@ -804,7 +804,7 @@ Old | New
  MHYDAS.TRACE | OPENFLUID.TRACE
 
 
-To use the OPENFLUID_GetRunEnvironment with the correct parameters, please read the simulation function developer (see [manuals](../start/manuals).
+To use the OPENFLUID_GetRunEnvironment with the correct parameters, please read the simulation function developer (see [manuals](../start/manuals.md).
 
 ### Vector values
 

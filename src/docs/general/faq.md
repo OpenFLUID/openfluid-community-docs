@@ -13,7 +13,7 @@ See the [framework and simulators overview](http://www.openfluid-project.org/abo
 ### What is the OpenFLUID license?
 
 OpenFLUID is distributed online under the GPLv3 license, but can be licensed with different terms if needed  
-See the [OpenFLUID license](../general/license) page for license text.
+See the [OpenFLUID license](../general/license.md) page for license text.
 
 ### On which operating systems OpenFLUID is available?
 
@@ -23,8 +23,8 @@ See the [Downloads](http://www.openfluid-project.org/downloads/) page for a list
 
 ### I need help about OpenFLUID, what can I do?
 
-First of all, you are really encouraged to read the [Manuals](../start/manuals).  
-You can also get help from the OpenFLUID community using the mailing-list or the IRC channel. See the [support](../start/support) page for details.
+First of all, you are really encouraged to read the [Manuals](../start/manuals.md).  
+You can also get help from the OpenFLUID community using the mailing-list or the IRC channel. See the [support](../start/support.md) page for details.
 
 ### I found a bug or I would like to suggest a feature, what should I do?
 
@@ -43,7 +43,7 @@ You can get the current OpenFLUID source code from our git repository on GitHub,
 git clone https://github.com/OpenFLUID/openfluid
 ```
 
-This source code can be built following the [build instructions](../coredev/build).
+This source code can be built following the [build instructions](../coredev/build.md).
 
 ## Using OpenFLUID
 
@@ -63,21 +63,21 @@ Finally, you can consult the simulators log files located in the output director
 
 ### How do I create and build a new simulator?
 
-See the [Create and build a simulator](../scidev/simbuild) page.
+See the [Create and build a simulator](../scidev/simbuild.md) page.
 
 ### What coding style should I use for writing source code?
 
-The best coding style for your simulators development is the coding style you are familiar with, as far as it is shared and applied in the work group you are belonging to. If you are not using a specific coding style, we recommend to use the [OpenFLUID coding style](../coredev/codestyle).
+The best coding style for your simulators development is the coding style you are familiar with, as far as it is shared and applied in the work group you are belonging to. If you are not using a specific coding style, we recommend to use the [OpenFLUID coding style](../coredev/codestyle.md).
 
 ### How can I log information, warnings and errors messages during simulations?
 
 You can log informations from your simulators using the OpenFLUID logging feature. This is the recommended way to log messages. Avoid using std::cout or std::cerr as the output to screen is not guaranteed on all systems.  
-For details, see the [manuals](../start/manuals), and go to the "Development of the simulator source code" of the manual.
+For details, see the [manuals](../start/manuals.md), and go to the "Development of the simulator source code" of the manual.
 
 ### How can I store data and status from one time step to the next time step?
 
 In this case, you can use "ID-maps" structures as attribute of the C++ class of your simulator .  
-For details, see the see the [manuals](../start/manuals), and go to the "Development of the simulator source code" of the manual.
+For details, see the see the [manuals](../start/manuals.md), and go to the "Development of the simulator source code" of the manual.
 
 ## Troubleshooting
 
@@ -99,7 +99,7 @@ When installing a new version of OpenFLUID, you may experience problems such as 
 
 For downloaded simulators (such as the MHYDAS model), reinstall the new version of the simulators, corresponding to the OpenFLUID version you have just installed.  
 
-For your own simulators, you have to rebuild them for linking with new OpenFLUID framework. See the [build a simulator](../scidev/simbuild) page for more details about building simulators from source code.
+For your own simulators, you have to rebuild them for linking with new OpenFLUID framework. See the [build a simulator](../scidev/simbuild.md) page for more details about building simulators from source code.
 
 ### I installed a new OpenFLUID version on Linux and the OpenFLUID-Builder icon does not show, what should I do?
 
