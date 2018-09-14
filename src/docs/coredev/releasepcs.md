@@ -56,12 +56,19 @@ ROpenFLUID:
 * Build and create packages
 
 
+### Containers
+
+* Configure and build images for Docker and Singularity
+
+
 ## Deployment
 
 ### Uploads
 
 * Upload OpenFLUID packages
 * Upload Models packages (if any)
+* Upload containers configurations and images
+
 
 ### Announcements
 

@@ -186,4 +186,45 @@ brew cask install openfluid
 * [CMake tool](http://www.cmake.org/download/)
 
 
-4) Some OpenFLUID observers require supplementary external tools to produce the output files. In order to take benefit from these observers, you are really encouraged to download and install these additional support tools for Windows, available from the [OpenFLUID downloads page](http://www.openfluid-project.org/downloads/).
+4) Some OpenFLUID observers require supplementary external tools to produce the output files. In order to take benefit from these observers, you are really encouraged to download and install these additional support tools for Windows, available from the [OpenFLUID downloads page](http://www.openfluid-project.org/downloads/).  
+
+
+## Containers
+
+OpenFLUID can be used through containerization (Operating-system-level virtualization), using Docker or Singularity software.  
+
+
+### Docker
+
+[Docker](https://www.docker.com/) images and usage instructions are available on Docker Hub : [https://hub.docker.com/r/openfluid/openfluid/](https://hub.docker.com/r/openfluid/openfluid/).  
+<br/>
+To use these images, the Docker container platform is required. Installation intructions are available at [https://docs.docker.com/install/](https://docs.docker.com/install/)
+
+
+### Singularity
+
+[Singularity](https://singularity.lbl.gov/) images uses Docker images hosted on Docker Hub.
+To build a Singularity image based on the latest OpenFLUID version, run the following command (with sudo if needed)
+```sh
+singularity build <imgfile> docker://openfluid/openfluid
+```
+*(Replace <imgfile> by the filename you want for your image, e.g. openfluid.img)*  
+<br/>
+
+To build a Singularity image based on a specific OpenFLUID version, run the following command (with sudo if needed)
+```sh
+singularity build <imgfile> docker://openfluid/openfluid:<TAG>
+```
+*(Replace `<TAG>` by the version tag you want for your image, e.g. `2.1.6`. Available tags are listed on [https://hub.docker.com/r/openfluid/openfluid/](https://hub.docker.com/r/openfluid/openfluid/))*  
+<br/>
+
+Once the image is created, use the `singularity shell` command or execute the image from the command line
+```sh
+singularity shell <imgfile>
+```
+or
+```sh
+./<imgfile>
+```  
+<br/>
+Singularitry installation instructions are available at [https://singularity.lbl.gov/](https://singularity.lbl.gov/)
