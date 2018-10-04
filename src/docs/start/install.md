@@ -182,8 +182,8 @@ brew cask install openfluid
 
 3) If you plan to develop your own simulators, you have to install
 
-* [Qt5.4.2 + MinGW package](http://download.qt.io/archive/qt/5.4/5.4.2/qt-opensource-windows-x86-mingw491_opengl-5.4.2.exe) available from the [qt-project.org website](http://qt-project.org)
-* [CMake tool](http://www.cmake.org/download/)
+* [Qt 5.9.6 package for Windows](http://download.qt.io/archive/qt/5.9/5.9.6/qt-opensource-windows-x86-5.9.6.exe). During installation process, select MinGW 5.3 32bits in `Qt > Qt5.9.6` and `Qt > Tools` sections
+* [CMake tool for Windows](http://www.cmake.org/download/)
 
 
 4) Some OpenFLUID observers require supplementary external tools to produce the output files. In order to take benefit from these observers, you are really encouraged to download and install these additional support tools for Windows, available from the [OpenFLUID downloads page](http://www.openfluid-project.org/downloads/).  
