@@ -153,7 +153,8 @@ class Vehicle
             const std::string& Model,
             const std::string& Color);
 
-    ~Vehicle() { };   
+    ~Vehicle()
+    { };   
 
     std::string getBrand() const
     { return m_Brand; }
@@ -209,9 +210,12 @@ You may also prefix temporary or local variables, macros and functions by a `_` 
 ### Indentation and statement blocks
 
 * The indentation is done using two spaces '  '. The use of tabs should be avoided.
-* The blocks of statements should be indented (functions, methods, loops, conditions, ...)
-
+* The blocks of statements must be indented (functions, methods, loops, conditions, ...)
 * In curly bracket programming languages (such as C++), the opening and closing brackets should be alone on a line. The indentation will begin just after the opening bracket and stop just before the closing bracket.
+* In case of empty blocks
+    * in header files (e.g. `*.hpp`), the block can be written on a single line using the `{ }` form just below the function or method declaration
+    * in implementation files (e.g. `*cpp`), the block must be written on multiple lines
+* Wherever possible, avoid using single line instruction without brackets under loops and conditions
 
 
 ```cpp
