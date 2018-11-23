@@ -17,20 +17,5 @@ Follow us on Twitter: [https://twitter.com/OpenFLUID](https://twitter.com/OpenFL
 
 ## Chat - IRC channel
 
-An IRC channel is registered on the freenode network for live discussion with OpenFLUID users and developers, asking questions or just hanging out and "socializing".
-You can join the openfluid [IRC](http://en.wikipedia.org/wiki/Internet_Relay_Chat) channel using your favorite IRC client.
-
-* server: chat.freenode.net
-* channel: #openfluid (no password required)
-
-
-Some IRC clients:
-
-* Linux : [Pidgin](http://pidgin.im/), [Empathy](http://live.gnome.org/Empathy)
-* Windows : [Pidgin](http://pidgin.im/), [Miranda-IM](http://www.miranda-im.org/)
-* MacOSX : [Colloquy](http://colloquy.info/)
-
-
-You can also use the embedded IRC client below:
-
-<iframe src="https://kiwiirc.com/client/irc.freenode.com/?#openfluid" style="border:0; width:100%; height:450px;"></iframe>
+Due to security/spamming problems with IRC on freenode, the #openfluid channel has been abandoned on November 23rd,  2018.  
+For any question, feel free to contact the [OpenFLUID team](https://www.openfluid-project.org/who/).
