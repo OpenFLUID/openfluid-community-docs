@@ -7,10 +7,10 @@ Then, you can log into this workspace at [https://openfluid.slack.com/](https://
 
 
 ## Twitter
-
-Follow us on Twitter: [https://twitter.com/OpenFLUID](https://twitter.com/OpenFLUID)
-
-<a class="twitter-timeline" href="https://twitter.com/OpenFLUID?ref_src=twsrc%5Etfw">Tweets by OpenFLUID</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-follow-button" href="https://twitter.com/OpenFLUID" data-size="large" data-show-count="false">Follow @OpenFLUID</a>
+<br/>
+<br/>
+<a class="twitter-timeline" href="https://twitter.com/OpenFLUID?ref_src=twsrc%5Etfw" data-width="400" data-height="600">Tweets by OpenFLUID</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ## Mailing-list
