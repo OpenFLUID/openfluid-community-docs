@@ -6,7 +6,7 @@
 
 {%- block site_name %}
    <a href="{{ config.extra.ofweb_url }}" class="ofweb">&laquo; Go to OpenFLUID main site</a><br/>
-   <img class="community-img" src="{{ base_url }}/img/ofcommunity.png"></img>
+   <a href="{{ nav.homepage.url | url }}"><img class="community-img" src="{{ base_url }}/img/ofcommunity.png"></img></a>
 {%- endblock %}
 
 {%- block analytics %}

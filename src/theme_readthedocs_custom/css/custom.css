@@ -61,11 +61,13 @@ footer p {
   border-color: #49617a;
 }
 
-.wy-side-nav-search > img.community-img {
+.wy-side-nav-search img.community-img {
   width: 158px;
   height: 114px;
   border-radius: 0;
   background-color: transparent;
+  margin : 0;
+  padding : 0;
 }
 
 a.ofweb:link,
