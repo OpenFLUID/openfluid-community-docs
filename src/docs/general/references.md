@@ -102,8 +102,11 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 
 ### PhD Thesis
 
-* Lebon, N., (in progress). **Modélisation des agro-hydrologiScreenshots
-que des retenues collinaires dans un paysage agricole**. _Montpellier SupAgro_.
+* Djouhri, M., (in progress). **Modélisation intégrée du devenir des pesticides dans un paysage viticole**. _Université Montpellier_.
+
+* Campan, P., (in progress). **Evaluation des risques de contamination des eaux par les pesticides à l’échelle parcellaire en situation agropédoclimatique tropicale**. _Montpellier SupAgro_.
+
+* Lebon, N., (in progress). **Modélisation agro-hydrologique des retenues collinaires dans un paysage agricole**. _Montpellier SupAgro_.
 
 * Rudi, G., (in progress). **Exploration numérique multiscalaire de processus spatio-temporels couplés biotiques-abiotiques : application aux services et disservices écosystémiques des réseaux de canaux et fossés d'agrosystèmes méditerranéens**. _Montpellier SupAgro_.
 
@@ -124,9 +127,9 @@ hydrique des sols à l'échelle des petits bassins versants cultivés**. _SupAgr
 
 ### Masters Thesis
 
-* Ibariouen, Y., 2018 (in progress). **Mise en oeuvre d'une architecture d'interopérabilité en modélisation spatialisée et déploiement par conteneurisation sur un cluster de calcul haute performance**. __.
+* Ibariouen, Y., 2018. **Mise en oeuvre d'une architecture d'interopérabilité en modélisation spatialisée et déploiement par conteneurisation sur un cluster de calcul haute performance**. _Université Paris-Saclay_.
 
-* Campan, P., 2018 (in progress). **Modélisation des transferts de pesticides en parcelle bananière en milieu volcanique tropical**. __.
+* Campan, P., 2018. **Modélisation des transferts de pesticides en parcelle bananière en milieu volcanique tropical**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
 
 * Bankhwal, P., 2017. **Atmospheric dispersion and dissipation of pesticides used in agriculture: Modeling at the landscape scale**. _AgrosParisTech, Université Paris-Saclay_.
 
