@@ -99,6 +99,33 @@ The formats:
 * camelCase: every sub-part begins with an uppercase letter except the first subpart, everything else in lowercase
 
 
+#### Pointer and reference expressions
+
+When declaring a pointer variable or argument, you must place the asterisk adjacent to the type of the variable.  
+When declaring a reference variable or argument, you must place the ampersand adjacent to the type of the variable.  
+When using a pointer or reference, you must not place any space around period or arrow operators, and pointer operators do not have trailing spaces.
+```cpp
+class ObjectType
+{
+  public:
+    void doThis(const std::string& Str)
+    { /*...*/ }
+};
+
+int main(int argc, char* argv[])
+{
+  std::string S = "Hello";
+
+  ObjectType* Op = new ObjectType();
+  Op->doThis(S);
+
+  ObjectType O = *Op;  
+  O.doThis(S);
+
+  delete Op;
+}
+```
+
 #### Specific naming rules for accessors to class members
 
 ##### Setters
@@ -123,8 +150,8 @@ private:
   ObjectType m_member;
 
 public:
-  Object getMember();
-  Object& member();
+  ObjectType getMember();
+  ObjectType& member();
 ```
 
 
@@ -154,7 +181,7 @@ class Vehicle
             const std::string& Color);
 
     ~Vehicle()
-    { };   
+    { }
 
     std::string getBrand() const
     { return m_Brand; }
@@ -366,15 +393,23 @@ bool getInfoAsString(const std::string& Key, std::string& Info) const
 ```
 
 
-### C++ 11
+### C++ Standard
 
-Since version 2.1, OpenFLUID requires a C++11 compliant compiler to be built. Starting with this version, it is highly recommended to:
+Since version 2.1.7, OpenFLUID requires a C++14 compliant compiler to be built.  
+So, it is highly recommended to apply the C++14 and C++11 features, such as:
 
-* Use <code>nullptr</code> instead of <code>NULL</code>
-* Use range-based for loops combined with the <code>auto</code> specifier (instead of iterators based loops for example)
-* Use <code>enum class</code> instead of classic <code>enum</code>
-* Use smart pointers wherever it is possible (taking into account the small overhead introduced by smart pointers)
-* Use delegating constructors where possible
+* <code>nullptr</code> instead of <code>NULL</code>
+* range-based for loops combined with the <code>auto</code> specifier (instead of iterators based loops for example)
+* <code>enum class</code> instead of classic <code>enum</code>
+* smart pointers wherever it is possible (taking into account the small overhead introduced by smart pointers)
+* delegating constructors where possible
+* ...
+
+
+Older versions of OpenFLUID requires C++ compliant compilers
+
+* C++11 for versions from 2.1.0 to 2.1.6 (included)
+* C++98 for previous versions
 
 
 ## Design conventions
