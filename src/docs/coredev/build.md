@@ -48,6 +48,13 @@ cd _build
 cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
 ```
 
+The following options are available to control the build process
+
+* `-DOFBUILD_ENABLE_SANITIZER` : Enable the compiler sanitizer to track memory address errors (default value : `OFF`)
+* `-DOFBUILD_ENABLE_TESTING` : Enable the build of tests (`ON` in Debug mode, `OFF` in Release mode)
+* `-DOFBUILD_ENABLE_HEAVYTESTING` : Enable the build of tests (default value : `OFF`)
+
+
 ### Build
 
 * Run "make" from your build directory
