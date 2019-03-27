@@ -137,3 +137,15 @@ a.ofweb:active {
 .home-container div img {
   width : 112px;
 }
+
+div.colorsample {
+  color : white;
+  font-weight: bold;
+  text-align : center;
+  vertical-align : middle;
+  border-radius: 50%;
+  line-height : 100px;
+  width : 100px;
+  height : 100px;
+
+}
