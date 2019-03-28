@@ -43,7 +43,7 @@ pages:
     - References : 'general/references.md'
     - Releases notes : 'general/changelog.md'
     - Versions numbers : 'general/versionsnum.md'
-    - Logo, icon and colors: 'general/logoicon.md'
+    - Logo, icon and more: 'general/logoicon.md'
     - Misc. ressources : 'general/miscress.md'
   - Simulators development :
     - Development environment : 'scidev/scidevenv.md'
