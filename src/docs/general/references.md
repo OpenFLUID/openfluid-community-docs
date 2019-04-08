@@ -5,10 +5,10 @@
 If you wish to cite OpenFLUID, please use the following reference:
 
 * Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M.
-and Raclot, D. and Lagacherie, P. and Voltz M. &nbsp;&nbsp;**<a href="http://www.umr-lisah.fr/rtra-projects/LANDMOD2010-proceedings/articles/632-article.htm" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes</a>**. _LANDMOD2010_.
+and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="http://www.umr-lisah.fr/rtra-projects/LANDMOD2010-proceedings/articles/632-article.htm" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes</a>**. _LANDMOD2010_.
 
 BibTex entry:
-```tex
+```
 @ARTICLE{Fabre2010a,
   author = {Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M.
             and Raclot, D. and Lagacherie, P. and Voltz M.},
