@@ -25,6 +25,7 @@ site_favicon: img/favicon.png
 
 markdown_extensions:
   - admonition
+  - pymdownx.tasklist
   - toc:
       permalink: True
   - markdown_include.include:
