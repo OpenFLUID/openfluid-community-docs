@@ -4,7 +4,7 @@ The MHYDAS model (Moussa et al., 2002, Hydrol. Process. 16) allows to simulate t
 
 The MHYDAS model takes into account specific features of agricultural landscapes : the influence of landscape discontinuities (reachs, plots, banks...), runoff-infiltration partition according to land use, exchanges between groundwater tables and ditches, ...  
 
-It is available through the OpenFLUID software platform, as a set of coupled simulators.
+Since version 2.1.8 of OpenFLUID, It is available with the OpenFLUID installation as a bundled example.
 
 
 ### Processes modelling
@@ -36,46 +36,16 @@ The digital landscape representation for MHYDAS model requires :
 In order to help the modelers for the definition of the digital landscape representation for the MHYDAS model, the Geo-MHYDAS tool (Lagacherie et al , 2010) can be used. It automates a set of spatial analysis commands for performing the landscape discretisation as spatial units, with connections and parametrisation. You can [contact us](http://www.openfluid-project.org/who) if you want to use the Geo-MHYDAS tool.
 
 
-## Installation
+## Example of application
 
-The MHYDAS packages for OpenFLUID are available from the [OpenFLUID web site](http://www.openfluid-project.org). You will find instructions below to install the packages you have downloaded.
-
-### Linux
-
-**Ubuntu / Debian**
-```
-sudo dpkg -i mhydas*.deb
-```
-
-**Fedora 21+**
-```
-sudo rpm -i mhydas*.rpm
-```
-
-### Windows
-
-Uncompress the MHYDAS zip archive in the directory where you installed OpenFLUID (i.e. `C:\OpenFLUID-2.1.x`)
-
-
-### From sources
-
-Once you have downloaded the sources archive of the MHYDAS model from the [OpenFLUID web site](http://www.openfluid-project.org), you have to  :
-
-* uncompress the content of the `simulators` subdirectory from the archive into your `wares-dev/simulators` directory of your workspace (usually `workspace/wares-dev/simulators` in you OpenFLUID user directory)
-* use the [OpenFLUID-DevStudio application](/scidev/scidevenv) to [build and install](/scidev/simbuild) each simulator
+An example of MHYDAS application is [available online](https://youtu.be/OOJR-rztycs) on YouTube.
 
 
 ## Documentation
 
-An example project (MHYDAS_Roujan) is provided with the MHYDAS package to run an already parameterized simulation using the MHYDAS model.  
-The documentation related to each simulator is available online :
+The documentation related to each simulator of the MHYDAS model is available online :
 
 * [water.atm-surf.rain-su.files](http://www.openfluid-project.org/resources/docs/mhydas/en/water.atm-surf.rain-su.files.pdf)
 * [water.surf-uz.runoff-infiltration.mseytoux](http://www.openfluid-project.org/resources/docs/mhydas/en/water.surf-uz.runoff-infiltration.mseytoux.pdf)
 * [water.surf.transfer-su.hayami](http://www.openfluid-project.org/resources/docs/mhydas/en/water.surf.transfer-su.hayami.pdf)
 * [water.surf.transfer-rs.hayami](http://www.openfluid-project.org/resources/docs/mhydas/en/water.surf.transfer-rs.hayami.pdf)
-
-or in the share directory of your MHYDAS installation:
-
-* Linux Ubuntu : `/usr/share/doc/mhydas/`
-* Windows : in the directory where you installed OpenFLUID : i.e. `C:\OpenFLUID-2.1.x\share\doc\mhydas\`

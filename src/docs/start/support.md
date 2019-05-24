@@ -1,3 +1,6 @@
+## FAQ - Frequently Asked Questions
+
+The [FAQ](../general/faq.md) may be a good starting point for common questions.
 
 ## Chat - Slack
 
