@@ -1,6 +1,6 @@
 !!! note "OpenFLUID Versions"
     The following instructions are for OpenFLUID versions 2.0.x and later.  
-    As older versions are deprecated, we do not provide online instructions for these older versions. However, you can contact us for that using the [support tools](../start/support.md)
+    As older versions are deprecated, we do not provide online instructions for these older versions. However, you can [contact us](../start/support.md)
 
 !!! note "ROpenFLUID"
     For installation notes about the ROpenFLUID package for R, please report to the [R OpenFLUID dedicated page](../external/ropenfluid.md)
@@ -18,7 +18,7 @@ _Since OpenFLUID 2.1.5, OpenFLUID for Linux systems also relies on Qt5_
 1) Install required libraries and development tools  :
 ```sh
 sudo apt-get install g++ cmake debhelper pkg-config doxygen \
-                     libboost-all-dev libgdal1-dev libgeos++-dev \
+                     libboost-all-dev libgdal-dev libgeos++-dev \
                      qt5-default qtbase5-dev-tools qttools5-dev-tools libqt5svg5-dev \
                      gnuplot p7zip-full graphviz
 ```
