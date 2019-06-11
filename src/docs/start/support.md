@@ -2,6 +2,11 @@
 
 The [FAQ](../general/faq.md) may be a good starting point for common questions.
 
+## Email and phone
+
+See the [OpenFLUID team](https://www.openfluid-project.org/who/) page of the OpenFLUID main site.
+
+
 ## Chat - Slack
 
 An OpenFLUID workspace is available on Slack. Using this workspace, you can chat online with other users and the OpenFLUID team to get help.  
