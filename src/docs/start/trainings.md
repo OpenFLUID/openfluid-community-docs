@@ -3,6 +3,35 @@
     [Adobe Acrobat Reader](http://get.adobe.com/reader/) (9 or higher) is recommended for viewing the following PDF files, as they embed animations.
 
 
+## June 2019
+
+The june 2019 session is based on OpenFLUID 2.1.8.
+
+
+### Slides
+
+* [OpenFLUID - Overview](http://www.openfluid-project.org/resources/docs/trainings/2019-06/openfluid-overview_fr.pdf) (in french)
+* OpenFLUID - Digital Landscape Representation (in french) - _**Available soon**_
+* [ROpenFLUID - Using OpenFLUID from R environment](http://www.openfluid-project.org/resources/docs/trainings/2019-06/ropenfluid_fr.pdf) (in french)
+* [OpenFLUID - Simulators development](http://www.openfluid-project.org/resources/docs/trainings/2019-06/openfluid-simdev_fr.pdf) (in french)
+* [Quick C++ course](http://www.openfluid-project.org/resources/docs/trainings/2019-06/cplusplus_fr.pdf) (in french)
+
+
+### Practical works (PW)
+
+_**Available soon**_
+
+
+### Datasets
+
+_**Available soon**_
+
+
+### Tutorials
+
+_**Available soon**_
+
+
 ## May 2015
 
 The may 2015 session is based on OpenFLUID 2.1.0~beta.
@@ -31,6 +60,7 @@ The may 2015 session is based on OpenFLUID 2.1.0~beta.
 * Datasets for practical works, available as either zip or tar.gz archive format:
     * [zip archive format](http://www.openfluid-project.org/resources/docs/trainings/2015-05/training-datasets_2015-05.zip)
     * [tar.gz archive format](http://www.openfluid-project.org/resources/docs/trainings/2015-05/training-datasets_2015-05.tar.gz)
+
 
 ### Tutorials
 
@@ -108,7 +138,7 @@ The february 2014 session is based on OpenFLUID 2.0.0~beta15. The schedule is av
 
 * [Quick C++ course](http://www.openfluid-project.org/resources/docs/trainings/2014-02/cplusplus_fr.pdf) (in french)
 * [OpenFLUID - Overview](http://www.openfluid-project.org/resources/docs/trainings/2014-02/openfluid-overview_fr.pdf) (in french)
-* [OpenFLUID - Simulators dévelopment](http://www.openfluid-project.org/resources/docs/trainings/2014-02/openfluid-simdev_fr.pdf) (in french)
+* [OpenFLUID - Simulators development](http://www.openfluid-project.org/resources/docs/trainings/2014-02/openfluid-simdev_fr.pdf) (in french)
 * [ROpenFLUID - Using OpenFLUID from R environment](http://www.openfluid-project.org/resources/docs/trainings/2014-02/ropenfluid_fr.pdf) (in french)
 * [GeoMHYDAS](http://www.openfluid-project.org/resources/docs/trainings/2014-02/mhydas-rnp_fr.pdf) (in french)
 
@@ -147,7 +177,7 @@ The november 2013 session is based on OpenFLUID 2.0.0~beta12. The schedule is av
 
 * [Quick C++ course](http://www.openfluid-project.org/resources/docs/trainings/2013-11/cplusplus_fr.pdf) (in french)
 * [OpenFLUID - Overview](http://www.openfluid-project.org/resources/docs/trainings/2013-11/openfluid-overview_fr.pdf) (in french)
-* [OpenFLUID - Simulators dévelopment](http://www.openfluid-project.org/resources/docs/trainings/2013-11/openfluid-simdev_fr.pdf) (in french)
+* [OpenFLUID - Simulators development](http://www.openfluid-project.org/resources/docs/trainings/2013-11/openfluid-simdev_fr.pdf) (in french)
 * [ROpenFLUID - Using OpenFLUID from R environment](http://www.openfluid-project.org/resources/docs/trainings/2013-11/ropenfluid_fr.pdf) (in french)
 
 * [MHYDAS - Digital landscape representation](http://www.openfluid-project.org/resources/docs/trainings/2013-11/mhydas-rnp_fr.pdf) (in french)
@@ -184,7 +214,7 @@ The 2013 session is based on OpenFLUID 2.0.0~beta1. The schedule is available [h
 
 * [Quick C++ course](http://www.openfluid-project.org/resources/docs/trainings/2013/cplusplus_fr.pdf) (in french)
 * [OpenFLUID - Overview](http://www.openfluid-project.org/resources/docs/trainings/2013/openfluid-overview_fr.pdf) (in french)
-* [OpenFLUID - Simulators dévelopment](http://www.openfluid-project.org/resources/docs/trainings/2013/openfluid-simdev_fr.pdf) (in french)
+* [OpenFLUID - Simulators development](http://www.openfluid-project.org/resources/docs/trainings/2013/openfluid-simdev_fr.pdf) (in french)
 
 
 * [MHYDAS - Digital landscape representation](http://www.openfluid-project.org/resources/docs/trainings/2013/mhydas-rnp_fr.pdf) (in french)
