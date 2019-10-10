@@ -90,6 +90,7 @@ ROpenFLUID:
 
 ### Announcements
 
+* [ ] Upload "highlights on version" video on YouTube (if any)
 * [ ] Update Downloads page on OpenFLUID website with new available packages
 * Add announcements on
     * [ ] OpenFLUID web site
