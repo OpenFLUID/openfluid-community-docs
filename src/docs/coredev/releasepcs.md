@@ -36,12 +36,6 @@ OpenFLUIDjs:
 
 * [ ] Simulators of provided models (MHYDAS) are adapted, builds and works perfectly
 
-### Community site
-
-* [ ] Documentation page is up to date with latest available documents
-* [ ] "Upgrading to a new version" page is up to date with correct instructions
-* [ ] "Release notes" page is up to date
-
 
 ## Building and packaging
 
@@ -69,6 +63,7 @@ _Only if external model packages are provided separately with the release_
 ROpenFLUID:
 
 * [ ] Build and create packages
+* [ ] Generate doc
 
 
 ### Containers
@@ -77,28 +72,44 @@ ROpenFLUID:
 * [ ] Tag docker images (latest, major.minor.patch, major.minor, major)
 
 
-## Deployment
+## Pre-deployment
 
 ### Uploads
 
 * [ ] Upload OpenFLUID packages
-* [ ] Upload Models packages (if any)
+* [ ] Upload models packages (if any)
 * [ ] Update containers configurations on GitHub
 * [ ] Upload Docker image on DockerHub
 * [ ] Update brew cask configuration on Github
-
-
-### Announcements
-
 * [ ] Upload "highlights on version" video on YouTube (if any)
-* [ ] Update Downloads page on OpenFLUID website with new available packages
-* Add announcements on
-    * [ ] OpenFLUID web site
-    * [ ] OpenFLUID mailing-list
-    * [ ] Twitter
+* [ ] Upload documentations
 
 
-### Internal maintenance
+### Web site
+
+* [ ] Release notes are up to date and added to the release page
+* [ ] Date is set in the release notes
+* [ ] Fair use charter is up to date
+* [ ] Blog article for release annoucement is written
+
+
+### Community site
+
+* [ ] Documentation page is up to date with latest available documents
+* [ ] "Upgrading to a new version" page is up to date with correct instructions
+* [ ] Fair use charter PDFs and links are up to date
+
+
+## Deployment
+
+
+* [ ] Deploy prepared community site
+* [ ] Deploy prepared web site
+* [ ] Add announcements on OpenFLUID mailing-list
+* [ ] Add announcements on Twitter
+
+
+## Internal maintenance
 
 * [ ] Close the related milestone in the OpenFLUID Roadmap (if the release is a final release for the version milestone)
 * [ ] Update master branch to develop branch and push it on GitHub
