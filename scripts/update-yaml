@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os
 from string import Template
@@ -33,7 +33,7 @@ TplContent = TplFile.read()
 TplFile.close()
 
 
-for Filename, Config in FileConfigs.iteritems():
+for Filename, Config in FileConfigs.items():
   DestFile = open(os.path.join(Helpers.SrcDir,Filename),'w')
   DestFile.write(Template(TplContent).substitute(Config))
   DestFile.close()

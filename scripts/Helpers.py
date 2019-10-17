@@ -35,4 +35,4 @@ def execCommand(Cmd,Cwdir):
                          stdout=subprocess.PIPE,
                          cwd=Cwdir)
   for Ln in Pcs.stdout:
-    print Ln,
+    print(Ln,end='')
