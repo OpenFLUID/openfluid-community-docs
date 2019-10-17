@@ -1,0 +1,6 @@
+mkdocs
+mkdocs-markdownextradata-plugin
+pymdown-extensions
+markdown-include
+jinja2
+bibtexparser
