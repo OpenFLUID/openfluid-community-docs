@@ -31,11 +31,15 @@ markdown_extensions:
   - markdown_include.include:
       base_path: docs
 
+plugins:
+  - markdownextradata: {}
+
 pages:
   - Getting started :
     - Installation : 'start/install.md'
     - Manuals : 'start/manuals.md'
     - Training sessions : 'start/trainings.md'
+    - Charter : 'start/charter.md'
     - Support : 'start/support.md'
   - General information :
     - Used terms and acronyms: 'general/terms.md'

@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+
+import os
+import subprocess
+import urllib.parse
+import argparse
+
+import Helpers
+
+
+##############################################################################
+
+
+def rebuild_charter_pdf(args,langcode):
+    charter_url = urllib.parse.urljoin(args['url'],"charter/{}".format(langcode))
+    output_pdf = os.path.join(Helpers.SrcDir,"docs","start","charter_{}.pdf".format(langcode))
+
+    command = [args['chromium_app'],'--headless','--disable-gpu','--print-to-pdf={}'.format(output_pdf),charter_url]
+    subprocess.run(command)
+
+
+##############################################################################
+
+
+parser = argparse.ArgumentParser(description="Update charter PDF from online version")
+parser.add_argument('--url', default="http://127.0.0.1:1313/")
+parser.add_argument('--chromium-app', default="chromium")
+
+parsed_args = vars(parser.parse_args())
+
+rebuild_charter_pdf(parsed_args,"en")
+rebuild_charter_pdf(parsed_args,"fr")

@@ -12,11 +12,19 @@ It also contains reference documentation for the platform core developers.
     </a>
   </div>
   <div>
+    <a href='start/charter'>
+      <img src="common/home-charter.png"/><br/>
+      <h2>Charter</h2>
+    </a>    
+  </div>
+  <div>
     <a href='start/manuals'>
       <img src="common/home-manuals.png"/><br/>
       <h2>Manuals</h2>
     </a>
   </div>
+</div>
+<div class="home-container">
   <div>
     <a href='start/trainings'>
       <img src="common/home-trainings.png"/><br/>
