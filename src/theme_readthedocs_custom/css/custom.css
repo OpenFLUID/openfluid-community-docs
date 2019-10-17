@@ -119,14 +119,21 @@ a.ofweb:active {
 
 .home-container {
   width : 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  min-width: 300px;
+  max-width: 800px;
 }
 
 .home-container div {
-  display: inline-block;
   text-align:center;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
   padding: 15px;
+  flex-basis: 100%;
+  flex: 0.33;
 }
 
 .home-container div h2 {
@@ -148,4 +155,18 @@ div.colorsample {
   width : 100px;
   height : 100px;
 
+}
+
+iframe.charter {
+  border : 1px solid lightgrey;
+  width: 215mm;
+}
+
+
+table.manuals thead th {
+  text-align: center;
+} 
+
+table.manuals tbody tr {
+  background-color: none;
 }

@@ -1,145 +1,33 @@
-<table>
+
+<table class="manuals">
 <thead>
-<tr class="header">
+<tr>
 <th></th>
 <th><p>HTML</p></th>
 <th><p>PDF</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td><p><b><u>v2.1.8</u></b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.8/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.8/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.8/main/openfluid_manual_2.1.8.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.8/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
+{% for version in ["2.1.9","2.1.8","2.1.7","2.1.6","2.1.5","2.1.4","2.1.3","2.1.2","2.1.1","2.1.0",
+                   "2.0.2","2.0.1","2.0.0",] %}
+<tr>
+  <td><p><b>{% if loop.index == 1 %}<u>{% endif %}v{{ version }}{% if loop.index == 1 %}</u>{% endif %}</b></p></td>
+  <td>
+    <ul>
+      <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
+      <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/main/openfluid_manual_{{ version }}.pdf">OpenFLUID manual for users and simulators developers</a></li>
+      <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
+    </ul>
+  </td>
 </tr>
-<tr class="even">
-<td><p><b>v2.1.7</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.7/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.7/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.7/main/openfluid_manual_2.1.7.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.7/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p><b>v2.1.6</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.6/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.6/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.6/main/openfluid_manual_2.1.6.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.6/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p><b>v2.1.5</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.5/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.5/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.5/main/openfluid_manual_2.1.5.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.5/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p><b>v2.1.4</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.4/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.4/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.4/main/openfluid_manual_2.1.4.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.4/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p><b>v2.1.3</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.3/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.3/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.3/main/openfluid_manual_2.1.3.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.3/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p><b>v2.1.2</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.2/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.2/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.2/main/openfluid_manual_2.1.2.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.2/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p><b>v2.1.1</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.1/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.1/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.1/main/openfluid_manual_2.1.1.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.1/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p><b>v2.1.0</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.0/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.0/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.0/main/openfluid_manual_2.1.0.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.1.0/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p><b>v2.0.2</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.2/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.2/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.2/main/openfluid_manual_2.0.2.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.2/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p><b>v2.0.1</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.1/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.1/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.1/main/openfluid_manual_2.0.1.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.1/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p><b>v2.0.0</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.0/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.0/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.0/main/openfluid_manual_2.0.0.pdf">OpenFLUID manual for users and simulators developers</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.0.0/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr class="odd">
+{% endfor %}
+
+<tr>
 <td><p><b>v1.7.2</b></p></td>
 <td><ul>
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.2/quickuser/html/index.html">Quick user manual</a></li>
@@ -151,7 +39,7 @@
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.2/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p><B>v1.7.1</B></p></td>
 <td><ul>
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.1/quickuser/html/index.html">Quick user manual</a></li>
@@ -161,7 +49,7 @@
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.1/quickuser/openfluid_quickuser_en.pdf">Quick user manual</a></li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p><B>v1.7.0</B></p></td>
 <td><ul>
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.0/quickuser/html/index.html">Quick user manual</a></li>
@@ -171,7 +59,7 @@
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.0/quickuser/openfluid_quickuser_en.pdf">Quick user manual</a></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p><B>v1.6.2</B></p></td>
 <td><ul>
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.2/quickuser/html/index.html">Quick user manual</a></li>
@@ -191,7 +79,7 @@
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.1/quickuser/openfluid_quickuser_en.pdf">Quick user manual</a></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p><B>v1.6.0</B></p></td>
 <td><ul>
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.0/quickuser/html/index.html">Quick user manual</a></li>
@@ -211,7 +99,7 @@
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.5.0/quickref/openfluid-engine_quickref_en.pdf">Quick reference manual</a></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p><B>v1.4.2</B></p></td>
 <td><ul>
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.2/quickref/html/index.html">Quick reference manual</a></li>
@@ -221,7 +109,7 @@
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.2/quickref/openfluid-engine_quickref_en.pdf">Quick reference manual</a></li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p><B>v1.4.1</B></p></td>
 <td><ul>
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.1/quickref/html/index.html">Quick reference manual</a></li>
@@ -231,7 +119,7 @@
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.1/quickref/openfluid-engine_quickref_en.pdf">Quick reference manual</a></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p><B>v1.4.0</B></p></td>
 <td><ul>
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.0/quickref/html/index.html">Quick reference manual</a></li>
@@ -241,7 +129,7 @@
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.0/quickref/openfluid-engine_quickref_en.pdf">Quick reference manual</a></li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p><B>v1.3.x</B></p></td>
 <td><ul>
 <li><a href="http://www.openfluid-project.org/resources/docs/manuals/fr/engine/1.3/user/index.html">User manual (in french)</a></li>
