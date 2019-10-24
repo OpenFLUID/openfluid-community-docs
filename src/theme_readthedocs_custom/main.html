@@ -1,12 +1,34 @@
 {% extends "base.html" %}
 
+{%- block site_meta %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if page and page.is_homepage %}<meta name="description" content="{{ config.site_description }}">{% endif %}
+  {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="OpenFLUID Community - {{ page.title }}" />
+  <meta property="og:url" content="{{ page.canonical_url | url }}" />
+  <meta property="og:image" content="{{ config.site_url }}img/{{ config.extra.image_og }}" />
+  <meta property="og:site_name" content="{{ config.site_name }}" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="{{ page.canonical_url | url }}" />
+  <meta property="twitter:title" content="OpenFLUID Community - {{ page.title }}" />
+  <meta property="twitter:image" content="{{ config.site_url }}img/{{ config.extra.image_og }}" />
+  <meta property="twitter:site" content="{{ config.extra.twitter_account }}" />
+  <meta property="twitter:creator" content="{{ config.extra.twitter_account }}" />
+  {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+  {% if config.site_favicon %}<link rel="shortcut icon" href="{{ config.site_favicon|url }}">
+  {% else %}<link rel="shortcut icon" href="{{ config.site_url }}img/favicon.ico">{% endif %}
+{%- endblock %}
+
 {%- block htmltitle %}
   <title>{{ config.site_name }}</title>
 {%- endblock %}
 
 {%- block site_name %}
    <a href="{{ config.extra.ofweb_url }}" class="ofweb">&laquo; Go to OpenFLUID main site</a><br/>
-   <a href="{{ nav.homepage.url | url }}"><img class="community-img" src="{{ base_url }}/img/ofcommunity.png"></img></a>
+   <a href="{{ nav.homepage.url | url }}"><img class="community-img" src="{{ config.site_url }}img/ofcommunity.png"></img></a>
 {%- endblock %}
 
 {%- block analytics %}

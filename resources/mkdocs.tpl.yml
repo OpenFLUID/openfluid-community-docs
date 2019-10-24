@@ -17,6 +17,8 @@ edit_uri: blob/master/src/docs
 extra:
   production: $production
   ofweb_url: $ofWebURL
+  twitter_account: "@OpenFLUID"
+  image_og : "ofcommunity_og.png"
 
 google_analytics: ['UA-10058595-1', 'openfluid-project.org']
 
