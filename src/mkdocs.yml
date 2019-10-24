@@ -10,7 +10,7 @@ extra_javascript:
   - js/cookieconsent.min.js
   - js/cookie-banner.js
 
-site_url: http://127.0.0.1:8000
+site_url: http://127.0.0.1:8000/
 repo_url: https://github.com/OpenFLUID/openfluid-community-docs
 edit_uri: blob/master/src/docs
 

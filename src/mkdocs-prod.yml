@@ -10,13 +10,13 @@ extra_javascript:
   - js/cookieconsent.min.js
   - js/cookie-banner.js
 
-site_url: https://community.openfluid-project.org
+site_url: https://community.openfluid-project.org/
 repo_url: https://github.com/OpenFLUID/openfluid-community-docs
 edit_uri: blob/master/src/docs
 
 extra:
   production: True
-  ofweb_url: https://www.openfluid-project.org
+  ofweb_url: https://www.openfluid-project.org/
   twitter_account: "@OpenFLUID"
   image_og : "ofcommunity_og.png"
 
