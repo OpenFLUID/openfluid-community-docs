@@ -35,6 +35,7 @@ markdown_extensions:
 
 plugins:
   - markdownextradata: {}
+  - search
 
 pages:
   - Getting started :
