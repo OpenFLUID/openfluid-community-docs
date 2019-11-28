@@ -37,7 +37,7 @@ BibTex entry:
 * {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.school }}_.
 {% endfor %}
 
-### Masters Thesis
+### Master's Thesis
 {% for item in Refsmastersthesis %}
 * {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.school }}_.
 {% endfor %}

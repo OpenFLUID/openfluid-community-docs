@@ -141,7 +141,13 @@ aux réseaux de fossés en zone viticole méditerranéenne**. _Montpellier SupAg
 hydrique des sols à l'échelle des petits bassins versants cultivés**. _SupAgro Montpellier_.
 
 
-### Masters Thesis
+### Master's Thesis
+
+* Giffone, V., 2019. **Modélisation de l’évolution des états de surface du sol en viticulture**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
+
+* Romàn-Villafane, S., 2018. **Modélisation spatio-temporelle des flux d'eau à l'échelle d'un périmètre irrigué par gravité**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
+
+* Saussey, L., 2018. **Evaluation du prototype de modèle TROPHY**. _Université Paris-Saclay_.
 
 * Ibariouen, Y., 2018. **Mise en oeuvre d'une architecture d'interopérabilité en modélisation spatialisée et déploiement par conteneurisation sur un cluster de calcul haute performance**. _Université Paris-Saclay_.
 
