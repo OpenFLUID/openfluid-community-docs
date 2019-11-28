@@ -5,7 +5,7 @@
 If you wish to cite OpenFLUID, please use the following reference:
 
 * Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M.
-and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="http://www.umr-lisah.fr/rtra-projects/LANDMOD2010-proceedings/articles/632-article.htm" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes</a>**. _LANDMOD2010_.
+and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="https://www.openfluid-project.org/resources/biblio/LANDMOD2010_OpenFLUID.pdf" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes</a>**. _LANDMOD2010_.
 
 BibTex entry:
 ```
@@ -18,7 +18,7 @@ BibTex entry:
   address = {Montpellier, France},
   publisher = {Symposcience},
   isbn = {978-2-7592-0859-3},
-  url = {http://www.umr-lisah.fr/rtra-projects/LANDMOD2010-proceedings/articles/632-article.htm}
+  url = {https://www.openfluid-project.org/resources/biblio/LANDMOD2010_OpenFLUID.pdf}
 }
 ```
 
@@ -45,11 +45,27 @@ BibTex entry:
 
 * Cheviron, B. and Gumiere, S. and Le Bissonnais, Y. and Moussa, R. and Raclot, D., 2010. **Sensitivity analysis of distributed erosion models: Framework**. _Water Resources Research_, 46.
 
-* Lagacherie, P. and Rabotin, M. and Colin, F. and Moussa, R. and Voltz, M., 2010. **Geo-MHYDAS: A landscape discretization tool for distributed hydrological
-modeling of cultivated areas**. _Computers & Geosciences_, 36, 1021 - 1032.
+* Lagacherie, P. and Rabotin, M. and Colin, F. and Moussa, R. and Voltz, M., 2010. &nbsp;&nbsp;**<a href="http://www.sciencedirect.com/science/article/B6V7D-4YWYYWC-1/2/a7d5b1d93f24af23b63dd66964eb059c" target=_blank>Geo-MHYDAS: A landscape discretization tool for distributed hydrological
+modeling of cultivated areas</a>**. _Computers & Geosciences_, 36, 1021 - 1032.
 
 
 ### Communications
+
+* Dagès, C. and Bailly, J.S. and Dollinger, J. and Lagacherie, P. and Voltz, M., 2019. &nbsp;&nbsp;**<a href="http://www.gfpesticides.org/bdd_fichiers/410e8a6be8a909d115d92bde534259d2d196c42c13e.pdf" target=_blank>L’entretien  des  fossés  comme  levier  pour  limiter  la  contamination  des eaux par les pesticides</a>**. _49ème congrès du Groupe Français des PEsticides_, Montpellier, France.
+
+* Voltz, M. and Bedos, C. and Crevoisier, D. and Fabre, J.C. and Loubet, B. and Chataigner, M. and Bankwal, P. and Barriuso, E. and Benoit, P. and Brunet, Y. and Casellas, E. and Chabrier, P. and Chambon, C. and Dagès, C. and Douzals, J.P. and Drouet, J.L. and Lafolie, F. and Mamy, L. and Moitrier, N. and Personne, E. and Pot, V. and Raynal, H. and Ruelle, B. and Samouelian, A. and Saudreau, M., 2019. &nbsp;&nbsp;**<a href="http://www.gfpesticides.org/bdd_fichiers/410e8a6be8a909d115d92bde534259d2d196c42c13e.pdf" target=_blank>Modélisation intégrée du devenir des pesticidesdans les paysages agricoles</a>**. _49ème congrès du Groupe Français des PEsticides_, Montpellier, France.
+
+* Campan, P. and Samouelian, A. and Crevoisier, D. and Voltz, M., 2019. &nbsp;&nbsp;**<a href="http://www.gfpesticides.org/bdd_fichiers/410e8a6be8a909d115d92bde534259d2d196c42c13e.pdf" target=_blank>Evaluation d’une méthodologie d’estimation du risque de contamination des eaux en contexte volcanique tropical</a>**. _49ème congrès du Groupe Français des PEsticides_, Montpellier, France.
+
+* Crevoisier, D. and Fernandez-Bayo, J. and Boivin, A. and Duboisset A. and Fostier, J. and Rudi, G. and Samouelian, A. and Voltz, M., 2019. &nbsp;&nbsp;**<a href="http://www.gfpesticides.org/bdd_fichiers/410e8a6be8a909d115d92bde534259d2d196c42c13e.pdf" target=_blank>TROPHY  un outil d’évaluation des risques de contamination des eaux souterraines et superficielles par les produits phytosanitaires en milieu volcanique antillais</a>**. _49ème congrès du Groupe Français des PEsticides_, Montpellier, France.
+
+* Voltz, M. et al., 2019. **Integrated modelling of pesticide fate in agricultural landscapes**. _21st International Fresenius AGRO Conference - Behaviour of Pesticides in Air, Soil and Water_, Maintz, Germany.
+
+* Dagès, C. et al., 2019. **Ditch maintenance as a lever to limit water contamination by pesticides**. _XVI Symposium on Pesticide Chemistry "Advances in risk assessment and management"_, Piacenza, Italy.
+
+* Bedos, C. et al., 2019. **Integrated modelling of pesticide fate in landscapes for designing sustainable agricultural management strategies**. _XVI Symposium on Pesticide Chemistry "Advances in risk assessment and management"_, Piacenza, Italy.
+
+* Lebon, N. and Dagès, C. and Burger-Leenhardt, D. and Fabre, J.C. and Molénat, J., 2019. &nbsp;&nbsp;**<a href="https://meetingorganizer.copernicus.org/EGU2019/EGU2019-17006-1.pdf" target=_blank>DAHM-Reservoir: An agro-hydrological model for agricultural catchment with small water reservoirs</a>**. _EGU General Assembly 2019_, Vienna, Austria.
 
 * Fabre, J.-C. and Rabotin, M. and Crevoisier, D. and Libres, A. and Dagès, C. and Moussa, R. and Lagacherie, Ph. and Raclot, D. and Voltz, M., 2018. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Fabre_OpenFLUID_EGU2013_CC.pdf" target=_blank>OpenFLUID: an open-source software environment for modelling fluxes in landscapes</a>**. _Rencontre utilisateurs du centre de calcul MESO@LR - Université Montpellier_, Montpellier (France).
 
@@ -73,17 +89,19 @@ modeling of cultivated areas**. _Computers & Geosciences_, 36, 1021 - 1032.
 
 * Hajji, O. and Habaieb, H. and Hermassi, T. and Mahjoub, M.R., 2013. &nbsp;&nbsp;**<a href="http://dx.doi.org/10.1109/ICMSAO.2013.6552599" target=_blank>Influence of spatio-temporal variability of soil surface states on the watershed hydrology behaviour Case study of El hnach watershed in Tunisian semi-arid zone</a>**. _Modeling, Simulation and Applied Optimization (ICMSAO), 2013 5th International Conference_, Hammamet.
 
-* Bouvet, L. and Louchart, X. and Barès, M. and Lalauze, S. and Moussa, R. and Voltz, M., 2010. **Modélisation intégrée des agro-hydrosystèmes avec MHYDAS : exemple
+* Bouvet, L. and Louchart, X. and Barès, M. and Lalauze, S. and Moussa,
+R. and Voltz, M., 2010. **Modélisation intégrée des agro-hydrosystèmes avec MHYDAS : exemple
 des transferts de pesticides en milieu viticole méditerranéen**. _Séminaire "Modélisation intégrée des Hydrosystèmes"_, Ecole des Mines, Paris.
 
-* Bouvet, L. and Louchart, X. and Barès, M. and Lalauze, S. and Voltz, M., 2010. **Modélisation intégrée des agro-hydrosystèmes avec MHYDAS : exemple
+* Bouvet, L. and Louchart, X. and Barès, M. and Lalauze, S. and Voltz,
+M., 2010. **Modélisation intégrée des agro-hydrosystèmes avec MHYDAS : exemple
 des transferts de pesticides en milieu viticole méditerranéen**. _40ème congrès scientifique du Groupe Français des Pesticides_, Banyuls sur Mer.
 
 * Levavasseur, F and Bailly, JS and Lagacherie, P and Rabotin, M and Colin, F and others, 2010. **Uncertainties of cultivated landscape drainage network mapping and its consequences on hydrological fluxes estimations**. _Accuracy2010_, Leicester (England).
 
 * Fabre, J.C. and Louchart, X., 2010. **OpenFLUID : un exemple de plate-forme de modélisation et de simulation des paysages cultivés - Applications avec le modèle MHYDAS**. _Colloque Gestion de l'Eau et des sols_, Hammamet (Tunisie).
 
-* Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M. and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Water2010_Quebec_05.pdf" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes	- Applications on distributed hydrological modelling of farmed catchments</a>**. _Water2010 conference_, Quebec, Canada.
+* Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M. and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Water2010_Quebec_05.pdf" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes - Applications on distributed hydrological modelling of farmed catchments</a>**. _Water2010 conference_, Quebec, Canada.
 
 * Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M. and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="http://www.umr-lisah.fr/rtra-projects/LANDMOD2010-proceedings/articles/632-article.htm" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes</a>**. _LANDMOD2010_, Montpellier, France.
 
@@ -92,22 +110,21 @@ des transferts de pesticides en milieu viticole méditerranéen**. _40ème congr
 * Rabotin, M. and Floure, C., 2009. **Moving landscape discretization GIS toolbox to open source**. _International Opensource Geospatial Research Symposium 2009_, Paris.
 
 * Rabotin, M. and Lagacherie, P. and Colin, F. and Moussa, R. and Voltz, M., 2009. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/poster_rabotin_lisah_final.pdf" target=_blank>Geo-MHYDAS: A discretization procedure of cultivated landscapes for
-distributed hydrological modelling</a>**. _European Geosciences Union, 5th General Assembly, Vienna, Austria, 20-24 April 2009_, .
+distributed hydrological modelling</a>**. _European Geosciences Union, 5th General Assembly, Vienna, Austria,
+20-24 April 2009_, .
 
-* Fabre, J.C. and Louchart, X., 2008. **OpenFLUID: a software environment for modelling FLUxes In Landscapes	- Application with the MHYDAS model for simulating hydrologicalpollutant and erosive processes**. _13th IWRA World Water Congress_, Montpellier, France.
+* Fabre, J.C. and Louchart, X., 2008. **OpenFLUID: a software environment for modelling FLUxes In Landscapes - Application with the MHYDAS model for simulating hydrologicalpollutant and erosive processes**. _13th IWRA World Water Congress_, Montpellier, France.
 
 
 ### PhD Thesis
 
-* Naulleau, A., (in progress). **Co-construction et évaluation de scénarios de gestion technique des paysages viticoles adaptés au changement climatique**. _Montpellier SupAgro_.
+* Naulleau, A., (in progress, expected 2021). **Co-construction et évaluation de scénarios de gestion technique des paysages viticoles adaptés au changement climatique**. _Montpellier SupAgro_.
 
-* Djouhri, M., (in progress). **Modélisation intégrée du devenir des pesticides dans un paysage viticole**. _Université Montpellier_.
+* Djouhri, M., (in progress, expected 2021). **Modélisation intégrée du devenir des pesticides dans un paysage viticole**. _Université Montpellier_.
 
-* Campan, P., (in progress). **Evaluation des risques de contamination des eaux par les pesticides à l’échelle parcellaire en situation agropédoclimatique tropicale**. _Montpellier SupAgro_.
+* Campan, P., (in progress, expected 2021). **Evaluation des risques de contamination des eaux par les pesticides à l’échelle parcellaire en situation agropédoclimatique tropicale**. _Montpellier SupAgro_.
 
-* Lebon, N., (in progress). **Modélisation agro-hydrologique des retenues collinaires dans un paysage agricole**. _Montpellier SupAgro_.
-
-* Rudi, G., (in progress). **Exploration numérique multiscalaire de processus spatio-temporels couplés biotiques-abiotiques : application aux services et disservices écosystémiques des réseaux de canaux et fossés d'agrosystèmes méditerranéens**. _Montpellier SupAgro_.
+* Lebon, N., (in progress, expected 2020). **Modélisation agro-hydrologique des retenues collinaires dans un paysage agricole**. _Montpellier SupAgro_.
 
 * Dollinger, J., 2016. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Dollinger_J_These.pdf" target=_blank>Analyse et modélisation des transferts et de la rétention de pesticides dans les fossés agricoles infiltrants en lien avec les stratégies d’entretien</a>**. _Montpellier SupAgro_.
 
@@ -154,7 +171,7 @@ diffuses**. _Polytech'Montpellier_.
 
 * Jacob, L., 2010. **Evaluation de différents niveaux de représentation des pratiques
 d'entretien du sol en vue d’une modélisation hydrologique dans un
-bassin versant viticole méditerranéen**. _Faculté des Sciences et Techniques, Université de Tours_.
+bassin versant viticole méditerranéen **. _Faculté des Sciences et Techniques, Université de Tours_.
 
 * Lalauze, S., 2009. **Modélisation des transferts d'eau et de produits phytosanitaires
 en bassins versants cultivés méditerranéens avec MHYDAS - Application

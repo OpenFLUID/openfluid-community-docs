@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os
 import jinja2
@@ -22,7 +22,7 @@ CitingStr = CitingFile.read()
 CitingFile.close()
 CitingDB = bibtexparser.loads(CitingStr)
 
-Vars['CitingBib'] = unicode(CitingStr,'utf8')
+Vars['CitingBib'] = CitingStr
 Vars['CitingRef'] = CitingDB.entries[0]
 
 
@@ -53,5 +53,5 @@ GeneratedContent = jinja2.Environment(loader=jinja2.FileSystemLoader(TplPath)).g
 
 
 OutFile = open(os.path.join(Helpers.SrcDir,"docs","general","references.md"),"w")
-OutFile.write(GeneratedContent.encode('utf8'))
+OutFile.write(GeneratedContent)
 OutFile.close()

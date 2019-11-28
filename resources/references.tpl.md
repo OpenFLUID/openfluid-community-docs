@@ -12,7 +12,7 @@
 
 If you wish to cite OpenFLUID, please use the following reference:
 
-* {{ CitingRef.author }}, {{ CitingRef.year }}. {{ buildtitle(CitingRef.title,CitingRef.link,CitingRef.pdf) }}. _{{ CitingRef.booktitle }}_.
+* {{ CitingRef.author }}, {{ CitingRef.year }}. {{ buildtitle(CitingRef.title,CitingRef.url,CitingRef.pdf) }}. _{{ CitingRef.booktitle }}_.
 
 BibTex entry:
 ```
