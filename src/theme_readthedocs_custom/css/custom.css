@@ -162,6 +162,9 @@ iframe.charter {
   width: 215mm;
 }
 
+iframe.ytvideo {
+  border : 1px solid grey;
+}
 
 table.manuals thead th {
   text-align: center;
