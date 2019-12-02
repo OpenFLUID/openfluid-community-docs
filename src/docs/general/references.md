@@ -143,21 +143,21 @@ hydrique des sols à l'échelle des petits bassins versants cultivés**. _SupAgr
 
 ### Master's Thesis
 
-* Giffone, V., 2019. **Modélisation de l’évolution des états de surface du sol en viticulture**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
+* Giffone, V., 2019. **Modélisation de l’évolution des états de surface du sol en viticulture**. _AgroParisTech, Université de Montpellier, Montpellier SupAgro_.
 
-* Romàn-Villafane, S., 2018. **Modélisation spatio-temporelle des flux d'eau à l'échelle d'un périmètre irrigué par gravité**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
+* Romàn-Villafane, S., 2018. **Modélisation spatio-temporelle des flux d'eau à l'échelle d'un périmètre irrigué par gravité**. _AgroParisTech, Université de Montpellier, Montpellier SupAgro_.
 
 * Saussey, L., 2018. **Evaluation du prototype de modèle TROPHY**. _Université Paris-Saclay_.
 
 * Ibariouen, Y., 2018. **Mise en oeuvre d'une architecture d'interopérabilité en modélisation spatialisée et déploiement par conteneurisation sur un cluster de calcul haute performance**. _Université Paris-Saclay_.
 
-* Campan, P., 2018. **Modélisation des transferts de pesticides en parcelle bananière en milieu volcanique tropical**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
+* Campan, P., 2018. **Modélisation des transferts de pesticides en parcelle bananière en milieu volcanique tropical**. _AgroParisTech, Université de Montpellier, Montpellier SupAgro_.
 
-* Bankhwal, P., 2017. **Atmospheric dispersion and dissipation of pesticides used in agriculture: Modeling at the landscape scale**. _AgrosParisTech, Université Paris-Saclay_.
+* Bankhwal, P., 2017. **Atmospheric dispersion and dissipation of pesticides used in agriculture: Modeling at the landscape scale**. _AgroParisTech, Université Paris-Saclay_.
 
-* Berkaoui, M. A., 2015. **Vers une modélisation spatialisée pour la simulation du fonctionnement hydrologique de surface du plateau de Saclay: Mise en oeuvre de la plate-forme OpenFLUID**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
+* Berkaoui, M. A., 2015. **Vers une modélisation spatialisée pour la simulation du fonctionnement hydrologique de surface du plateau de Saclay: Mise en oeuvre de la plate-forme OpenFLUID**. _AgroParisTech, Université de Montpellier, Montpellier SupAgro_.
 
-* Chovelon, G., 2015. **Calibration et évaluation d’un modèle couplé de transfert d’eau et de solutés : Cas du devenir du cadusafos dans une parcelle bananière en milieu volcanique tropical**. _AgrosParisTech, Université de Montpellier, Montpellier SupAgro_.
+* Chovelon, G., 2015. **Calibration et évaluation d’un modèle couplé de transfert d’eau et de solutés : Cas du devenir du cadusafos dans une parcelle bananière en milieu volcanique tropical**. _AgroParisTech, Université de Montpellier, Montpellier SupAgro_.
 
 * Podechard, T., 2015. **Amélioration de simulateurs OpenFLUID pour les modélisations hydrologiques - Mise en place d'une procédure de calage automatique de modèle pluie-débit sous OpenFLUID**. _Polytech Montpellier_.
 
