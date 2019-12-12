@@ -137,7 +137,7 @@ Thanks to Jonathan for these detailed instructions.
 
 !!! warning
     Since OpenFLUID 2.1.5, the macOS installation relies on the [Brew packaging tool](https://brew.sh/).  
-    It is still an preview release, and has only been tested on macOS 10.13
+    It is still an preview release, and has only been tested on macOS 10.13 _High Sierra_ and 10.14 _Mojave_
 
 
 Install Brew (_Task to perform only once, see also [https://brew.sh/](https://brew.sh/)_)
@@ -208,14 +208,14 @@ To build a Singularity image based on the latest OpenFLUID version, run the foll
 ```sh
 singularity build <imgfile> docker://openfluid/openfluid
 ```
-*(Replace <imgfile> by the filename you want for your image, e.g. openfluid.img)*  
+*(Replace `<imgfile>` by the filename of the image to build, e.g. openfluid.img)*  
 <br/>
 
 To build a Singularity image based on a specific OpenFLUID version, run the following command (with sudo if needed)
 ```sh
-singularity build <imgfile> docker://openfluid/openfluid:<TAG>
+singularity build <imgfile> docker://openfluid/openfluid:<tag>
 ```
-*(Replace `<TAG>` by the version tag you want for your image, e.g. `2.1.6`. Available tags are listed on [https://hub.docker.com/r/openfluid/openfluid/](https://hub.docker.com/r/openfluid/openfluid/))*  
+*(Replace `<tag>` by the specific OpenFLUID version tag for the image to build, e.g. `2.1.9`. Available tags are listed on [https://hub.docker.com/r/openfluid/openfluid/](https://hub.docker.com/r/openfluid/openfluid/))*  
 <br/>
 
 Once the image is created, use the `singularity shell` command or execute the image from the command line
@@ -227,4 +227,4 @@ or
 ./<imgfile>
 ```  
 <br/>
-Singularitry installation instructions are available at [https://singularity.lbl.gov/](https://singularity.lbl.gov/)
+Installation instructions for Singularity are available at [https://sylabs.io/docs/](https://sylabs.io/docs/)
