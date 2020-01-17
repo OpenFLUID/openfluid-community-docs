@@ -35,28 +35,28 @@ _(presented at a workshop of the PAYOTE scientific network )_
 
 ### Highlights on features
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4xU9EaRRlds" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4xU9EaRRlds" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Highlights for version 2.1.9*  
 <br/>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4cYzeGIZ1Ns" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4cYzeGIZ1Ns" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Highlights for version 2.1.8*
 
 <br/>
 
 ### Examples of applications
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2Vg8Z7SN99w" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2Vg8Z7SN99w" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Simulation of herbicide content in soil over 1 year*  
 
 <br/>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7-vGc5LRYZo" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7-vGc5LRYZo" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Simulation of herbicide transfer in hydrological network during a rain event*  
 
 <br/>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OOJR-rztycs" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OOJR-rztycs" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Roujan catchment hydrology*  
 
 <br/>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0H0gO1HJh4s" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0H0gO1HJh4s" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Fire spreading simulation over a small region*  
 
 <br/>

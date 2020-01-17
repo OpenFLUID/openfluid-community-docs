@@ -7,6 +7,8 @@ The OpenFLUID source code is hosted on [GitHub](https://github.com/OpenFLUID), a
 | --- | ----- | --- |
 | OpenFLUID framework and applications | [https://username@github.com/OpenFLUID/openfluid.git](https://username@github.com/OpenFLUID/openfluid.git)  | git@github.com:OpenFLUID/openfluid.git |
 | ROpenFLUID package for R | [https://username@github.com/OpenFLUID/ropenfluid.git](https://username@github.com/OpenFLUID/ropenfluid.git) | git@github.com:OpenFLUID/ropenfluid.git |
+| PyOpenFLUID package for Python | [https://username@github.com/OpenFLUID/pyopenfluid.git](https://username@github.com/OpenFLUID/pyopenfluid.git) | git@github.com:OpenFLUID/pyopenfluid.git |
+| OpenFLUIDjs module for node.js | [https://username@github.com/OpenFLUID/openfluidjs.git](https://username@github.com/OpenFLUID/openfluidjs.git) | git@github.com:OpenFLUID/openfluidjs.git |
 | FluidHub services | [https://username@github.com/OpenFLUID/openfluid-fluidhub.git](https://username@github.com/OpenFLUID/openfluid-fluidhub.git) | git@github.com:OpenFLUID/openfluid-fluidhub.git |
 
 
@@ -16,6 +18,8 @@ The repositories can also be cloned with public read-only access, at the followi
 | --- | ---- | --- |
 | OpenFLUID framework and applications | [http://github.com/OpenFLUID/openfluid.git](http://github.com/OpenFLUID/openfluid.git)  | git@github.com:OpenFLUID/openfluid.git |
 | ROpenFLUID package for R | [http://github.com/OpenFLUID/ropenfluid.git](http://github.com/OpenFLUID/ropenfluid.git) | git@github.com:OpenFLUID/ropenfluid.git |
+| PyOpenFLUID package for Python | [http://github.com/OpenFLUID/pyopenfluid.git](http://github.com/OpenFLUID/pyopenfluid.git) | git@github.com:OpenFLUID/pyopenfluid.git |
+| OpenFLUIDjs module for node.js | [http://github.com/OpenFLUID/openfluidjs.git](http://github.com/OpenFLUID/openfluidjs.git) | git@github.com:OpenFLUID/openfluidjs.git |
 | FluidHub services | [http://github.com/OpenFLUID/openfluid-fluidhub.git](http://github.com/OpenFLUID/openfluid-fluidhub.git) | git@github.com:OpenFLUID/openfluid-fluidhub.git |
 
 
@@ -210,8 +214,3 @@ Git branching model and workflow:
 * [My Git branching model, by William Durand](http://williamdurand.fr/2012/01/17/my-git-branching-model/)
 * [How to GitHub: Fork, Branch, Track, Squash and Pull Request](http://gun.io/blog/how-to-github-fork-branch-and-pull-request/)
 * [Scott Chacon's Git flow](http://scottchacon.com/2011/08/31/github-flow.html)
-
-
-## Using Git with Eclipse
-
-Recent versions of [Eclipse](http://www.eclipse.org) integrates full git functionalities.
