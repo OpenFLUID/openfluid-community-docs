@@ -14,7 +14,7 @@ OpenFLUID-WaresHub is made of a management system of git repositories, webservic
 The OpenFLUID-DevStudio application allows to directly connect to an OpenFLUID-WaresHub repository to facilitate development, follow-up and sharing of simulators, observers, and extensions for OpenFLUID-Builder.
 
 An example of an OpenFLUID-WaresHub instance is the models repository of LISAH research unit, which can be accessed at
-[https://coding.umr-lisah.fr/lisah-wareshub/report/](https://coding.umr-lisah.fr/lisah-wareshub/report/)  
+[https://dev.openfluid-project.org/lisah-wareshub/report/](https://dev.openfluid-project.org/lisah-wareshub/report/)  
 It it presented in the following part.
 
 
@@ -30,5 +30,5 @@ In particular, it hosts the MHYDAS and WATSFAR models, the Geo-MHYDAS geomatic t
 * Agronomy
 * ...
 
-LISAH-WaresHub can be accessed at [https://coding.umr-lisah.fr/lisah-wareshub/report/](https://coding.umr-lisah.fr/lisah-wareshub/report/).  
+LISAH-WaresHub can be accessed at [https://dev.openfluid-project.org/lisah-wareshub/report/](https://dev.openfluid-project.org/lisah-wareshub/report/).  
 Access to source codes is allowed depending on users access rights.
