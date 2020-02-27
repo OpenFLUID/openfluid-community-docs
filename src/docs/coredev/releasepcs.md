@@ -9,7 +9,7 @@
 * [ ] Version number is correct in CMake.in.cmake
 * [ ] CHANGELOG file is up-to-date
 * [ ] Version number is correct in user manual
-* [ ] All documentation can be built (user manual, API guide, ...)
+* [ ] All documentation can be built with web analytics enabled (user manual, API guide, ...)
 * [ ] All translatable strings are translated in french
 * [ ] All examples can be built
 
