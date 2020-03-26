@@ -11,11 +11,11 @@ You may clone the repositories to work with the source code. More information ar
 
 Install the required libraries and tools using the following command:
 
-Ubuntu 14.04 and higher, Debian Jessie and higher
+Ubuntu 16.04 and higher, Debian 8 and higher
 ```sh
 sudo apt-get install build-essential lsb-release g++ gfortran git cmake \
                      texlive-latex-extra texlive-fonts-extra latex2html doxygen \
-                     libboost-all-dev libgdal1-dev libgeos++-dev \
+                     libboost-all-dev libgdal-dev libgeos++-dev \
                      qt5-default qtbase5-dev-tools qttools5-dev-tools libqt5svg5-dev \
                      p7zip-full gnuplot graphviz python2.7
 ```

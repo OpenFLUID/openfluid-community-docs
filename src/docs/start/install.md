@@ -13,7 +13,7 @@
 
 _Since OpenFLUID 2.1.5, OpenFLUID for Linux systems also relies on Qt5_
 
-#### Ubuntu 14.04+ and Debian 8+
+#### Ubuntu 16.04 and higher, Debian 8 and higher
 
 1) Install required libraries and development tools  :
 ```sh
@@ -34,7 +34,7 @@ openfluid --version
 ```
 
 
-#### Linux Fedora 25+
+#### Linux Fedora 25 and higher
 
 1) Install required libraries and development tools  :
 ```sh
@@ -57,7 +57,7 @@ openfluid --version
 
 ### OpenFLUID 2.1.0 - 2.1.4
 
-#### Ubuntu 14.04+ and Debian Jessie
+#### Ubuntu 14.04&rarr;16.04 and Debian Jessie
 
 1) Install required libraries and development tools  :
 ```
