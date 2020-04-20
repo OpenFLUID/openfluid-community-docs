@@ -49,10 +49,7 @@ It also contains reference documentation for the platform core developers.
 <br/>
 
 !!! tip "Contributions are welcome!"
-    **Feel free to contribute to this documentation:**
+    **Feel free to contribute to the community documentation!**
 
-    1. clone the [repository on GitHub](https://github.com/OpenFLUID/openfluid-community-docs)
-    1. add new content or update current content
-    1. propose a [pull-request](https://github.com/OpenFLUID/openfluid-community-docs/pulls) including these contributions
-
+    More informations on how to contribute are available in the **[CONTRIBUTING](https://github.com/OpenFLUID/openfluid-community-docs/blob/master/CONTRIBUTING.md)** file of the documentation sources. 
 <br/>
