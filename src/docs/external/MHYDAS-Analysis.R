@@ -1,49 +1,9 @@
-!!! danger "TODO"
-    To be reviewed
+### A specific framework to set factors, run one simulation and get results
 
+# 1. Setting and running the simulation with the defaults factors:
 
-## Introduction
+#    Preparing the simulation
 
-**Here is a practical use of ROpenFLUID package for simulations and model analyses.**  
-It is illustrated on the MHYDAS model (see [notes](../models/mhydas.md) for more details about the model and installation). The MHYDAS model is applied on a virtual catchment composed of 9 spatial units : 6 parcels (SUs) and 3 ditches (RSs) (see figure 1).
-
-<center>
-![Spatial domain](Virtual6SU3RS.png)  
-_Figure 1: Spatial domain on which is applied MHYDAS model_
-</center>
-
-This model represents and couples three processes (production function : separation of the rain into runoff and infiltration, water transfers on the SUs surface and water transfers in the RSs). The computed variables are :
-
-- the infiltration and runoff height on the SUs,
-
-- the flow rate at the outlet of the SUs and RSs,
-
-- the water level on the RSs.
-
-The model input factors which will be analysed are :
-
-- the wave mean celerity on SUs,
-
-- the wave mean celerity on RSs,
-
-- the wave mean diffusivity on SUs and RSs,
-
-- the initial water content on SUs,
-
-- the saturated hydraulic conductivity on SUs.
-
-Among the output variables, some of them characterize the global behaviour of the model (i.e. the flow rate at the outlet of the RS3, the global outlet of the virtual subcatchment), others characterize its local behaviour (i.e. the infiltration on each SUs). The three first input factors are parameters of the transfer models, the next two factors depend on the spatial units characteristics and control the runoff production. The others model factors: simulator parameters, spatial attributes and the rain height on each SUs (the input spatial and temporal variable) will not be analyzed in this example. The analysis of a such spatialized model should take into account the effects of the input factors on the output variables at the global and the local scale.
-
-The following lines propose some examples of model analysis. Thanks to the ROpenFLUID package, simple simulations and model analysis are performed. The [sensitivity](https://cran.r-project.org/web/packages/sensitivity/) R package is used to perform expert analysis. Other R packages are required in the following script for rendering results ([ggplot2](https://cran.r-project.org/web/packages/ggplot2/)) or for factors sampling ([lhs](https://cran.r-project.org/web/packages/lhs/)). The input dataset can be found [here](tuto-MHYDAS-ROpenFLUID.zip) as a zip file and the final R script can be download [here](MHYDAS-Analysis.R).
-
-
-## A specific framework to set factors, run one simulation and get results
-
-
-**1. Setting and running the simulation with the defaults factors:**
-
-* Preparing the simulation
-```R
 library('ROpenFLUID')
 
 inputDir  = "path/to/MHYDAS/dataset"
@@ -55,20 +15,16 @@ OpenFLUID.addVariablesExportAsCSV(ofsim,"RS",3) # export all variables on the un
 OpenFLUID.addVariablesExportAsCSV(ofsim,"SU") # export all variables of class "SU"
 # get default time step
 dT=OpenFLUID.getDefaultDeltaT(ofsim)
-```
 
 
-* Running the simulation with the default factors of the dataset
-```R
+#    Running the simulation with the default factors of the dataset
+
 OpenFLUID.runSimulation(ofsim)
-```
 
+# 2. Defining structures and functions to simplify the input factors and output results management:
 
-**2. Defining structures and functions to simplify the input factors and output results management:**
+#    Defining a structure to map the input factors of the MHYDAS model. The simulator parameters and spatial attributes are read "by batch" with dedicated ROpenFLUID commands and store in several synthetic lists. See the Manuals section for more details on these "by batch" commands.
 
-
-* Defining a structure to map the input factors of the MHYDAS model. The simulator parameters and spatial attributes are read "by batch" with dedicated ROpenFLUID commands and store in several synthetic lists. See the [Manuals](../start/manuals.md) section for more details on these "by batch" commands.
-```R
 simIDs    = OpenFLUID.getSimulatorsIDs(ofsim)
 simParams = list()
 for (simID in simIDs) {
@@ -104,11 +60,10 @@ factorVal[3] = as.numeric(simParams[[simIDs[4]]][1,c("meansigma")])
 factorVal[4:9] = ( as.numeric(attrs[["SU"]][,"thetaini"])-as.numeric(attrs[["SU"]][,"thetares"]) ) / 
     ( as.numeric(attrs[["SU"]][,"thetasat"])-as.numeric(attrs[["SU"]][,"thetares"]) )
 factorVal[10:15] = as.numeric(attrs[["SU"]][,"Ks"])
-```
 
 
-* Defining a generic function to gather an output variables set in a synthetic list
-```R
+#    Defining a generic function to gather an output variables set in a synthetic list
+
 #
 # ofsim      : the simulation definition
 # unitclass  : the unit class name
@@ -138,11 +93,9 @@ getSpatialResults <- function(ofsim,unitclass,unitids,OFnames,shortnames,out=NUL
     }
     return(out)
 }
-```
 
+#    Defining a specific function to gather the selected variables set of a MHYDAS simuation in a synthetic list
 
-* Defining a specific function to gather the selected variables set of a MHYDAS simuation in a synthetic list
-```R
 #
 # ofsim  : the simulation definition
 # 
@@ -170,11 +123,9 @@ getSelectedSimResults <- function(ofsim) {
     )
     return(out)
 }
-```
 
+#    Evaluating aggregated indicators on the simulation
 
-* Evaluating aggregated indicators on the simulation
-```R
 #
 # ofsim       : the simulation definition
 # outProvided : a list obtained with previous function
@@ -216,7 +167,7 @@ aggregateSelectedSimResults <- function(ofsim,outProvided=NULL) {
         difftime(out$datetime[which.max(out$RS3Q)],out$datetime[which.max(out$SU5RR)],units='hour')
     )
     if (RS3TMax < 0) RS3TMax=NA
-    
+
     # return aggregated results as list
     return(
         data.frame(
@@ -231,11 +182,10 @@ aggregateSelectedSimResults <- function(ofsim,outProvided=NULL) {
         )
     )
 }
-```
 
 
-* Defining a function to run one simulation with modified factors
-```R
+#    Defining a function to run one simulation with modified factors
+
 #
 # ofsim    : the simulation definition
 # X[1]     : simulator parameter meancelSU -> simParams[[ simIDs[3] ]]
@@ -264,13 +214,11 @@ runOneSim <- function(X,ofsim) {
     return(list("byTimeStep"=out,"indicators"=aggregateSelectedSimResults(ofsim,out)))
 
 }
-```
 
-**3. Rendering the first results:**
+# 3. Rendering the first results:
 
+#    Checking the surface water mass balance : rain is equal to infiltrated water added to exported water
 
-* Checking the surface water mass balance : rain is equal to infiltrated water added to exported water
-```R
 # running MHYDAS simulation with default factors values
 out = runOneSim(factorVal,ofsim)
 aggInd = aggregateSelectedSimResults(ofsim,out$byTimeStep)
@@ -285,11 +233,9 @@ cat("\n - cumulative infiltrated volume :",aggInd$sumSUI)
 cat("\n - cumulative exported volume    :",aggInd$sumRS3V)
 cat("\n - mass balance error            :",aggInd$sumSURR-(aggInd$sumSUI+aggInd$sumRS3V))
 cat("\n")
-```
 
+#    Plotting the temporal evolution of the selected variables
 
-* Plotting the temporal evolution of the selected variables
-```R
 library('ggplot2')
 
 #
@@ -305,10 +251,10 @@ plotSimResults <- function(ofsim,outProvided=NULL) {
     } else {
         out = outProvided
     }
-    
+
     # water height exported at the SU5 outlet, (spatialized output)
     out = cbind(out,"SU5H"=out$SU5Q*dT/as.numeric(OpenFLUID.getAttribute(ofsim,"SU",5,"area")))
-    
+
     # cumulative rain and infiltration in the whole catchment (global output)
     SURR = rep(0,n=length(T))
     SUI  = SURR
@@ -351,25 +297,13 @@ dev.off()
 png("graphics/resultsRS3.png")    
 gpRes$RS3
 dev.off()
-```
 
-<center>
-<div>
-<img src="/external/resultsSU5.png" alt="Rain, infiltration and water exported heights on SU5" width="40%"/>
-<img src="/external/resultsRS3.png" alt="Rain, infiltration and water exported volumes on RS3" width="40%"/>
-</div>
-_Figure 2: cumulative rain, infiltrated and exported water heights on SU5 (left) and volumes on the whole subcatchment (right)_
-</center>
+### Some elements for model's behaviour analysis
 
+# 1. Get the design of experiments and the model responses:
 
-## Some elements for model's behaviour analysis
+#    Defining the factors boundaries: values have been choosen to have a non null exported water volume at the outlet of the subcatchment for the most of the simulations.
 
-
-**1. Get the design of experiments and the model responses:**
-
-
-* Defining the factors boundaries: values have been choosen to have a non null exported water volume at the outlet of the subcatchment for the most of the simulations. 
-```R
 factorMin=rep(NA,n=nFactor)
 factorMax=rep(NA,n=nFactor)
 
@@ -388,11 +322,10 @@ factorMax[4:9] = 0.99
 #Ks: from high (clay soils) to moderate (loam soils) impermeability
 factorMin[10:15] = 1e-7
 factorMax[10:15] = 1e-5
-```
 
 
-* Defining a design of experiments (Sobol2002 from sensitivity package) to explore model responses
-```R
+#    Defining a design of experiments (Sobol2002 from sensitivity package) to explore model responses
+
 library('lhs')
 library('sensitivity')
 
@@ -437,11 +370,10 @@ nRepeat=25
 SobolSamples = generateSobolRandomSamples(nSlice,nRepeat,factorMin,factorMax,factorNames)
 DOE          = sobol2002(model=NULL,X1=SobolSamples$X1,X2=SobolSamples$X2,conf=0.95,nboot=100)
 NSimu        = dim(DOE$X)[1]
-```
 
 
-* Checking the coverage of the factors domain
-```R
+#    Checking the coverage of the factors domain
+
 #
 # DOE    : the design of experiments (data.frame)
 #
@@ -467,18 +399,10 @@ plotDOECoverage <- function(DOE) {
 png('graphics/DOECoverage.png')
 plotDOECoverage(DOE$X)
 dev.off()
-```
-
-<center>
-<div>
-<img src="/external/DOECoverage.png" alt="Factor domain coverage" width="75%"/>
-</div>
-_Figure 3: The factors domain coverage of the computed design of experiments_
-</center>
 
 
-* Running a set of simulations at once and return the model responses as a list
-```R
+#    Running a set of simulations at once and return the model responses as a list
+
 #
 # ofsim  : the simulation definition
 # X      : the matrix of factors (NSimu x NFactors)
@@ -508,28 +432,23 @@ runMultiSim <- function(X,ofsim) {
 
 }
 
+isComputeRequired = TRUE
 # run the N simulations and get the model responses
-# /!\ may take some time (0.1s / simulations on a Intel(R) Xeon(R) CPU E5-2609 v4 @ 1.70GHz)
-Y = runMultiSim(DOE$X)
-X = DOE
-```
+if (isComputeRequired) {
+    # /!\ may take some time (0.1s / simulations on a Intel(R) Xeon(R) CPU E5-2609 v4 @ 1.70GHz)
+    Y = runMultiSim(DOE$X,ofsim)
+    X = DOE
+    #    Saving design of experiments and model responses for further analysis
+    save(list=c("X","Y"),file='rdata/DOE-50-25.rdata')
+} else {
+    #    Reloading previously computed model responses: skip previous steps and run
+    load(file='rdata/DOE-50-25.rdata')
+    NSimu = dim(X$X)[1]
+}
 
 
-* Saving design of experiments and model responses for further analysis
-```R
-save(list=c("X","Y"),file='rdata/DOE-50-25.rdata')
-```
+#    Rendering some global results: plot water exported volume against transfer time for both SU5 and subcatchement
 
-
-* Reloading previously computed model responses: skip previous steps and run
-```R
-load(file='rdata/DOE-50-25.rdata')
-NSimu = dim(X$X)[1]
-```
-
-
-* Rendering some global results: plot water exported volume against transfer time for both SU5 and subcatchement
-```R
 #
 # YIndicators : aggregated indicators from model responses
 # iToPlot     : simulation indexes to render in plot
@@ -537,7 +456,7 @@ NSimu = dim(X$X)[1]
 # return      : a list of ggplot objects
 #
 plotVolTMax <- function(YIndicators,iToPlot,nbins) {
-    
+
     iToPlotSU5 = intersect(iToPlot,which(YIndicators$sumSU5V!=0))
     iToPlotRS3 = intersect(iToPlot,which(YIndicators$sumRS3V!=0))
 
@@ -571,22 +490,10 @@ dev.off()
 png(paste(RDir,"graphics/vol2tmaxRS3.png",sep='/'))
 gpVolTMax$RS3
 dev.off()
-```
 
+# 2. Sobol indices of two kind of output:
 
-<center>
-<div>
-<img src="/external/vol2tmaxSU5.png" alt="Exported water volume against transfer time on SU5" width="40%"/>
-<img src="/external/vol2tmaxRS3.png" alt="Exported water volume against transfer time on RS3" width="40%"/>
-</div>
-_Figure 4: exported water volume against transfer time on SU5 (left) and on the whole subcatchment (right)_
-</center>
-
-
-**2. Sobol indices of two kind of output:**
-
-* Computed and plot Sobol indices on indicators sumSU5V and tmaxSU5Q, two local indicators
-```R
+#    Computed and plot Sobol indices on indicators sumSU5V and tmaxSU5Q, two local indicators
 YVSU5=Y$indicators$sumSU5V
 tell(X,YVSU5)
 png("graphics/sobolSU5V.png")
@@ -601,56 +508,31 @@ tell(X,YTMaxSU5)
 png("graphics/sobolSU5TMax.png")
 ggplot(X)
 dev.off()
-```
 
-
-<center>
-<div>
-<img src="/external/sobolSU5V.png" alt="Sobol indices on SU5V" width="40%"/>
-<img src="/external/sobolSU5TMax.png" alt="Sobol indices on SU5TMax" width="40%"/>
-</div>
-_Figure 3a: Sobol indices for the exported water volume on SU5 (left) and for the transfer time (right):
-as expected, results are only influenced by global parameters and local attrbutes. The sensitivity on the exported volume is only due to initial humidity and hydraulic conductivity of the SU5, the transfer time is also sensitive to the mean wave celerity on SU._
-</center>
-
-
-* Computed and plot Sobol indices on indicators sumRS3V and tmaxRS3Q, two global indicators
-```R
-tell(X,Y$indicators$sumRS3V)
+#    Computed and plot Sobol indices on indicators sumRS3V and tmaxRS3Q, two global indicators
+YV = Y$indicators$sumRS3V
+tell(X,YV)
 png('graphics/sobolRS3V.png')
 ggplot(X)
 dev.off()
 
-YTMax=Y$indicators$tmaxRS3Q
+YTMax = Y$indicators$tmaxRS3Q
 # /!\ if the volume exported is null, transfer time is NA, replace them by 0
-iTMaxNA=which(is.na(YTMax))
+iTMaxNA = which(is.na(YTMax))
 YTMax[iTMaxNA]=0
 tell(X,YTMax)
 png("graphics/sobolRS3TMax.png")
 ggplot(X)
 dev.off()
-```
+
+### Some elements for model's calibration
 
 
-<center>
-<div>
-<img src="/external/sobolRS3V.png" alt="Sobol indices on RS3V" width="40%"/>
-<img src="/external/sobolRS3TMax.png" alt="Sobol indices on RS3TMax" width="40%"/>
-</div>
-_Figure 3b: Sobol indices for the exported water volume on RS3 (left) and for the transfer time (right):
-the exported water volume is mainly due to runoff production, especially these of nearest SUs from outlet, thereas the time transfer is mainly due to the mean wave celerity._
-</center>
+# 1. Calibration with observations on cumulative volume and transfer time on RS3:
 
+#    Let's consider the cumulative volume and the transfer time have been measured at the outlet of subcatchment (respectively 0.25m3 and 0.4h with an arbitrary measure error of 0.05m3 and 0.05h).
+#    We try first to identify the factors sets leading to this model response.
 
-
-## Some elements for model's calibration
-
-
-**1. Calibration with observations on cumulative volume and transfer time at global scale:**
-
-
-* Let's consider the cumulative volume and the transfer time have been measured at the outlet of subcatchment (respectively 0.25m3 and 0.4h with an arbitrary measure error of 0.05m3 and 0.05h). We try first to identify the factors sets leading to these model responses. 
-```R
 # define a bounding box centered at 0.25 +/- 0.05 and 0.4 +/- 0.05
 boxCenter=c(0.25,0.4)
 boxSize=c(0.1,0.1)
@@ -675,22 +557,12 @@ iMatchBox = intersect(
 png(paste(RDir,"graphics/DOECoverage-withBox.png",sep='/'))
 plotDOECoverage(X$X[iMatchBox,])
 dev.off()
-```
 
-<center>
-<div>
-<img src="/external/vol2tmaxRS3-withBox.png" alt="Exported water volume against transfer time on RS3" width="40%"/>
-<img src="/external/DOECoverage-withBox.png" alt="Factor domain coverage leading to measured model responses" width="40%"/>
-</div>
-_Figure 4: Model responses at RS3 (left) and factor domain coverage leading to the measured cumulative volume and transfer time at the outlet of virtual subcatchment (right). A problem of equifinality is obvious here: several set of factors lead to the same model response. For instance, 2 simulations with an high infiltrability on only SU3 or SU5, all other infilitrabilities set to a very low value, could lead to the same cumulative volume. In the first case, exported water at outlet will be due only to SU3 runoff, in the second case to SU5. Without complementary measures or other data (i.e. expert opinions), model calibration will be impossible._
-</center>
+# 2. Calibration with observations on cumulative volume and transfer time at local and global scale:
 
+#    Let's now consider the same quantities have been also monitored at the outlet of SU5 (respectively 0.175m3 and 0.075h with the same measure error).
+#    Among the previously selected factors sets in the last analysis, the same screening is performed based on the model responses on SU5.
 
-**2. Calibration with observations on cumulative volume and transfer time at local and global scale:**
-
-
-* Let's now consider the same quantities have been also monitored at the outlet of SU5 (respectively 0.175m3 and 0.075h with the same measure error). Among the previously selected factors sets in the last analysis, the same screening is performed based on the model responses on SU5. 
-```R
 # define a bounding box centered at 0.175 +/- 0.05 and 0.075 +/- 0.05
 boxCenterSU5=c(0.175,0.075)
 boundingBoxSU5=data.frame("x"=(boxCenterSU5[1]-0.5*boxSize[1]),"y"=(boxCenterSU5[2]-0.5*boxSize[2]))
@@ -725,11 +597,3 @@ for (i in 1:length(iMatchBoxSU5)) {
 gpFactors
 dev.off()
 ```
-<center>
-<div>
-<img src="/external/vol2tmaxSU5-withBox.png" alt="Exported water volume against transfer time on SU5" width="40%"/>
-<img src="/external/DOECoverageSU5-withBox.png" alt="Factor domain coverage leading to measured model responses" width="40%"/>
-</div>
-_Figure 5: Model responses at SU5 (left) and factor domain coverage leading to the measured cumulative volume and transfer time at both the outlet of virtual subcatchment and SU5(right). The dashed lines connect the factors set. The number of matching simulations is drasticly reduced and the problem of equifinality is clearly reduced for some factors._
-</center>
-
