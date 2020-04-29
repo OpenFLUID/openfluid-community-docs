@@ -597,3 +597,35 @@ for (i in 1:length(iMatchBoxSU5)) {
 gpFactors
 dev.off()
 ```
+
+# 3. Automatic calibration with observations on cumulative volume and transfer time at local scale:
+
+#    Defining the objective function to optimize. For results on SU5, only mean cell on SU, initial humidity and hydraulic conductivity are sensitive.
+
+# define ojective function
+ref = data.frame("tmaxSU5Q"=0.175,"sumSU5V"=0.075)
+iFactorSensitive=c(1,8,14)
+objectiveFct <- function(X,factorOther,ofsim,ref) {
+    factorCurrent=factorOther
+    factorCurrent[iFactorSensitive] = X
+    out=runOneSim(factorCurrent,ofsim)
+    if (is.na(out$indicators$tmaxSU5Q)) out$indicators$tmaxSU5Q=0
+    return(sum((out$indicators[c("tmaxSU5Q","sumSU5V")]-ref)**2))
+}
+
+#    Running automatic calibration with optimx R package, initial guess is one of the previous sets of factors
+
+library('optimx')
+X0 = as.numeric(X$X[iMatchBoxSU5[1],iFactorSensitive])
+objFct0 = objectiveFct(X0,as.numeric(X$X[iMatchBoxSU5[1],]),ofsim,ref)
+factorOptim = optimx(
+    X0,
+    fn=objectiveFct,
+    lower=lower[iFactorSensitive],
+    upper=upper[iFactorSensitive],
+    method='nmkb',
+    factorOther=as.numeric(X$X[iMatchBoxSU5[1],]),ofsim=ofsim,ref=ref
+)
+# replace method='nmkb' by a vector of methods or by the argument control=list(all.methods=TRUE) to compare several methods
+summary(factorOptim)
+

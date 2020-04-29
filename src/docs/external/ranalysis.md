@@ -34,7 +34,7 @@ The model input factors which will be analysed are :
 
 Among the output variables, some of them characterize the global behaviour of the model (i.e. the flow rate at the outlet of the RS3, the global outlet of the virtual subcatchment), others characterize its local behaviour (i.e. the infiltration on each SUs). The three first input factors are parameters of the transfer models, the next two factors depend on the spatial units characteristics and control the runoff production. The others model factors: simulator parameters, spatial attributes and the rain height on each SUs (the input spatial and temporal variable) will not be analyzed in this example. The analysis of a such spatialized model should take into account the effects of the input factors on the output variables at the global and the local scale.
 
-The following lines propose some examples of model analysis. Thanks to the ROpenFLUID package, simple simulations and model analysis are performed. The [sensitivity](https://cran.r-project.org/web/packages/sensitivity/) R package is used to perform expert analysis. Other R packages are required in the following script for rendering results ([ggplot2](https://cran.r-project.org/web/packages/ggplot2/)) or for factors sampling ([lhs](https://cran.r-project.org/web/packages/lhs/)). The input dataset can be found [here](tuto-MHYDAS-ROpenFLUID.zip) as a zip file and the final R script can be download [here](MHYDAS-Analysis.R).
+The following lines propose some examples of model analysis. Thanks to the ROpenFLUID package, simple simulations and model analysis are performed. The [sensitivity](https://cran.r-project.org/web/packages/sensitivity/) and [optimx](https://cran.r-project.org/web/packages/optimx/) R packages are used to perform expert analysis. Other R packages are required in the following script for rendering results ([ggplot2](https://cran.r-project.org/web/packages/ggplot2/)) or for factors sampling ([lhs](https://cran.r-project.org/web/packages/lhs/)). The input dataset can be found [here](tuto-MHYDAS-ROpenFLUID.zip) as a zip file and the final R script can be download [here](MHYDAS-Analysis.R).
 
 
 ## A specific framework to set factors, run one simulation and get results
@@ -732,4 +732,54 @@ dev.off()
 </div>
 _Figure 5: Model responses at SU5 (left) and factor domain coverage leading to the measured cumulative volume and transfer time at both the outlet of virtual subcatchment and SU5(right). The dashed lines connect the factors set. The number of matching simulations is drasticly reduced and the problem of equifinality is clearly reduced for some factors._
 </center>
+
+**3. Automatic calibration with observations on cumulative volume and transfer time at local scale:**
+
+
+* Defining the objective function to optimize. For results on SU5, only mean cell on SU, initial humidity and hydraulic conductivity are sensitive.
+```R
+# define ojective function
+ref = data.frame("tmaxSU5Q"=0.175,"sumSU5V"=0.075)
+iFactorSensitive=c(1,8,14)
+objectiveFct <- function(X,factorOther,ofsim,ref) {
+    factorCurrent=factorOther
+    factorCurrent[iFactorSensitive] = X
+    out=runOneSim(factorCurrent,ofsim)
+    if (is.na(out$indicators$tmaxSU5Q)) out$indicators$tmaxSU5Q=0
+    return(sum((out$indicators[c("tmaxSU5Q","sumSU5V")]-ref)**2))
+}
+```
+
+* Running automatic calibration with optimx R package, initial guess is one of the previous sets of factors, the choosen method is the Nelder-Mead algorithm for derivative-free optimization.
+```R
+library('optimx')
+X0 = as.numeric(X$X[iMatchBoxSU5[1],iFactorSensitive])
+objFct0 = objectiveFct(X0,as.numeric(X$X[iMatchBoxSU5[1],]),ofsim,ref)
+factorOptim = optimx(
+    X0,
+    fn=objectiveFct,
+    lower=lower[iFactorSensitive],
+    upper=upper[iFactorSensitive],
+    method='nmkb',
+    factorOther=as.numeric(X$X[iMatchBoxSU5[1],]),ofsim=ofsim,ref=ref
+)
+# replace method='nmkb' by a vector of methods or by the argument control=list(all.methods=TRUE) to compare several methods
+summary(factorOptim)
+```
+
+* The Nelder-Mead algorithm reduces the objective function from 0.0027 to 0.0001 and adjust the 3 sensitive factors.
+
+```R
+> X0
+[1] 9.435129e-03 3.835945e-01 8.358475e-07
+> objFct0
+[1] 0.002655506
+> summary(factorOptim)
+              p1        p2           p3        value fevals gevals niter
+nmkb 0.006786553 0.5585314 1.416184e-06 0.0001007124    103     NA    NA
+     convcode  kkt1  kkt2 xtime
+nmkb        0 FALSE FALSE 8.246
+> 
+
+```
 
