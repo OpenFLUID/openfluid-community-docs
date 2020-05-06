@@ -28,7 +28,7 @@ _in the previous command, replace x.x.x-x with the correct version number (e.g. 
 
 ## Examples
 
-_(The following commands are illustrated with the example "Primitives" delivred with OpenFLUID)_
+_(The following commands are illustrated with the example "Primitives" delivered with OpenFLUID)_
 
 
 * Running a project as a black box. This command allows a low interaction level between R and OpenFLUID environnement, the pre- and post-processing of a simulation are performed without the ROpenFLUID package commands.
@@ -50,14 +50,14 @@ plot(var1A8$datetime,var1A8$var1,type="l")
 ```
 
 
-* Opening an input dataset, modifying simulation default time step and running the simulation
+* Modifying simulation default time step and running the simulation
 ```R
 OpenFLUID.setDefaultDeltaT(ofsim,1800)
 OpenFLUID.runSimulation(ofsim)
 ```
 
 
-* Opening an input dataset, modifying parameter "gmult" of the simulator "examples.primitives.unitsA.up" and running the simulation
+* Modifying parameter "gmult" of the simulator "examples.primitives.unitsA.up" and running the simulation
 ```R
 gmult = as.numeric(OpenFLUID.getSimulatorParam(ofsim,"examples.primitives.unitsA.up","gmult"))  # warning: the return type of this command is "character"
 OpenFLUID.setSimulatorParam(ofsim,"examples.primitives.unitsA.up","gmult",0.5*gmult)
@@ -65,7 +65,7 @@ OpenFLUID.runSimulation(ofsim)
 ```
 
 
-* Opening an input dataset, modifying attribute "inivar1" of the unit "8" of class "unitsA" and running the simulation
+* Modifying attribute "inivar1" of the unit "8" of class "unitsA" and running the simulation
 ```R
 inivar1 = as.numeric(OpenFLUID.getAttribute(ofsim,"unitsA",8,"inivar1"))  # warning: the return type of this command  is "character"
 OpenFLUID.setAttribute(ofsim,"unitsA",8,"inivar1",inivar1+1)
