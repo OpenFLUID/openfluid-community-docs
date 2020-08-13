@@ -82,13 +82,14 @@ ROpenFLUID:
 * [ ] Upload Docker image on DockerHub
 * [ ] Update brew cask configuration on Github
 * [ ] Upload "highlights on version" video on YouTube (if any)
-* [ ] Upload documentations
+* [ ] Upload documentations (built sith analytics)
 
 
 ### Web site
 
 * [ ] Release notes are up to date and added to the release page
 * [ ] Date is set in the release notes
+* [ ] Highlights video is added to the materials page (if any, with rotation of older videos if needed)
 * [ ] Fair use charter is up to date
 * [ ] Blog article for release annoucement is written
 
@@ -114,3 +115,4 @@ ROpenFLUID:
 * [ ] Close the related milestone in the OpenFLUID Roadmap (if the release is a final release for the version milestone)
 * [ ] Update master branch to develop branch and push it on GitHub
 * [ ] Push tags on GitHub (if not already done)
+* [ ] Push to secondary repositories

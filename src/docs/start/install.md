@@ -137,7 +137,7 @@ Thanks to Jonathan for these detailed instructions.
 
 !!! warning
     Since OpenFLUID 2.1.5, the macOS installation relies on the [Brew packaging tool](https://brew.sh/).  
-    It is still an preview release, and has only been tested on macOS 10.13 _High Sierra_ and 10.14 _Mojave_
+    It is still an unstable packaging, and is available only for macOS 10.14 _Mojave_ and 10.15 _Catalina_
 
 
 Install Brew (_Task to perform only once, see also [https://brew.sh/](https://brew.sh/)_)
@@ -150,9 +150,9 @@ Add OpenFLUID tap for Brew _(Task to perform only once)_
 brew tap OpenFLUID/openfluid
 ```
 
-Install OpenFLUID using Brew
+Install OpenFLUID using Brew (with `--no-quarantine` option to avoid Gatekeeper restrictions in recent MacOS versions)
 ```sh
-brew cask install openfluid
+brew cask install --no-quarantine openfluid
 ```
 
 
