@@ -35,7 +35,7 @@ BibTex entry:
 
 * Gumiere, S. and Delattre, L. and Le Bissonnais, Y. and Cheviron, B. and Ben Slimane, A. and Raclot, D., 2014. &nbsp;&nbsp;**<a href="http://id.erudit.org/iderudit/1021980ar" target=_blank>Multi-scale Calibration and Validation of MHYDAS-Erosion for A Small Mediterranean Vineyard Catchment: A Case Study</a>**. _Journal of Water Science_, 27, 21--36.
 
-* Hajji, O. and Abidi, S. and Hermassi, T. and Mohamed, R. M. and Habaieb, H., 2014. &nbsp;&nbsp;**<a href="http://journalissues.org/abstract/hajji/" target=_blank>Influence of spatio-temporal variability of soil surface states on the watershed hydrology behavior: A case study of El Hnach watershed in the semi-arid zone of Tunisia</a>**. _International Research Journal of Public and Environmental Health_, 1.
+* Hajji, O. and Abidi, S. and Hermassi, T. and Mohamed, R. M. and Habaieb, H., 2014. &nbsp;&nbsp;**<a href="https://journalissues.org/irjpeh/abstract/hajji/" target=_blank>Influence of spatio-temporal variability of soil surface states on the watershed hydrology behavior: A case study of El Hnach watershed in the semi-arid zone of Tunisia</a>**. _International Research Journal of Public and Environmental Health_, 1.
 
 * Levavasseur, F. and Bailly, J.S. and Lagacherie, P. and Colin, F. and Rabotin, M., 2012. &nbsp;&nbsp;**<a href="http://dx.doi.org/10.1002/hyp.8422" target=_blank>Simulating the effects of spatial configurations of agricultural ditch drainage networks on surface runoff from agricultural catchments</a>**. _Hydrological Processes_, .
 
@@ -45,7 +45,7 @@ BibTex entry:
 
 * Cheviron, B. and Gumiere, S. and Le Bissonnais, Y. and Moussa, R. and Raclot, D., 2010. **Sensitivity analysis of distributed erosion models: Framework**. _Water Resources Research_, 46.
 
-* Lagacherie, P. and Rabotin, M. and Colin, F. and Moussa, R. and Voltz, M., 2010. &nbsp;&nbsp;**<a href="http://www.sciencedirect.com/science/article/B6V7D-4YWYYWC-1/2/a7d5b1d93f24af23b63dd66964eb059c" target=_blank>Geo-MHYDAS: A landscape discretization tool for distributed hydrological
+* Lagacherie, P. and Rabotin, M. and Colin, F. and Moussa, R. and Voltz, M., 2010. &nbsp;&nbsp;**<a href="https://doi.org/10.1016/j.cageo.2009.12.005" target=_blank>Geo-MHYDAS: A landscape discretization tool for distributed hydrological
 modeling of cultivated areas</a>**. _Computers & Geosciences_, 36, 1021 - 1032.
 
 
@@ -103,9 +103,9 @@ des transferts de pesticides en milieu viticole méditerranéen**. _40ème congr
 
 * Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M. and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Water2010_Quebec_05.pdf" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes - Applications on distributed hydrological modelling of farmed catchments</a>**. _Water2010 conference_, Quebec, Canada.
 
-* Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M. and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="http://www.umr-lisah.fr/rtra-projects/LANDMOD2010-proceedings/articles/632-article.htm" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes</a>**. _LANDMOD2010_, Montpellier, France.
+* Fabre, J.C. and Louchart, X. and Moussa, R. and Dagès, C. and Colin, F. and Rabotin, M. and Raclot, D. and Lagacherie, P. and Voltz M., 2010. &nbsp;&nbsp;**<a href="http://greenlab.cirad.fr/LandMod2010/exl-php/articles/632-article.htm" target=_blank>OpenFLUID: a software environment for modelling fluxes in landscapes</a>**. _LANDMOD2010_, Montpellier, France.
 
-* Moussa, R and Colin, F and Dagès, C and Fabre, JC and Lagacherie, P and Louchart, X and Rabotin, M and Raclot, D and Voltz, M, 2010. &nbsp;&nbsp;**<a href="http://www.umr-lisah.fr/rtra-projects/LANDMOD2010-proceedings/articles/637-article.htm" target=_blank>Distributed hydrological modelling of farmed catchments (MHYDAS): assessing the impact of man-made structures on hydrological processes</a>**. _LANDMOD2010_, Montpellier, France.
+* Moussa, R and Colin, F and Dagès, C and Fabre, JC and Lagacherie, P and Louchart, X and Rabotin, M and Raclot, D and Voltz, M, 2010. &nbsp;&nbsp;**<a href="http://greenlab.cirad.fr/LandMod2010/exl-php/articles/637-article.htm" target=_blank>Distributed hydrological modelling of farmed catchments (MHYDAS): assessing the impact of man-made structures on hydrological processes</a>**. _LANDMOD2010_, Montpellier, France.
 
 * Rabotin, M. and Floure, C., 2009. **Moving landscape discretization GIS toolbox to open source**. _International Opensource Geospatial Research Symposium 2009_, Paris.
 

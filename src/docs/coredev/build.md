@@ -202,7 +202,7 @@ cmake -P ofpack-osx-brewcask.cmake
 
 **Doxygen**
 
-* Download the [Doxygen](http://www.stack.nl/~dimitri/doxygen/) installer, and install Doxygen
+* Download the [Doxygen](https://www.doxygen.nl/) installer, and install Doxygen
 
 
 #### Support libraries

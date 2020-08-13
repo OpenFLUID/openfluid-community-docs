@@ -125,11 +125,6 @@ sudo dpkg -i </path/to/openfluid/debfile>
 openfluid --version
 ```
 
-#### Debian
-
-Jonathan Vanhouteghem has written an [article on his blog](http://vanhouteghem-jonathan.fr/2014/05/installation-prise-en-main-du-logiciel-openfluid-umr-lisah-sur-debian/) (in english and french) about installation of OpenFLUID from source on a Debian 7 distribution.<br/>
-Thanks to Jonathan for these detailed instructions.
-
 
 ## MacOS
 

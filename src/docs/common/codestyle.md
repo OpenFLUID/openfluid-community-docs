@@ -374,7 +374,7 @@ std::string Vehicle::getColor()
 
 ### Comments for API documentation
 
-The API documentation should be written following the [Doxygen](http://www.stack.nl/~dimitri/doxygen/) formalism and commands
+The API documentation should be written following the [Doxygen](https://www.doxygen.nl/) formalism and commands
 
 * The comment block should begin by `/*` and end by `*/`
 * The lines in the comment block should not be left prefixed by a `*`
