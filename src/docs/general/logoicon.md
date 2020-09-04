@@ -8,7 +8,7 @@
     <td style='background-color : transparent; padding : 25px;'>
       <img src='https://www.openfluid-project.org/resources/graphics/openfluid_official.svg' width='384'>
     </td>
-    <td>
+    <td style='vertical-align : middle; padding : 25px;'>
       <a href="https://www.openfluid-project.org/resources/graphics/openfluid_official.svg">Download as SVG</a><br/>
       <br/>
       <a href="https://www.openfluid-project.org/resources/graphics/openfluid_official_800.png">Download as PNG (800px width)</a><br/>
@@ -25,7 +25,7 @@
      <td style='background-color : transparent; padding : 25px;'>
        <img src='https://www.openfluid-project.org/resources/graphics/openfluid_icon.svg' width='128'>
     </td>
-    <td>
+    <td style='vertical-align : middle; padding : 25px;'>
       <a href="https://www.openfluid-project.org/resources/graphics/openfluid_icon.svg">Download as SVG</a><br/>
       <br/>
       <a href="https://www.openfluid-project.org/resources/graphics/openfluid_icon_64.png">Download as PNG (64px width)</a><br/>      
@@ -58,8 +58,7 @@
     <td style='background-color : transparent; padding : 25px;'>
       Arrow orange<br/>
       <br/>
-      <!--<div class='colorsample' style='background-color : #ffc85f;'>#ffc85f</div>-->
-      <div class='colorsample' style='background-color : #F1A631;'>#F1A631</div>
+      <div class='colorsample' style='background-color : #F1a631;'>#F1a631</div>
     </td>
   </tr>
 </table>
@@ -72,7 +71,7 @@
     <td style='background-color : transparent; padding : 25px;'>
       <img src='../OpenSans.png' width='500'>
     </td>
-    <td>
+    <td style='vertical-align : middle; padding : 25px;'>
       <a href='https://www.openfluid-project.org/resources/graphics/OpenSans.zip'>Download Open Sans font (TTF format)</a>
     </td>
   </tr>
