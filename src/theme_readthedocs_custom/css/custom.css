@@ -83,9 +83,14 @@ a.ofweb:active {
   font-size: 85%;
 }
 
-.wy-menu-vertical span {
+.wy-menu-vertical p.caption {
+  margin-top : 25px;
+}
+
+.wy-menu-vertical p.caption span.caption-text {
   font-weight: bold;
-  font-size: 105%;
+  font-size: 120%;
+  color : #86ae39;
 }
 
 .wy-menu-vertical a,
