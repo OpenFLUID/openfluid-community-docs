@@ -17,7 +17,7 @@ _Since OpenFLUID 2.1.5, OpenFLUID for Linux systems also relies on Qt5_
 
 1) Install required libraries and development tools  :
 ```sh
-sudo apt-get install g++ cmake debhelper pkg-config doxygen \
+sudo apt-get install build-essential g++ cmake git debhelper pkg-config doxygen \
                      libboost-all-dev libgdal-dev libgeos++-dev \
                      qt5-default qtbase5-dev-tools qttools5-dev-tools libqt5svg5-dev \
                      gnuplot p7zip-full graphviz
