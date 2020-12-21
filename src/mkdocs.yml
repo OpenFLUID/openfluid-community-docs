@@ -20,8 +20,6 @@ extra:
   twitter_account: "@OpenFLUID"
   image_og : "ofcommunity_og.png"
 
-google_analytics: ['UA-10058595-1', 'openfluid-project.org']
-
 copyright: 'Copyright INRA-Montpellier SupAgro - <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>'
 site_favicon: img/favicon.png
 

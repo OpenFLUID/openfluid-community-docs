@@ -9,7 +9,6 @@
 * [ ] Version number is correct in CMake.in.cmake
 * [ ] CHANGELOG file is up-to-date
 * [ ] Version number is correct in user manual
-* [ ] All documentation can be built with web analytics enabled (user manual, API guide, ...)
 * [ ] All translatable strings are translated in french
 * [ ] All examples can be built
 
@@ -82,7 +81,6 @@ ROpenFLUID:
 * [ ] Upload Docker image on DockerHub
 * [ ] Update brew cask configuration on Github
 * [ ] Upload "highlights on version" video on YouTube (if any)
-* [ ] Upload documentations (built sith analytics)
 
 
 ### Web site
