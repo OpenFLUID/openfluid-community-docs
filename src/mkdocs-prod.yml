@@ -1,3 +1,5 @@
+# Install required Python 3 packages using pip3
+# pip3 install mkdocs mkdocs-markdownextradata-plugin pymdown-extensions markdown-include mkdocs-material bibtexparser
 
 site_name: OpenFLUID community
 theme:
@@ -25,7 +27,8 @@ site_favicon: img/favicon.png
 
 markdown_extensions:
   - admonition
-  - pymdownx.tasklist
+  - pymdownx.tasklist:
+      clickable_checkbox: True
   - toc:
       permalink: True
   - markdown_include.include:
