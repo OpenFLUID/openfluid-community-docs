@@ -11,7 +11,10 @@ As the OpenFLUID community documentation is adressed to the users, we ❤️ the
 * If not already done, have a look at [MkDocs](http://www.mkdocs.org) documentation tool and [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) syntax. The OpenFLUID community documentation is based on this tool and language
 * If not already done, install required tools :
   1. Python 3 ([see instruction here](https://www.python.org/downloads/))
-  1. MkDocs and extensions `pip3 install mkdocs mkdocs-markdownextradata-plugin`
+  1. MkDocs and extensions 
+     ```sh
+     pip3 install mkdocs mkdocs-markdownextradata-plugin pymdown-extensions markdown-include mkdocs-material bibtexparser
+     ```
 
 ## Contribution process
 
