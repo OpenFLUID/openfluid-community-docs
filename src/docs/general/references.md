@@ -27,6 +27,8 @@ BibTex entry:
 
 ### Articles
 
+* Haorui Chen and Wenzhi Zeng and Yinlong Jin and Yuanyuan Zha and Boyu Mi and Shaohui Zhang, 2020. &nbsp;&nbsp;**<a href="https://www.sciencedirect.com/science/article/pii/S002216942030785X" target=_blank>Development of a waterlogging analysis system for paddy fields in irrigation districts</a>**. _Journal of Hydrology_, 591, 125325.
+
 * Biarnes, A. and Andrieux, P. and Barbier, J-M. and Bonnefoy, A. and Compagnone, C. and Delpuech, X. and Gary, C. and Metay, A. and Rellier, J-P. and Voltz, M., 2017. &nbsp;&nbsp;**<a href="http://dx.doi.org/10.15454/1.5137823967929834E12" target=_blank>Evaluer par modélisation des stratégies de réduction des usages d'herbicides dans les bassins versants viticoles</a>**. _Innovations Agronomiques_, 57, 141-152.
 
 * Hould-Gosselin, G., and Rousseau, A. N. and Gumiere, Silvio J. and Hallema, Dennis W. and Ratté-Fortin, Claudie and Thériault, Georges and van Bochove, Eric, 2016. &nbsp;&nbsp;**<a href="http://dx.doi.org/10.1002/hyp.10817" target=_blank>Modeling the sediment yield and the impact of vegetated filters using an event-based soil erosion model—a case study of a small Canadian watershed</a>**. _Hydrological Processes_, 30, 2835--2850.
@@ -124,7 +126,7 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 
 * Campan, P., (in progress, expected 2021). **Evaluation des risques de contamination des eaux par les pesticides à l’échelle parcellaire en situation agropédoclimatique tropicale**. _Montpellier SupAgro_.
 
-* Lebon, N., (in progress, expected 2020). **Modélisation agro-hydrologique des retenues collinaires dans un paysage agricole**. _Montpellier SupAgro_.
+* Lebon, N., (in progress, expected 2021). **Modélisation agro-hydrologique des retenues collinaires dans un paysage agricole**. _Montpellier SupAgro_.
 
 * Dollinger, J., 2016. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Dollinger_J_These.pdf" target=_blank>Analyse et modélisation des transferts et de la rétention de pesticides dans les fossés agricoles infiltrants en lien avec les stratégies d’entretien</a>**. _Montpellier SupAgro_.
 
@@ -142,6 +144,8 @@ hydrique des sols à l'échelle des petits bassins versants cultivés**. _SupAgr
 
 
 ### Master's Thesis
+
+* Doré, C., 2020. **Évaluation des risques de contamination des eaux de surface par la dérive dans les fossés par une approche de modélisation**. _Université de Lyon, Mines Saint-Etienne, ENTPE, INSA Lyon_.
 
 * Giffone, V., 2019. **Modélisation de l’évolution des états de surface du sol en viticulture**. _AgroParisTech, Université de Montpellier, Montpellier SupAgro_.
 
