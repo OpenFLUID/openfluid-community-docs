@@ -22,10 +22,7 @@ BibTex entry:
 }
 ```
 
-
-## Publications
-
-### Articles
+## Articles
 
 * Haorui Chen and Wenzhi Zeng and Yinlong Jin and Yuanyuan Zha and Boyu Mi and Shaohui Zhang, 2020. &nbsp;&nbsp;**<a href="https://www.sciencedirect.com/science/article/pii/S002216942030785X" target=_blank>Development of a waterlogging analysis system for paddy fields in irrigation districts</a>**. _Journal of Hydrology_, 591, 125325.
 
@@ -51,7 +48,7 @@ BibTex entry:
 modeling of cultivated areas</a>**. _Computers & Geosciences_, 36, 1021 - 1032.
 
 
-### Communications
+## Communications
 
 * Dagès, C. and Bailly, J.S. and Dollinger, J. and Lagacherie, P. and Voltz, M., 2019. &nbsp;&nbsp;**<a href="http://www.gfpesticides.org/bdd_fichiers/410e8a6be8a909d115d92bde534259d2d196c42c13e.pdf" target=_blank>L’entretien  des  fossés  comme  levier  pour  limiter  la  contamination  des eaux par les pesticides</a>**. _49ème congrès du Groupe Français des PEsticides_, Montpellier, France.
 
@@ -118,7 +115,11 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 * Fabre, J.C. and Louchart, X., 2008. **OpenFLUID: a software environment for modelling FLUxes In Landscapes - Application with the MHYDAS model for simulating hydrologicalpollutant and erosive processes**. _13th IWRA World Water Congress_, Montpellier, France.
 
 
-### PhD Thesis
+## PhD Thesis
+
+* Metayer, G., (in progress, expected 2023). **Simulation par approche mixte mécaniste-statistique du devenir des pesticides dans l'environnement pour le diagnostic de la contamination des sols et des eaux**. _L'institut Agro. / Montpellier SupAgro_.
+
+* Orieschnig, C. , (in progress, expected 2021). **Understanding the Hydrological Dynamics of Delta Areas – The Perspective of Integrated Natural Resource Management**. _AgroParisTech_.
 
 * Naulleau, A., (in progress, expected 2021). **Co-construction et évaluation de scénarios de gestion technique des paysages viticoles adaptés au changement climatique**. _Montpellier SupAgro_.
 
@@ -130,7 +131,7 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 
 * Dollinger, J., 2016. &nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/Dollinger_J_These.pdf" target=_blank>Analyse et modélisation des transferts et de la rétention de pesticides dans les fossés agricoles infiltrants en lien avec les stratégies d’entretien</a>**. _Montpellier SupAgro_.
 
-* Inoubli, N., 2016. **Ruissellement et érosion hydrique en milieu méditerranéen vertique : approche expérimentale et modélisation**. _Montpellier SupAgro, INAT (Tunisie)_.
+* Inoubli, N., 2016. **Ruissellement et érosion hydrique en milieu méditerranéen vertique : approche expérimentale et modélisation**. _Montpellier SupAgro, INAT (Tunisia)_.
 
 * Pak, L.T., 2013. **Modélisation hydrologique distribuée des écoulements surface-souterrain à l’échelle d’un bassin versant bananier en milieu tropical volcanique (Guadeloupe, France)**. _Université Montpellier 2_.
 
@@ -143,7 +144,7 @@ aux réseaux de fossés en zone viticole méditerranéenne**. _Montpellier SupAg
 hydrique des sols à l'échelle des petits bassins versants cultivés**. _SupAgro Montpellier_.
 
 
-### Master's Thesis
+## Master's Thesis
 
 * Doré, C., 2020. **Évaluation des risques de contamination des eaux de surface par la dérive dans les fossés par une approche de modélisation**. _Université de Lyon, Mines Saint-Etienne, ENTPE, INSA Lyon_.
 
@@ -190,7 +191,7 @@ au projet LIFE Aware**. _Centre d'Hydrogéologie de Neuchâtel, Université de N
 * Tarrou, E., 2007. **OpenFLUID-Builder : Création d'une interface graphique pour la plateforme de modélisation OpenFLUID**. _Université Montpellier 2_.
 
 
-### Reports
+## Reports
 
 * Agropolis international, 2019 &nbsp;&nbsp;**<a href="http://www.agropolis.org/pdf/publications/complex-systems-thematic-file-agropolis-international.pdf" target=_blank>Complex systems, from biology to landscapes</a>**. _Les dossiers d'Agropolis international_.
 

@@ -19,30 +19,27 @@ BibTex entry:
 {{ CitingBib }}
 ```
 
-
-## Publications
-
-### Articles
+## Articles
 {% for item in Refsarticle %}
 * {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.journal }}_, {{ item.volume }}{% if item.pages %}, {{ item.pages }}{% endif %}.
 {% endfor %}
 
-### Communications
+## Communications
 {% for item in  Refsinproceedings %}
 * {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.booktitle }}_, {{ item.address }}.
 {% endfor %}
 
-### PhD Thesis
+## PhD Thesis
 {% for item in Refsphdthesis %}
 * {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.school }}_.
 {% endfor %}
 
-### Master's Thesis
+## Master's Thesis
 {% for item in Refsmastersthesis %}
 * {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.school }}_.
 {% endfor %}
 
-### Reports
+## Reports
 {% for item in Refstechreport %}
 * {{ item.author }}, {{ item.year }} {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.institution }}_.
 {% endfor %}
