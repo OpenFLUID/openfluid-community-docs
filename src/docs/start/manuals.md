@@ -1,143 +1,81 @@
+{% set currentver = "2.1.10" %}
 
-<table class="manuals">
-<thead>
-<tr>
-<th></th>
-<th><p>HTML</p></th>
-<th><p>PDF</p></th>
-</tr>
-</thead>
-<tbody>
-{% for version in ["2.1.10","2.1.9","2.1.8","2.1.7","2.1.6","2.1.5","2.1.4","2.1.3","2.1.2","2.1.1","2.1.0",
+## Latest version - {{ currentver }}
+<div class="docs-main">
+  <div class="doc-format">
+    <h3>OpenFLUID manual for users<br/>and simulators developers</h3>
+    <br/>
+     <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/main/html/index.html" target="_blank">
+      <img src="../html.svg" width="75px" />
+     </a>
+     <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/main/openfluid_manual_{{ currentver }}.pdf" target="_blank">
+       <img src="../pdf.svg" width="75px" />
+    </a>
+  </div>
+  <div class="doc-format">
+    <h3>ROpenFLUID package<br/>reference manual</h3>
+    <br/>
+    <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/main/html/index.html" target="_blank">
+      <img src="../html.svg" width="75px" />
+    </a>
+    <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/ROpenFLUID/ROpenFLUID-manual.pdf" target="_blank">
+      <img src="../pdf.svg" width="75px" />
+    </a>
+  </div>
+</div>
+
+
+
+## Previous versions
+
+{% for version in ["2.1.9","2.1.8","2.1.7","2.1.6","2.1.5","2.1.4","2.1.3","2.1.2","2.1.1","2.1.0",
                    "2.0.2","2.0.1","2.0.0",] %}
-<tr>
-  <td><p><b>{% if loop.index == 1 %}<u>{% endif %}v{{ version }}{% if loop.index == 1 %}</u>{% endif %}</b></p></td>
-  <td>
-    <ul>
-      <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/main/html/index.html">OpenFLUID manual for users and simulators developers</a></li>
-      <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-    </ul>
-  </td>
-  <td>
-    <ul>
-      <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/main/openfluid_manual_{{ version }}.pdf">OpenFLUID manual for users and simulators developers</a></li>
-      <li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-    </ul>
-  </td>
-</tr>
+### {{ version }}
+
+* OpenFLUID manual for users and simulators developers : <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/main/html/index.html" target="_blank">HTML</a> - 
+  <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/main/openfluid_manual_{{ version }}.pdf" target="_blank">PDF</a>
+* ROpenFLUID package reference manual : <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/ROpenFLUID/html/index.html" target="_blank">HTML</a> -
+  <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/ROpenFLUID/ROpenFLUID-manual.pdf" target="_blank">PDF</a>
 {% endfor %}
 
-<tr>
-<td><p><b>v1.7.2</b></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.2/quickuser/html/index.html">Quick user manual</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.2/api/index.html">Guide for developing simulation functions, with API reference</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.2/ROpenFLUID/html/index.html">ROpenFLUID package reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.2/quickuser/openfluid_quickuser_en.pdf">Quick user manual</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.2/ROpenFLUID/ROpenFLUID-manual.pdf">ROpenFLUID package reference</a></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><B>v1.7.1</B></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.1/quickuser/html/index.html">Quick user manual</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.1/api/index.html">Guide for developing simulation functions, with API reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.1/quickuser/openfluid_quickuser_en.pdf">Quick user manual</a></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><B>v1.7.0</B></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.0/quickuser/html/index.html">Quick user manual</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.0/sdk/index.html">Guide for developing simulation functions, with API reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.7.0/quickuser/openfluid_quickuser_en.pdf">Quick user manual</a></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><B>v1.6.2</B></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.2/quickuser/html/index.html">Quick user manual</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.2/sdk/index.html">Guide for developing simulation functions, with API reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.2/quickuser/openfluid_quickuser_en.pdf">Quick user manual</a></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p><B>v1.6.1</B></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.1/quickuser/html/index.html">Quick user manual</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.1/sdk/index.html">Guide for developing simulation functions, with API reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.1/quickuser/openfluid_quickuser_en.pdf">Quick user manual</a></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><B>v1.6.0</B></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.0/quickuser/html/index.html">Quick user manual</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.0/sdk/index.html">Guide for developing simulation functions, with API reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/1.6.0/quickuser/openfluid_quickuser_en.pdf">Quick user manual</a></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p><B>v1.5.0</B></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.5.0/quickref/html/index.html">Quick reference manual</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.5.0/sdk/index.html">Guide for developing simulation functions, with API reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.5.0/quickref/openfluid-engine_quickref_en.pdf">Quick reference manual</a></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><B>v1.4.2</B></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.2/quickref/html/index.html">Quick reference manual</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.2/sdk/index.html">Guide for developing simulation functions, with API reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.2/quickref/openfluid-engine_quickref_en.pdf">Quick reference manual</a></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><B>v1.4.1</B></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.1/quickref/html/index.html">Quick reference manual</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.1/sdk/index.html">Guide for developing simulation functions, with API reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.1/quickref/openfluid-engine_quickref_en.pdf">Quick reference manual</a></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><B>v1.4.0</B></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.0/quickref/html/index.html">Quick reference manual</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.0/sdk/index.html">Guide for developing simulation functions, with API reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.4.0/quickref/openfluid-engine_quickref_en.pdf">Quick reference manual</a></li>
-</ul></td>
-</tr>
-<tr>
-<td><p><B>v1.3.x</B></p></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/fr/engine/1.3/user/index.html">User manual (in french)</a></li>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/1.3/sdk/index.html">Guide for developing simulation functions, with API reference</a></li>
-</ul></td>
-<td><ul>
-<li><a href="http://www.openfluid-project.org/resources/docs/manuals/fr/engine/1.3/OpenFLUID-Engine_User.pdf">User manual (in french)</a></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+{% for version in ["1.7.2",] %}
+### {{ version }}
+
+* Quick user manual : <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/quickuser/html/index.html" target="_blank">HTML</a> - 
+  <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/quickuser/openfluid_quickuser_en.pdf" target="_blank">PDF</a>
+* Guide for developing simulation functions, with API reference : <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/api/index.html" target="_blank">HTML</a>
+* ROpenFLUID package reference <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/ROpenFLUID/html/index.html" target="_blank">HTML</a> - 
+  <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/ROpenFLUID/ROpenFLUID-manual.pdf" target="_blank">PDF</a>
+
+{% endfor %}
+
+{% for version in ["1.7.1",] %}
+### {{ version }}
+
+* Quick user manual : <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/quickuser/html/index.html" target="_blank">HTML</a> - 
+  <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/quickuser/openfluid_quickuser_en.pdf" target="_blank">PDF</a>
+* Guide for developing simulation functions, with API reference : <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/api/index.html" target="_blank">HTML</a>
+{% endfor %}
+
+{% for version in ["1.7.0","1.6.2","1.6.1","1.6.0",] %}
+### {{ version }}
+
+* Quick user manual : <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/quickuser/html/index.html" target="_blank">HTML</a> - 
+  <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/quickuser/openfluid_quickuser_en.pdf" target="_blank">PDF</a>
+* Guide for developing simulation functions, with API reference : <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ version }}/sdk/index.html" target="_blank">HTML</a>
+{% endfor %}
+
+{% for version in ["1.5.0","1.4.2","1.4.1","1.4.0",] %}
+### {{ version }}
+
+* Quick reference manual : <a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/{{ version }}/quickref/html/index.html" target="_blank">HTML</a> - 
+  <a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/{{ version }}/quickref/openfluid-engine_quickref_en.pdf" target="_blank">PDF</a>
+* Guide for developing simulation functions, with API reference : <a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/{{ version }}/sdk/index.html" target="_blank">HTML </a>
+{% endfor %}
+
+{% for version in ["1.3",] %}
+### {{ version }}.x
+* User manual 🇫🇷 : <a href="http://www.openfluid-project.org/resources/docs/manuals/fr/engine/{{ version }}/user/index.html" target="_blank">HTML</a> - 
+  <a href="http://www.openfluid-project.org/resources/docs/manuals/fr/engine/{{ version }}/OpenFLUID-Engine_User.pdf" target="_blank">PDF</a>
+* Guide for developing simulation functions, with API reference : <a href="http://www.openfluid-project.org/resources/docs/manuals/en/engine/{{ version }}/sdk/index.html" target="_blank">HTML</a>
+{% endfor %}

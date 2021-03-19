@@ -171,10 +171,33 @@ iframe.ytvideo {
   border : 1px solid grey;
 }
 
-table.manuals thead th {
-  text-align: center;
-} 
+.docs-main {
+  display: flex;
+  /*width: 100%;*/
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+}
 
-table.manuals tbody tr {
-  background-color: none;
+.doc-format {
+  flex: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 25px;
+  margin-left: 45px;
+  margin-right: 45px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  font-size: 110%;
+  font-weight: bold;
+  background-color: #f7f7f7 ;
+}
+
+.doc-format a {
+  margin: 20px;
+}
+
+.doc-format h3 {
+  margin-top: 0px;
 }
