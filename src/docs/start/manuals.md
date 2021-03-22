@@ -2,25 +2,17 @@
 
 ## Latest version - {{ currentver }}
 <div class="docs-main">
-  <div class="doc-format">
-    <h3>OpenFLUID manual for users<br/>and simulators developers</h3>
+  <div class="docs-item">
+    <h4>OpenFLUID manual for users<br/>and simulators developers</h4>
     <br/>
-     <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/main/html/index.html" target="_blank">
-      <img src="../html.svg" width="75px" />
-     </a>
-     <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/main/openfluid_manual_{{ currentver }}.pdf" target="_blank">
-       <img src="../pdf.svg" width="75px" />
-    </a>
+     <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/main/html/index.html" target="_blank"><img src="../html.svg"></a>
+     <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/main/openfluid_manual_{{ currentver }}.pdf" target="_blank"><img src="../pdf.svg"></a>
   </div>
-  <div class="doc-format">
-    <h3>ROpenFLUID package<br/>reference manual</h3>
+  <div class="docs-item">
+    <h4>ROpenFLUID package<br/>reference manual</h4>
     <br/>
-    <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/main/html/index.html" target="_blank">
-      <img src="../html.svg" width="75px" />
-    </a>
-    <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/ROpenFLUID/ROpenFLUID-manual.pdf" target="_blank">
-      <img src="../pdf.svg" width="75px" />
-    </a>
+    <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/main/html/index.html" target="_blank"><img src="../html.svg"></a>
+    <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/ROpenFLUID/ROpenFLUID-manual.pdf" target="_blank"><img src="../pdf.svg"></a>
   </div>
 </div>
 
