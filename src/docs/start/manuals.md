@@ -11,7 +11,7 @@
   <div class="docs-item">
     <h4>ROpenFLUID package<br/>reference manual</h4>
     <br/>
-    <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/main/html/index.html" target="_blank"><img src="../html.svg"></a>
+    <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/ROpenFLUID/html/index.html" target="_blank"><img src="../html.svg"></a>
     <a href="http://www.openfluid-project.org/resources/docs/manuals/en/openfluid/{{ currentver }}/ROpenFLUID/ROpenFLUID-manual.pdf" target="_blank"><img src="../pdf.svg"></a>
   </div>
 </div>
@@ -20,7 +20,7 @@
 
 ## Previous versions
 
-{% for version in ["2.1.9","2.1.8","2.1.7","2.1.6","2.1.5","2.1.4","2.1.3","2.1.2","2.1.1","2.1.0",
+{% for version in ["2.1.9","2.1.9","2.1.8","2.1.7","2.1.6","2.1.5","2.1.4","2.1.3","2.1.2","2.1.1","2.1.0",
                    "2.0.2","2.0.1","2.0.0",] %}
 ### {{ version }}
 
