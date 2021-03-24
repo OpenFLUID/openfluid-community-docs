@@ -87,7 +87,6 @@ ROpenFLUID:
 
 * [ ] Release notes are up to date and added to the release page
 * [ ] Date is set in the release notes
-* [ ] Highlights video is added to the materials page (if any, with rotation of older videos if needed)
 * [ ] Fair use charter is up to date
 * [ ] Blog article for release annoucement is written
 
@@ -97,6 +96,7 @@ ROpenFLUID:
 * [ ] Documentation page is up to date with latest available documents
 * [ ] "Upgrading to a new version" page is up to date with correct instructions
 * [ ] Fair use charter PDFs and links are up to date
+* [ ] Highlights video is added to the materials page (if any, with rotation of older videos if needed)
 
 
 ## Deployment
