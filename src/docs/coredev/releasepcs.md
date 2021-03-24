@@ -4,7 +4,6 @@
 ### OpenFLUID framework and applications, and related documentation
 
 * [ ] All modifications are commited
-* [ ] Git tagging is done (for final and rc versions)
 * [ ] All tests passes in Debug build mode
 * [ ] Version number is correct in CMake.in.cmake
 * [ ] CHANGELOG file is up-to-date
@@ -17,7 +16,6 @@
 ROpenFLUID:
 
 * [ ] Version number is correct
-* [ ] Git tagging is done (for final and rc versions)
 * [ ] The package is checked and builds correctly
 * [ ] Man pages are up-to-date
 
@@ -79,6 +77,7 @@ ROpenFLUID:
 * [ ] Upload models packages (if any)
 * [ ] Update containers configurations on GitHub
 * [ ] Upload Docker image on DockerHub
+* [ ] Update README on DockerHub
 * [ ] Update brew cask configuration on Github
 * [ ] Upload "highlights on version" video on YouTube (if any)
 
@@ -106,11 +105,19 @@ ROpenFLUID:
 * [ ] Deploy prepared web site
 * [ ] Add announcements on OpenFLUID mailing-list
 * [ ] Add announcements on Twitter
+* [ ] Add announcements on Slack workspaces
 
 
 ## Internal maintenance
 
-* [ ] Close the related milestone in the OpenFLUID Roadmap (if the release is a final release for the version milestone)
+* Create and check version tagging with correct `vM.m.p` pattern : 
+    * [ ] openfluid
+    * [ ] ropenfluid
+    * [ ] homebrew-openfluid
 * [ ] Update master branch to develop branch and push it on GitHub
 * [ ] Push tags on GitHub (if not already done)
-* [ ] Push to secondary repositories
+* Create releases on GitHub
+    * [ ] openfluid
+    * [ ] ropenfluid
+* [ ] Push to secondary repositories, including tags
+* [ ] Close the related milestone in the OpenFLUID Roadmap (if the release is a final release for the version milestone)
