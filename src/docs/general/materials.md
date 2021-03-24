@@ -35,6 +35,10 @@ _(presented at a workshop of the PAYOTE scientific network )_
 
 ### Highlights on features
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4sVMEOkYWGw" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Highlights for version 2.1.11*  
+<br/>
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MyxfQaTy07M" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Highlights for version 2.1.10*  
 <br/>
 
@@ -42,10 +46,6 @@ _(presented at a workshop of the PAYOTE scientific network )_
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4xU9EaRRlds" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Highlights for version 2.1.9*  
 <br/>
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4cYzeGIZ1Ns" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Highlights for version 2.1.8*
-
-<br/>
 
 ### Examples of applications
 
