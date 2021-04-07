@@ -1,0 +1,161 @@
+#!/usr/bin/env python3
+
+import os
+import jinja2
+import yaml
+
+import Helpers
+
+
+##############################################################################
+##############################################################################
+
+
+def translateYamlToMatrix(Data, Source="native-compatibility"):
+    if Source not in Data:
+        print("Key not in yaml:", Source)
+        return []
+    CompatibilityData = Data[Source]
+    OpenfluidVersionMonth = Data["openfluid-release-months"]
+    Systems = []
+    OfVersions = []
+    for Corresp in CompatibilityData:
+        if Corresp not in OfVersions:
+            OfVersions += [Corresp]
+        for s in CompatibilityData[Corresp]:
+            if s not in Systems:
+                Systems += [s]
+
+    Systems.sort(key=lambda s: (s.split()[0], float(s.replace(".x","0").split()[1]))) 
+    # caution: this sort for system does not handle third level of version
+    OfVersions.sort(key=lambda s: list(map(int, s.split('.'))))  # Version sorting
+    CustomOrderSystems = []
+
+    WantedUnixOrder = ["Ubuntu", "Debian", "Fedora", "CentOS"]
+    WantedOther = ["MacOS", "Windows"]
+    
+    for WantedSystem in WantedUnixOrder:
+        for s in Systems:
+            if s.startswith(WantedSystem):
+                CustomOrderSystems += [s]
+    for WantedSystem in WantedOther:
+        for s in Systems:
+            if s.startswith(WantedSystem):
+                CustomOrderSystems += [s]
+
+    # Unknown systems are added after the others
+    CustomOrderSystems += list(set(Systems) - set(CustomOrderSystems))
+    Systems = CustomOrderSystems
+
+    # generate table
+
+    Matrix = []
+    ## header
+    HeaderLine = ["OpenFLUID version"]
+    HeaderLineBis = ["Release date"]
+    for ov in OfVersions:
+        HeaderLine += [ov]
+        if ov in OpenfluidVersionMonth:
+            HeaderLineBis += [OpenfluidVersionMonth[ov]]
+        else:
+            HeaderLineBis += ["?"]
+    Matrix += [HeaderLine, HeaderLineBis]
+
+    ## lines
+    for s in Systems:
+        SystemLine = [s]
+        for ov in OfVersions:
+            if s in CompatibilityData[ov]:
+                SystemLine += [CompatibilityData[ov][s]]
+            else:
+                SystemLine += [""]
+        Matrix += [SystemLine]
+
+
+    return Matrix
+
+
+##############################################################################
+
+
+def writeHtmlFromMatrix(Matrix, WithDate=True):
+    VisualByStatus = {"supported":'<td class="status-s">S</td>',
+                      "compatible":'<td class="status-c">c</td>',
+                      "failing":'<td class="status-x">x</td>',
+                      "theorical":'<td class="status-t"><i>t</i></td>',
+                      "experimental":'<td class="status-e">e</td>'}
+
+    Html = '<table class="compatibility-matrix">'
+    PreviousOS = ""
+    headerSize = 2
+    if not WithDate:
+        headerSize = 1
+    if len(Matrix) > 0:
+        # header
+        Html += "\n<thead>"
+        for l in Matrix[:headerSize]:
+            Html += "\n<tr>"
+            for c in l:
+                Html += f"\n<th>{c}</th>"
+            Html += "\n</tr>"
+        Html += "\n</thead>"
+        # content
+        for l in Matrix[2:]:
+            CurrentOS = l[0].split()[0]
+            if CurrentOS != PreviousOS:
+                Html += "\n<tr>"+"<td></td>"*len(l)+"</tr>"
+            PreviousOS = CurrentOS
+            Html += "\n<tr>"
+            FirstCol = True
+            for c in l:
+                CustomClass = ""
+                if FirstCol:
+                    FirstCol = False
+                    CustomClass = ' class="OSname"'
+                if c in VisualByStatus:
+                    Html += VisualByStatus[c]
+                else:
+                    Html += f"<td{CustomClass}>{c}</td>"
+            Html += "</tr>"
+        Html += "\n</tbody>"
+    Html += "\n</table>"
+    return Html
+
+
+##############################################################################
+
+
+def generateDockerhubTable(DockerhubData):
+    DockerhubTable = {"ofversions": [], "os": []}
+    OfVersions = list(DockerhubData.keys())
+    OfVersions.sort(key=lambda s: list(map(int, s.split('.'))))  # Version sorting
+    for v in OfVersions:
+        DockerhubTable["ofversions"].append(v)
+        DockerhubTable["os"].append(DockerhubData[v])
+    return DockerhubTable
+
+
+##############################################################################
+
+
+Vars = dict()
+
+with open(os.path.join(Helpers.RessDir,"compatibility-matrix.yml"), 'r') as Stream:
+    Data_loaded = yaml.safe_load(Stream)
+
+
+NativeMatrix = translateYamlToMatrix(Data_loaded, Source="native-compatibility")
+Vars['nativeMatrix'] = writeHtmlFromMatrix(NativeMatrix)
+
+DockerhubTable = generateDockerhubTable(Data_loaded["dockerhub-versions"])
+Vars['dockerhubTable'] = DockerhubTable
+
+TplPath, TplFilename = os.path.split(os.path.join(Helpers.RessDir,
+                                     "system-compatibility.tpl.md"))
+GeneratedContent = jinja2.Environment(
+                    loader=jinja2.FileSystemLoader(TplPath)).get_template(
+                      TplFilename).render(**Vars)
+
+
+with open(os.path.join(Helpers.SrcDir,"docs","general","system-compatibility.md"),"w") as OutFile:
+    OutFile.write(GeneratedContent)
