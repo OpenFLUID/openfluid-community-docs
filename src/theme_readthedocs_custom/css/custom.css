@@ -206,3 +206,53 @@ iframe.ytvideo {
   margin-bottom: 10px;
 }
 
+.legend td.detail  {
+  text-align: left;
+}
+
+.legend tr {
+  border: hidden;
+}
+
+.compatibility-matrix th, td {
+  text-align: center;
+  padding:5px;
+}
+
+.compatibility-matrix .example {
+  width: 40px;
+  border: 1px;
+}
+
+.compatibility-matrix .OSname {
+  text-align: left;
+}
+
+.compatibility-matrix .status-s {
+  font-weight: bold;
+  background-color:YellowGreen;
+  color:YellowGreen;
+}
+
+.compatibility-matrix .status-e {
+  font-weight: bold;
+  background-color:orange;
+  color:orange;
+}
+
+.compatibility-matrix .status-x {
+  background-color:OrangeRed;
+  color:OrangeRed;
+}
+
+.compatibility-matrix .status-t {
+  font-style: italic;
+  background-color:Violet;
+  color:Violet;
+}
+
+.compatibility-matrix .status-c {
+  font-style: italic;
+  background-color:DeepSkyBlue;
+  color:DeepSkyBlue;
+}
