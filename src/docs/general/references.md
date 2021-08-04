@@ -50,6 +50,8 @@ modeling of cultivated areas</a>**. _Computers & Geosciences_, 36, 1021 - 1032.
 
 ## Communications
 
+* Voltz, M. and Bedos, C. and Crevoisier, D. and Dagès, C. and Djouhri, M. and Fabre, J.C. and Lafolie, F. and Loubet, B. and Personne, E. and Bancal, P. and Barriuso, E. and Benoit, P. and Brunet, Y. and Casellas, E. and Chabrier, P. and Chambon, C. and Chataigner, M. and Douzals, J.P. and Drouet, J.L. and Mamy, L. and Moitrier, N. and Pot, V. and Raynal, H. and Ruelle, B. and Samouëlian, A. and Saudreau, M., 2021. &nbsp;&nbsp;**<a href="https://hal.inrae.fr/hal-03303236" target=_blank>Modélisation intégrée du devenir des pesticides dans le paysage</a>**. _Colloque SEFA 2021_, Versailles, France.
+
 * Dagès, C. and Bailly, J.S. and Dollinger, J. and Lagacherie, P. and Voltz, M., 2019. &nbsp;&nbsp;**<a href="http://www.gfpesticides.org/bdd_fichiers/410e8a6be8a909d115d92bde534259d2d196c42c13e.pdf" target=_blank>L’entretien  des  fossés  comme  levier  pour  limiter  la  contamination  des eaux par les pesticides</a>**. _49ème congrès du Groupe Français des PEsticides_, Montpellier, France.
 
 * Voltz, M. and Bedos, C. and Crevoisier, D. and Fabre, J.C. and Loubet, B. and Chataigner, M. and Bankwal, P. and Barriuso, E. and Benoit, P. and Brunet, Y. and Casellas, E. and Chabrier, P. and Chambon, C. and Dagès, C. and Douzals, J.P. and Drouet, J.L. and Lafolie, F. and Mamy, L. and Moitrier, N. and Personne, E. and Pot, V. and Raynal, H. and Ruelle, B. and Samouelian, A. and Saudreau, M., 2019. &nbsp;&nbsp;**<a href="http://www.gfpesticides.org/bdd_fichiers/410e8a6be8a909d115d92bde534259d2d196c42c13e.pdf" target=_blank>Modélisation intégrée du devenir des pesticidesdans les paysages agricoles</a>**. _49ème congrès du Groupe Français des PEsticides_, Montpellier, France.
@@ -117,7 +119,7 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 
 ## PhD Thesis
 
-* Metayer, G., (in progress, expected 2023). **Simulation par approche mixte mécaniste-statistique du devenir des pesticides dans l'environnement pour le diagnostic de la contamination des sols et des eaux**. _L'institut Agro. / Montpellier SupAgro_.
+* Metayer, G., (in progress, expected 2023). **Simulation par approche mixte mécaniste-statistique du devenir des pesticides dans l'environnement pour le diagnostic de la contamination des sols et des eaux**. _l'institut Agro. / Montpellier SupAgro_.
 
 * Orieschnig, C. , (in progress, expected 2021). **Understanding the Hydrological Dynamics of Delta Areas – The Perspective of Integrated Natural Resource Management**. _AgroParisTech_.
 
