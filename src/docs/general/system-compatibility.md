@@ -131,7 +131,7 @@ Here are listed versions of OpenFLUID Docker images that can be pulled from [Doc
 
 <td>Ubuntu 18.04</td>
 
-<td>Ubuntu 18.04</td>
+<td>Ubuntu 20.04</td>
 
 <td>Ubuntu 20.04</td>
 
