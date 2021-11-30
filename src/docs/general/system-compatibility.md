@@ -1,3 +1,10 @@
+<!-- 
+CAUTION: this page was generated. 
+To change it:
+- edit the file resources/compatibility-matrix.yml 
+- execute the script scripts/update-compat-matrix
+-->
+
 
 ## System compatibility matrix
 This table show the levels of compatibility between OpenFLUID versions and several operating systems.  

@@ -1,35 +1,3 @@
-<!-- 
-CAUTION: this page was generated. 
-To change it:
-- edit the file resources/faq-source.md 
-- execute the script scripts/update-faq
--->
-
-## Table of content
-- <strong> General information</strong>
-    - [ What is OpenFLUID?](#what-is-openfluid)
-    - [ What are OpenFLUID simulators?](#what-are-openfluid-simulators)
-    - [ What is the OpenFLUID license?](#what-is-the-openfluid-license)
-    - [ On which operating systems OpenFLUID is available?](#on-which-operating-systems-openfluid-is-available)
-    - [ I need help about OpenFLUID, what can I do?](#i-need-help-about-openfluid-what-can-i-do)
-    - [ I found a bug or I would like to suggest a feature, what should I do?](#i-found-a-bug-or-i-would-like-to-suggest-a-feature-what-should-i-do)
-- <strong> Installation</strong>
-    - [ How do I get the latest OpenFLUID packages for installation?](#how-do-i-get-the-latest-openfluid-packages-for-installation)
-    - [ How do I get the current source code and build OpenFLUID?](#how-do-i-get-the-current-source-code-and-build-openfluid)
-- <strong> Using OpenFLUID</strong>
-    - [ How do I add paths to search for simulators?](#how-do-i-add-paths-to-search-for-simulators)
-    - [ How to enable verbose display while executing simulations?](#how-to-enable-verbose-display-while-executing-simulations)
-    - [ How to generate a performance profile while executing simulations?](#how-to-generate-a-performance-profile-while-executing-simulations)
-- <strong> Development of simulators</strong>
-    - [ How do I create and build a new simulator?](#how-do-i-create-and-build-a-new-simulator)
-    - [ What coding style should I use for writing source code?](#what-coding-style-should-i-use-for-writing-source-code)
-    - [ How can I log information, warnings and errors messages during simulations?](#how-can-i-log-information-warnings-and-errors-messages-during-simulations)
-    - [ How can I store data and status from one time step to the next time step?](#how-can-i-store-data-and-status-from-one-time-step-to-the-next-time-step)
-- <strong> Troubleshooting</strong>
-    - [ How can I resolve the "Too many open files" error?](#how-can-i-resolve-the-too-many-open-files-error)
-    - [ I installed a new OpenFLUID version and OpenFLUID doesn't start anymore, why?](#i-installed-a-new-openfluid-version-and-openfluid-doesnt-start-anymore-why)
-    - [ I installed a new OpenFLUID version on Linux and the OpenFLUID-Builder icon does not show, what should I do?](#i-installed-a-new-openfluid-version-on-linux-and-the-openfluid-builder-icon-does-not-show-what-should-i-do)
-
 ## General information
 
 ### What is OpenFLUID?

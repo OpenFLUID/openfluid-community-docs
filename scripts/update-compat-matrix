@@ -140,7 +140,8 @@ def generateDockerhubTable(DockerhubData):
 
 Vars = dict()
 
-with open(os.path.join(Helpers.RessDir,"compatibility-matrix.yml"), 'r') as Stream:
+MatrixFilename = "compatibility-matrix.yml"
+with open(os.path.join(Helpers.RessDir, MatrixFilename), 'r') as Stream:
     Data_loaded = yaml.safe_load(Stream)
 
 
@@ -156,6 +157,9 @@ GeneratedContent = jinja2.Environment(
                     loader=jinja2.FileSystemLoader(TplPath)).get_template(
                       TplFilename).render(**Vars)
 
+CurrentScriptFilename = os.path.basename(__file__)
+WarningMessage = Helpers.getProcessedWarning(os.path.join(Helpers.RessLabel, MatrixFilename), 
+                                             os.path.join(Helpers.ScriptLabel, CurrentScriptFilename))
 
 with open(os.path.join(Helpers.SrcDir,"docs","general","system-compatibility.md"),"w") as OutFile:
-    OutFile.write(GeneratedContent)
+    OutFile.write(WarningMessage + GeneratedContent)

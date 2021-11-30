@@ -1,3 +1,10 @@
+<!-- 
+CAUTION: this page was generated. 
+To change it:
+- edit the file resources/OpenFLUIDRefs.bib 
+- execute the script scripts/update-bib
+-->
+
 
 
 ## Citing OpenFLUID

@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import os
+
+import Helpers
+
+
+##############################################################################
+##############################################################################
+
+
+FAQFilename = "faq-source.md"
+with open(os.path.join(Helpers.RessDir, FAQFilename), 'r') as Stream:
+    Txt = Stream.read()
+
+
+##############################################################################
+
+
+CurrentScriptFilename = os.path.basename(__file__)
+WarningComment = Helpers.getProcessedWarning(os.path.join(Helpers.RessLabel, FAQFilename), 
+                                             os.path.join(Helpers.ScriptLabel, CurrentScriptFilename))
+
+Txt =  WarningComment + Helpers.generateTableOfContent(Txt) + "\n" + Txt
+
+with open(os.path.join(Helpers.SrcDir,"docs","general","faq.md"),"w") as OutFile:
+    OutFile.write(Txt)
