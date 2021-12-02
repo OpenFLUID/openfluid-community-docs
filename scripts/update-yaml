@@ -13,27 +13,27 @@ import Helpers
 FileConfigs = dict()
 
 FileConfigs['mkdocs-prod.yml'] = {
-  'siteURL' : "https://community.openfluid-project.org/",
-  'ofWebURL' : "https://www.openfluid-project.org/",
-  'production' : "True"
+  'siteURL': "https://community.openfluid-project.org/",
+  'ofWebURL': "https://www.openfluid-project.org/",
+  'production': "True"
 }
 
 FileConfigs['mkdocs.yml'] = {
-  'siteURL' : "http://127.0.0.1:8000/",
-  'ofWebURL' : "http://127.0.0.1:1313/",
-  'production' : "False"
+  'siteURL': "http://127.0.0.1:8000/",
+  'ofWebURL': "http://127.0.0.1:1313/",
+  'production': "False"
 }
 
 
 ##############################################################################
 
 
-TplFile = open(os.path.join(Helpers.RessDir,"mkdocs.tpl.yml"), 'r')
+TplFile = open(os.path.join(Helpers.RessDir, "mkdocs.tpl.yml"), 'r')
 TplContent = TplFile.read()
 TplFile.close()
 
 
 for Filename, Config in FileConfigs.items():
-  DestFile = open(os.path.join(Helpers.SrcDir,Filename),'w')
-  DestFile.write(Template(TplContent).substitute(Config))
-  DestFile.close()
+    DestFile = open(os.path.join(Helpers.SrcDir, Filename), 'w')
+    DestFile.write(Template(TplContent).substitute(Config))
+    DestFile.close()

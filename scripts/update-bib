@@ -17,7 +17,7 @@ Vars = dict()
 ##############################################################################
 
 
-CitingFile = open(os.path.join(Helpers.RessDir,"OpenFLUIDCiting.bib"))
+CitingFile = open(os.path.join(Helpers.RessDir, "OpenFLUIDCiting.bib"))
 CitingStr = CitingFile.read()
 CitingFile.close()
 CitingDB = bibtexparser.loads(CitingStr)
@@ -35,26 +35,26 @@ RefsFile.close()
 RefsDB = bibtexparser.loads(RefsStr)
 
 for Ref in RefsDB.entries:
-  UpdRef = Ref
-  if "url" in UpdRef.keys():
-    UpdRef["link"] = UpdRef.pop("url")
+    UpdRef = Ref
+    if "url" in UpdRef.keys():
+        UpdRef["link"] = UpdRef.pop("url")
 
-  if not 'Refs'+UpdRef['ENTRYTYPE'] in Vars:
-    Vars['Refs'+UpdRef['ENTRYTYPE']] = list()
+    if not 'Refs'+UpdRef['ENTRYTYPE'] in Vars:
+        Vars['Refs'+UpdRef['ENTRYTYPE']] = list()
 
-  Vars['Refs'+UpdRef['ENTRYTYPE']].append(UpdRef)
+    Vars['Refs'+UpdRef['ENTRYTYPE']].append(UpdRef)
 
 
 ##############################################################################
 
 
-TplPath, TplFilename = os.path.split(os.path.join(Helpers.RessDir,"references.tpl.md"))
+TplPath, TplFilename = os.path.split(os.path.join(Helpers.RessDir, "references.tpl.md"))
 GeneratedContent = jinja2.Environment(loader=jinja2.FileSystemLoader(TplPath)).get_template(TplFilename).render(**Vars)
 
 CurrentScriptFilename = os.path.basename(__file__)
-WarningMessage = Helpers.getGeneratedWarning(os.path.join(Helpers.RessLabel, OFRefsFilename), 
+WarningMessage = Helpers.getGeneratedWarning(os.path.join(Helpers.RessLabel, OFRefsFilename),
                                              os.path.join(Helpers.ScriptLabel, CurrentScriptFilename))
 
-OutFile = open(os.path.join(Helpers.SrcDir,"docs","general","references.md"),"w")
+OutFile = open(os.path.join(Helpers.SrcDir, "docs", "general", "references.md"), "w")
 OutFile.write(WarningMessage + GeneratedContent)
 OutFile.close()

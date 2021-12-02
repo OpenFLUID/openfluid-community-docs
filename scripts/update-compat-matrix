@@ -26,14 +26,14 @@ def translateYamlToMatrix(Data, Source="native-compatibility"):
             if s not in Systems:
                 Systems += [s]
 
-    Systems.sort(key=lambda s: (s.split()[0], float(s.replace(".x","0").split()[1]))) 
+    Systems.sort(key=lambda s: (s.split()[0], float(s.replace(".x", "0").split()[1])))
     # caution: this sort for system does not handle third level of version
     OfVersions.sort(key=lambda s: list(map(int, s.split('.'))))  # Version sorting
     CustomOrderSystems = []
 
     WantedUnixOrder = ["Ubuntu", "Debian", "Fedora", "CentOS"]
     WantedOther = ["MacOS", "Windows"]
-    
+
     for WantedSystem in WantedUnixOrder:
         for s in Systems:
             if s.startswith(WantedSystem):
@@ -50,7 +50,7 @@ def translateYamlToMatrix(Data, Source="native-compatibility"):
     # generate table
 
     Matrix = []
-    ## header
+    # header
     HeaderLine = ["OpenFLUID version"]
     HeaderLineBis = ["Release date"]
     for ov in OfVersions:
@@ -61,7 +61,7 @@ def translateYamlToMatrix(Data, Source="native-compatibility"):
             HeaderLineBis += ["?"]
     Matrix += [HeaderLine, HeaderLineBis]
 
-    ## lines
+    # lines
     for s in Systems:
         SystemLine = [s]
         for ov in OfVersions:
@@ -71,7 +71,6 @@ def translateYamlToMatrix(Data, Source="native-compatibility"):
                 SystemLine += [""]
         Matrix += [SystemLine]
 
-
     return Matrix
 
 
@@ -79,11 +78,11 @@ def translateYamlToMatrix(Data, Source="native-compatibility"):
 
 
 def writeHtmlFromMatrix(Matrix, WithDate=True):
-    VisualByStatus = {"supported":'<td class="status-s">S</td>',
-                      "compatible":'<td class="status-c">c</td>',
-                      "failing":'<td class="status-x">x</td>',
-                      "theorical":'<td class="status-t"><i>t</i></td>',
-                      "experimental":'<td class="status-e">e</td>'}
+    VisualByStatus = {"supported": '<td class="status-s">S</td>',
+                      "compatible": '<td class="status-c">c</td>',
+                      "failing": '<td class="status-x">x</td>',
+                      "theorical": '<td class="status-t"><i>t</i></td>',
+                      "experimental": '<td class="status-e">e</td>'}
 
     Html = '<table class="compatibility-matrix">'
     PreviousOS = ""
@@ -93,21 +92,21 @@ def writeHtmlFromMatrix(Matrix, WithDate=True):
     if len(Matrix) > 0:
         # header
         Html += "\n<thead>"
-        for l in Matrix[:headerSize]:
+        for line in Matrix[:headerSize]:
             Html += "\n<tr>"
-            for c in l:
+            for c in line:
                 Html += f"\n<th>{c}</th>"
             Html += "\n</tr>"
         Html += "\n</thead>"
         # content
-        for l in Matrix[2:]:
-            CurrentOS = l[0].split()[0]
+        for line in Matrix[2:]:
+            CurrentOS = line[0].split()[0]
             if CurrentOS != PreviousOS:
-                Html += "\n<tr>"+"<td></td>"*len(l)+"</tr>"
+                Html += "\n<tr>"+"<td></td>"*len(line)+"</tr>"
             PreviousOS = CurrentOS
             Html += "\n<tr>"
             FirstCol = True
-            for c in l:
+            for c in line:
                 CustomClass = ""
                 if FirstCol:
                     FirstCol = False
@@ -158,8 +157,8 @@ GeneratedContent = jinja2.Environment(
                       TplFilename).render(**Vars)
 
 CurrentScriptFilename = os.path.basename(__file__)
-WarningMessage = Helpers.getGeneratedWarning(os.path.join(Helpers.RessLabel, MatrixFilename), 
+WarningMessage = Helpers.getGeneratedWarning(os.path.join(Helpers.RessLabel, MatrixFilename),
                                              os.path.join(Helpers.ScriptLabel, CurrentScriptFilename))
 
-with open(os.path.join(Helpers.SrcDir,"docs","general","system-compatibility.md"),"w") as OutFile:
+with open(os.path.join(Helpers.SrcDir, "docs", "general", "system-compatibility.md"), "w") as OutFile:
     OutFile.write(WarningMessage + GeneratedContent)
