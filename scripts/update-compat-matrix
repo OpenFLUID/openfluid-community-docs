@@ -158,7 +158,7 @@ GeneratedContent = jinja2.Environment(
                       TplFilename).render(**Vars)
 
 CurrentScriptFilename = os.path.basename(__file__)
-WarningMessage = Helpers.getProcessedWarning(os.path.join(Helpers.RessLabel, MatrixFilename), 
+WarningMessage = Helpers.getGeneratedWarning(os.path.join(Helpers.RessLabel, MatrixFilename), 
                                              os.path.join(Helpers.ScriptLabel, CurrentScriptFilename))
 
 with open(os.path.join(Helpers.SrcDir,"docs","general","system-compatibility.md"),"w") as OutFile:

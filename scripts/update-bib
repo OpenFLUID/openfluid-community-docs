@@ -52,7 +52,7 @@ TplPath, TplFilename = os.path.split(os.path.join(Helpers.RessDir,"references.tp
 GeneratedContent = jinja2.Environment(loader=jinja2.FileSystemLoader(TplPath)).get_template(TplFilename).render(**Vars)
 
 CurrentScriptFilename = os.path.basename(__file__)
-WarningMessage = Helpers.getProcessedWarning(os.path.join(Helpers.RessLabel, OFRefsFilename), 
+WarningMessage = Helpers.getGeneratedWarning(os.path.join(Helpers.RessLabel, OFRefsFilename), 
                                              os.path.join(Helpers.ScriptLabel, CurrentScriptFilename))
 
 OutFile = open(os.path.join(Helpers.SrcDir,"docs","general","references.md"),"w")

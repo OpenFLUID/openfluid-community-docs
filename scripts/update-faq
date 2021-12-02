@@ -14,11 +14,8 @@ with open(os.path.join(Helpers.RessDir, FAQFilename), 'r') as Stream:
     Txt = Stream.read()
 
 
-##############################################################################
-
-
 CurrentScriptFilename = os.path.basename(__file__)
-WarningComment = Helpers.getProcessedWarning(os.path.join(Helpers.RessLabel, FAQFilename), 
+WarningComment = Helpers.getGeneratedWarning(os.path.join(Helpers.RessLabel, FAQFilename), 
                                              os.path.join(Helpers.ScriptLabel, CurrentScriptFilename))
 
 Txt =  WarningComment + Helpers.generateTableOfContent(Txt) + "\n" + Txt

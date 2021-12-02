@@ -6,6 +6,7 @@ import subprocess
 
 ##############################################################################
 
+
 ScriptDir = os.path.dirname(os.path.abspath(__file__))
 ScriptLabel = os.path.basename(ScriptDir)
 BaseDir = os.path.dirname(ScriptDir)
@@ -43,28 +44,32 @@ def execCommand(Cmd,Cwdir):
 ##############################################################################
 
 
-def getProcessedWarning(resourcePath, scriptPath):
-  txt = f"""<!-- 
-CAUTION: this page was generated. 
-To change it:
-- edit the file {resourcePath} 
-- execute the script {scriptPath}
--->"""
+def getGeneratedWarning(resourcePath, scriptPath):
+  txt = f"""--- 
+message: |-
+  WARNING : This page has been automatically generated. Do not edit directly.
+  To modify this page:
+  * edit the '{resourcePath}' file to update the source data
+  * execute the '{scriptPath}' script to generate this file
+---"""
   return txt + "\n\n"
 
 
 ##############################################################################
 
 
-LinkableChars = ''.join(ch for ch in string.printable if ch.isalnum())+"-"
-
-def keepPrintable(S):
+def slugify(S):
   """To slugify a string"""
-  # If not enough, install extensive pip library:
+  # If this function is not adequate, install extensive pip library:
   #    https://pypi.org/project/python-slugify/ (slugify function for unicode)
+  LinkableChars = ''.join(ch for ch in string.printable if ch.isalnum())+"-"
+
   CleanedS = S.strip().lower().replace(" ", "-")
   CleanedS = "".join(ch for ch in CleanedS if ch in LinkableChars)
   return CleanedS
+
+
+##############################################################################
 
 
 def generateTableOfContent(RefTxt):
@@ -72,8 +77,8 @@ def generateTableOfContent(RefTxt):
 
   for l in RefTxt.split("\n"):
     if l.startswith("##"):
-      LineTxt = l.strip("#")
-      InternalLink = keepPrintable(LineTxt)
+      LineTxt = l.strip("#").strip()
+      InternalLink = slugify(LineTxt)
       if l.startswith("### "): # Level 3
         TableOfContent += f"    - [{LineTxt}](#{InternalLink})\n"
       else: # Level 2

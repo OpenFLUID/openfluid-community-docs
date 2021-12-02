@@ -1,9 +1,10 @@
-<!-- 
-CAUTION: this page was generated. 
-To change it:
-- edit the file resources/OpenFLUIDRefs.bib 
-- execute the script scripts/update-bib
--->
+--- 
+message: |-
+  WARNING : This page has been automatically generated. Do not edit directly.
+  To modify this page:
+  * edit the 'resources/OpenFLUIDRefs.bib' file to update the source data
+  * execute the 'scripts/update-bib' script to generate this file
+---
 
 
 
