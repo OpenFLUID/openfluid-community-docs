@@ -1,8 +1,8 @@
 {% macro buildtitle(title="",url="",pdf="") -%}
 {% if url -%}
-&nbsp;&nbsp;**<a href="{{ url }}" target=_blank>{{- title -}}</a>**
+**<a href="{{ url }}" target=_blank>{{- title -}}</a>**
 {%- elif pdf -%}
-&nbsp;&nbsp;**<a href="http://www.openfluid-project.org/resources/biblio/{{ pdf }}" target=_blank>{{- title -}}</a>**
+**<a href="http://www.openfluid-project.org/resources/biblio/{{ pdf }}" target=_blank>{{- title -}}</a>**
 {%- else -%}
 **{{- title -}}**
 {%- endif %}
@@ -21,7 +21,7 @@ BibTex entry:
 
 ## Articles
 {% for item in Refsarticle %}
-* {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.journal }}_, {{ item.volume }}{% if item.pages %}, {{ item.pages }}{% endif %}.
+* {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.journal }}_{% if item.volume %}, {{ item.volume }}{% endif %}{% if item.pages %}, {{ item.pages }}{% endif %}.
 {% endfor %}
 
 ## Communications
