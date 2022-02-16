@@ -160,6 +160,8 @@ hydrique des sols à l'échelle des petits bassins versants cultivés**. _SupAgr
 
 ## Master's Thesis
 
+* Faucher, M., 2021. **Validation d’un modèle de croissance des peuplements végétaux non cultivés en milieu viticole méditerranéen**. _Université de Rennes 1_.
+
 * Doré, C., 2020. **Évaluation des risques de contamination des eaux de surface par la dérive dans les fossés par une approche de modélisation**. _Université de Lyon, Mines Saint-Etienne, ENTPE, INSA Lyon_.
 
 * Giffone, V., 2019. **Modélisation de l’évolution des états de surface du sol en viticulture**. _AgroParisTech, Université de Montpellier, Montpellier SupAgro_.
