@@ -1,6 +1,6 @@
 <br/>
 
-This page indexes a selection of interesting presentation materials about OpenFLUID.
+This page indexes a selection of presentation materials about OpenFLUID.
 
 
 ## Slideshows
@@ -10,20 +10,13 @@ This page indexes a selection of interesting presentation materials about OpenFL
     You will find more presentations in the [trainings section](../start/trainings.md).
 
 
-* **[Overview of the OpenFLUID platform](https://www.openfluid-project.org/resources/docs/slideshows/2019-09-18_ATOS/)** (September 2019, in french)  
-_Overview of the OpenFLUID platform : concepts, software, scientific applications and project team._  
-_(presented at the meeting with ATOS group)_  
+* **[Overview of the OpenFLUID software environment for spatial modelling in landscapes](https://www.openfluid-project.org/resources/docs/slideshows/overview-fr/)** (March 2022, in french)  
+_Overview of the OpenFLUID platform : origin, concepts, software, scientific applications and more_  
 <br/>
 
 * **[Continuous integration in OpenFLUID development](https://www.openfluid-project.org/resources/docs/slideshows/ci-2018-06-07/)** (June 2018, in french)  
 _Presentation of continuous integration tools and infrastructure involved in OpenFLUID development process_  
 _(presented at the DevLR workshop)_  
-<br/>
-
-
-* **[Overview of OpenFLUID](https://www.openfluid-project.org/resources/docs/slideshows/OpenFLUID_PAYOTE_2016-11-03.pdf)** (November 2016, in french)  
-_Overview of OpenFLUID with a focus on digital landscape representations used in various scientific applications_  
-_(presented at a workshop of the PAYOTE scientific network )_  
 <br/>
 
 

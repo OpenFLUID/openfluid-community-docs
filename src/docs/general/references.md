@@ -141,7 +141,7 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 
 * Campan, P., (in progress, expected 2022). **Evaluation des risques de contamination des eaux par les pesticides à l’échelle parcellaire en situation agropédoclimatique tropicale**. _Montpellier SupAgro_.
 
-* Naulleau, A., 2021. **Co-construction et évaluation de scénarios de gestion technique des paysages viticoles adaptés au changement climatique**. _Montpellier SupAgro_.
+* Naulleau, A., 2021. **<a href="https://hal.inrae.fr/tel-03562565/document" target=_blank>Co-construction et évaluation de scénarios de gestion technique des paysages viticoles adaptés au changement climatique</a>**. _Montpellier SupAgro_.
 
 * Dollinger, J., 2016. **<a href="http://www.openfluid-project.org/resources/biblio/Dollinger_J_These.pdf" target=_blank>Analyse et modélisation des transferts et de la rétention de pesticides dans les fossés agricoles infiltrants en lien avec les stratégies d’entretien</a>**. _Montpellier SupAgro_.
 
