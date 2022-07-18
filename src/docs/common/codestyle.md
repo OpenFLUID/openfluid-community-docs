@@ -412,6 +412,33 @@ Older versions of OpenFLUID requires C++ compliant compilers
 * C++98 for previous versions
 
 
+## Source code tags
+
+During the development process, tags can be used in code comments to mark specific code status or actions to perform.
+They are written in capital, followed by an optional description.  
+
+* `DIRTYCODE` : code marked as temporarily inserted (e.g. display of internal values, debugging hints, ...), must be deleted once useless and must not be commited
+* `TOIMPL` : part to be implemented, must be done before the next release
+* `FIXME` : marked bug, must be fixed before the next release
+* `HACK` : temporary workaround, should be replaced before the next release
+* `TODO` : action to perform, not critical with no due date
+* `NOTE` : a simple note
+
+Examples
+
+```cpp
+std::cout << __PRETTY_FUNCTION__  << ", " << __LINE__ << std::endl; // DIRTYCODE
+```
+
+```cpp
+int doThis()
+{
+  std::cerr << "not implemented" << std::endl; // TOIMPL implement the code to do this, see ticket xxx
+  return 0;
+}
+```
+
+
 ## Design conventions
 
 ### Object class
