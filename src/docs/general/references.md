@@ -32,6 +32,8 @@ BibTex entry:
 
 ## Articles
 
+* Lagacherie, Philippe and Dagès, Cécile and Zadonina, Ekatarina and Fabre, Jean Christophe and Molénat, Jérôme and Squividant, Hervé and Thomas, Bruce, 2022. **<a href="https://doi.org/10.2166/hydro.2022.048" target=_blank>A fully automated and generic spatial discretization procedure for cultivated landscapes with human-made landscape elements</a>**. _Journal of Hydroinformatics_.
+
 * Nicolas Lebon and Cécile Dagès and Delphine Burger-Leenhardt and Jérôme Molénat, 2022. **<a href="https://www.sciencedirect.com/science/article/pii/S1364815222001153" target=_blank>A new agro-hydrological catchment model to assess the cumulative impact of small reservoirs</a>**. _Environmental Modelling & Software_, 153, 105409.
 
 * Audrey Naulleau and Christian Gary and Laurent Prévot and Victor Berteloot and Jean-Christophe Fabre and David Crevoisier and Rémi Gaudin and Laure Hossard, 2022. **<a href="https://www.sciencedirect.com/science/article/pii/S1364815222000482" target=_blank>Participatory modeling to assess the impacts of climate change in a Mediterranean vineyard watershed</a>**. _Environmental Modelling & Software_, 105342.
