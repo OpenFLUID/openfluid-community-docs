@@ -32,6 +32,8 @@ BibTex entry:
 
 ## Articles
 
+* Audrey Naulleau and Christian Gary and Laurent Prévot and Fabrice Vinatier and Laure Hossard, 2022. **<a href="https://www.sciencedirect.com/science/article/pii/S0308521X22001500" target=_blank>How can winegrowers adapt to climate change? A participatory modeling approach in southern France</a>**. _Agricultural Systems_, 203, 103514.
+
 * Lagacherie, Philippe and Dagès, Cécile and Zadonina, Ekatarina and Fabre, Jean Christophe and Molénat, Jérôme and Squividant, Hervé and Thomas, Bruce, 2022. **<a href="https://doi.org/10.2166/hydro.2022.048" target=_blank>A fully automated and generic spatial discretization procedure for cultivated landscapes with human-made landscape elements</a>**. _Journal of Hydroinformatics_.
 
 * Nicolas Lebon and Cécile Dagès and Delphine Burger-Leenhardt and Jérôme Molénat, 2022. **<a href="https://www.sciencedirect.com/science/article/pii/S1364815222001153" target=_blank>A new agro-hydrological catchment model to assess the cumulative impact of small reservoirs</a>**. _Environmental Modelling & Software_, 153, 105409.
@@ -139,11 +141,11 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 
 * Metayer, G., (in progress, expected 2023). **Simulation par approche mixte mécaniste-statistique du devenir des pesticides dans l'environnement pour le diagnostic de la contamination des sols et des eaux**. _l'institut Agro. / Montpellier SupAgro_.
 
-* Orieschnig, C. , (in progress, expected 2022). **Understanding the Hydrological Dynamics of Delta Areas – The Perspective of Integrated Natural Resource Management**. _AgroParisTech_.
+* Djouhri, M., 2022. **Modélisation intégrée du devenir des pesticides dans un paysage viticole**. _Université Montpellier_.
 
-* Djouhri, M., (in progress, expected 2022). **Modélisation intégrée du devenir des pesticides dans un paysage viticole**. _Université Montpellier_.
+* Campan, P., 2022. **Evaluation des risques de contamination des eaux par les pesticides à l’échelle parcellaire en situation agropédoclimatique tropicale**. _Montpellier SupAgro_.
 
-* Campan, P., (in progress, expected 2022). **Evaluation des risques de contamination des eaux par les pesticides à l’échelle parcellaire en situation agropédoclimatique tropicale**. _Montpellier SupAgro_.
+* Orieschnig, C., 2022. **Understanding the Hydrological Dynamics of Delta Areas – The Perspective of Integrated Natural Resource Management**. _AgroParisTech_.
 
 * Naulleau, A., 2021. **<a href="https://hal.inrae.fr/tel-03562565/document" target=_blank>Co-construction et évaluation de scénarios de gestion technique des paysages viticoles adaptés au changement climatique</a>**. _Montpellier SupAgro_.
 
