@@ -88,6 +88,7 @@ Example for a MyFilename.hpp file:
 | Class name | use PascalCase | ClassName
 | Class attribute (private) | begins with a lowercase 'm', followed by a '_' (underscore), followed by the name in PascalCase | m_Member
 | Class pointer attribute (private) | begins with a lowercase 'mp', followed by a '_' (underscore), followed by the name in PascalCase | mp_PtrMember
+| Class static attribute (private) | begins with a lowercase 'ms', followed by a '_' (underscore), followed by the name in PascalCase | ms_StaticMember
 | Class method (public or private) | use camelCase, preferably begins with a verb in lower case | doThisJob(...)
 | Accessors to class members (getters and setters) | use camelCase, with [naming rules for accessors to class members](#specific-naming-rules-for-accessors-to-class-members) (see below) | setMember(...), getMember(), member()
 
