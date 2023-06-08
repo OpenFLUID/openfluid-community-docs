@@ -44,6 +44,8 @@ BibTex entry:
 
 * Haorui Chen and Wenzhi Zeng and Yinlong Jin and Yuanyuan Zha and Boyu Mi and Shaohui Zhang, 2020. **<a href="https://www.sciencedirect.com/science/article/pii/S002216942030785X" target=_blank>Development of a waterlogging analysis system for paddy fields in irrigation districts</a>**. _Journal of Hydrology_, 591, 125325.
 
+* Emilie Rouzies and Claire Lauvernet and Christine Barachet and Thierry Morel and Flora Branger and Isabelle Braud and Nadia Carluer, 2019. **<a href="https://www.sciencedirect.com/science/article/pii/S0048969719310381" target=_blank>From agricultural catchment to management scenarios: A modular tool to assess effects of landscape features on water and pesticide behavior</a>**. _Science of The Total Environment_, 671, 1144-1160.
+
 * Biarnes, A. and Andrieux, P. and Barbier, J-M. and Bonnefoy, A. and Compagnone, C. and Delpuech, X. and Gary, C. and Metay, A. and Rellier, J-P. and Voltz, M., 2017. **<a href="http://dx.doi.org/10.15454/1.5137823967929834E12" target=_blank>Evaluer par modélisation des stratégies de réduction des usages d'herbicides dans les bassins versants viticoles</a>**. _Innovations Agronomiques_, 57, 141-152.
 
 * Hould-Gosselin, G., and Rousseau, A. N. and Gumiere, Silvio J. and Hallema, Dennis W. and Ratté-Fortin, Claudie and Thériault, Georges and van Bochove, Eric, 2016. **<a href="http://dx.doi.org/10.1002/hyp.10817" target=_blank>Modeling the sediment yield and the impact of vegetated filters using an event-based soil erosion model—a case study of a small Canadian watershed</a>**. _Hydrological Processes_, 30, 2835--2850.
