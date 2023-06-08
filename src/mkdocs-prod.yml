@@ -23,7 +23,6 @@ extra:
   image_og : "ofcommunity_og.png"
 
 copyright: 'Copyright INRA-Montpellier SupAgro - <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>'
-site_favicon: img/favicon.png
 
 markdown_extensions:
   - admonition
@@ -38,7 +37,7 @@ plugins:
   - markdownextradata: {}
   - search
 
-pages:
+nav:
   - Getting started :
     - Installation : 'start/install.md'
     - Manuals : 'start/manuals.md'
