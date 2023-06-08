@@ -32,6 +32,8 @@ BibTex entry:
 
 ## Articles
 
+* Cécile Dagès and Marc Voltz and Jean-Stéphane Bailly and David Crevoisier and Jeanne Dollinger and Christelle Margoum, 2023. **<a href="https://www.sciencedirect.com/science/article/pii/S0048969723032230" target=_blank>PITCH: A model simulating the transfer and retention of pesticides in infiltrating ditches and channel networks for management design purposes</a>**. _Science of The Total Environment_, 164602.
+
 * Audrey Naulleau and Christian Gary and Laurent Prévot and Fabrice Vinatier and Laure Hossard, 2022. **<a href="https://www.sciencedirect.com/science/article/pii/S0308521X22001500" target=_blank>How can winegrowers adapt to climate change? A participatory modeling approach in southern France</a>**. _Agricultural Systems_, 203, 103514.
 
 * Lagacherie, Philippe and Dagès, Cécile and Zadonina, Ekatarina and Fabre, Jean Christophe and Molénat, Jérôme and Squividant, Hervé and Thomas, Bruce, 2022. **<a href="https://doi.org/10.2166/hydro.2022.048" target=_blank>A fully automated and generic spatial discretization procedure for cultivated landscapes with human-made landscape elements</a>**. _Journal of Hydroinformatics_.
