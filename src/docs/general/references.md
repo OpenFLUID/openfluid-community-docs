@@ -141,6 +141,8 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 
 ## PhD Thesis
 
+* Faucher, M., (in progress, expected 2024). **Connectivité des paysages agricoles : application au transport de graines par hydrochorie**. _l'institut Agro. / Montpellier SupAgro_.
+
 * Metayer, G., (in progress, expected 2023). **Simulation par approche mixte mécaniste-statistique du devenir des pesticides dans l'environnement pour le diagnostic de la contamination des sols et des eaux**. _l'institut Agro. / Montpellier SupAgro_.
 
 * Djouhri, M., 2022. **Modélisation intégrée du devenir des pesticides dans un paysage viticole**. _Université Montpellier_.
