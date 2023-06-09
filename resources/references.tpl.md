@@ -19,27 +19,31 @@ BibTex entry:
 {{ CitingBib }}
 ```
 
-## Articles
+## OpenFLUID references
+
+_The following references are about OpenFLUID itself or about using OpenFLUID as a modelling and simulation platform for scientific applications._
+
+### Articles
 {% for item in Refsarticle %}
 * {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.journal }}_{% if item.volume %}, {{ item.volume }}{% endif %}{% if item.pages %}, {{ item.pages }}{% endif %}.
 {% endfor %}
 
-## Communications
+### Communications
 {% for item in  Refsinproceedings %}
 * {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.booktitle }}_, {{ item.address }}.
 {% endfor %}
 
-## PhD Thesis
+### PhD Thesis
 {% for item in Refsphdthesis %}
 * {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.school }}_.
 {% endfor %}
 
-## Master's Thesis
+### Master's Thesis
 {% for item in Refsmastersthesis %}
 * {{ item.author }}, {{ item.year }}. {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.school }}_.
 {% endfor %}
 
-## Reports
+### Reports
 {% for item in Refstechreport %}
 * {{ item.author }}, {{ item.year }} {{ buildtitle(item.title,item.link,item.pdf) }}. _{{ item.institution }}_.
 {% endfor %}

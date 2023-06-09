@@ -30,7 +30,11 @@ BibTex entry:
 }
 ```
 
-## Articles
+## OpenFLUID references
+
+_The following references are about OpenFLUID itself or about using OpenFLUID as a modelling and simulation platform for scientific applications._
+
+### Articles
 
 * Cécile Dagès and Marc Voltz and Jean-Stéphane Bailly and David Crevoisier and Jeanne Dollinger and Christelle Margoum, 2023. **<a href="https://www.sciencedirect.com/science/article/pii/S0048969723032230" target=_blank>PITCH: A model simulating the transfer and retention of pesticides in infiltrating ditches and channel networks for management design purposes</a>**. _Science of The Total Environment_, 164602.
 
@@ -68,7 +72,7 @@ BibTex entry:
 modeling of cultivated areas</a>**. _Computers & Geosciences_, 36, 1021 - 1032.
 
 
-## Communications
+### Communications
 
 * Naulleau, Audrey and Gary, Christian and Prevot, Laurent and Fabre, Jean-Christophe and Crevoisier, David and Hossard, Laure, 2021. **<a href="https://hal.inrae.fr/hal-03510815" target=_blank>Evaluation des impacts du changement climatique dans un bassin versant viticole méditerranéen : une approche de modélisation participative</a>**. _Séminaire de la modélisation des peuplements cultivés_, Montpellier, France.
 
@@ -141,15 +145,17 @@ distributed hydrological modelling</a>**. _European Geosciences Union, 5th Gener
 * Fabre, J.C. and Louchart, X., 2008. **OpenFLUID: a software environment for modelling FLUxes In Landscapes - Application with the MHYDAS model for simulating hydrologicalpollutant and erosive processes**. _13th IWRA World Water Congress_, Montpellier, France.
 
 
-## PhD Thesis
+### PhD Thesis
 
 * Faucher, M., (in progress, expected 2024). **Connectivité des paysages agricoles : application au transport de graines par hydrochorie**. _l'institut Agro. / Montpellier SupAgro_.
 
 * Metayer, G., (in progress, expected 2023). **Simulation par approche mixte mécaniste-statistique du devenir des pesticides dans l'environnement pour le diagnostic de la contamination des sols et des eaux**. _l'institut Agro. / Montpellier SupAgro_.
 
-* Djouhri, M., 2022. **Modélisation intégrée du devenir des pesticides dans un paysage viticole**. _Université Montpellier_.
+* Rouzies, E., 2023. **<a href="https://www.theses.fr/s226881" target=_blank>Quantification et réduction de l'incertitude dans un modèle de transfert de pesticides à l'échelle du bassin versant</a>**. _Université Grenoble Alpes_.
 
-* Campan, P., 2022. **Evaluation des risques de contamination des eaux par les pesticides à l’échelle parcellaire en situation agropédoclimatique tropicale**. _Montpellier SupAgro_.
+* Djouhri, M., 2022. **<a href="https://www.theses.fr/2022UMONG073" target=_blank>Modélisation des processus de distribution et de dérive des pesticides lors de la pulvérisation et de leur contribution à l’exposition des passants : illustration en viticulture</a>**. _Université Montpellier_.
+
+* Campan, P., 2022. **<a href="https://www.theses.fr/s210060" target=_blank>Caractérisation du devenir des produits phytosanitaires dans les sols volcaniques Antillais : application à l'évaluation du risque de contamination des eaux</a>**. _Montpellier SupAgro_.
 
 * Orieschnig, C., 2022. **Understanding the Hydrological Dynamics of Delta Areas – The Perspective of Integrated Natural Resource Management**. _AgroParisTech_.
 
@@ -170,7 +176,7 @@ aux réseaux de fossés en zone viticole méditerranéenne</a>**. _Montpellier S
 hydrique des sols à l'échelle des petits bassins versants cultivés**. _SupAgro Montpellier_.
 
 
-## Master's Thesis
+### Master's Thesis
 
 * Faucher, M., 2021. **Validation d’un modèle de croissance des peuplements végétaux non cultivés en milieu viticole méditerranéen**. _Université de Rennes 1_.
 
@@ -219,7 +225,7 @@ au projet LIFE Aware**. _Centre d'Hydrogéologie de Neuchâtel, Université de N
 * Tarrou, E., 2007. **OpenFLUID-Builder : Création d'une interface graphique pour la plateforme de modélisation OpenFLUID**. _Université Montpellier 2_.
 
 
-## Reports
+### Reports
 
 * Agropolis international, 2019 **<a href="http://www.agropolis.org/pdf/publications/complex-systems-thematic-file-agropolis-international.pdf" target=_blank>Complex systems, from biology to landscapes</a>**. _Les dossiers d'Agropolis international_.
 
