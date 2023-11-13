@@ -55,9 +55,6 @@ And for form/UI design:
 
 * [![CI](https://github.com/OpenFLUID/openfluid/actions/workflows/CI.yaml/badge.svg)](https://github.com/OpenFLUID/openfluid/actions/workflows/CI.yaml) 
   **[GitHub Actions](https://github.com/OpenFLUID/openfluid/actions/workflows/CI.yaml)**  
-  Used for OpenFLUID test and package builds for linux and mac.  
+  Used for OpenFLUID test on linux, windows and mac and package builds for linux and mac.  
   See `.github/workflows/CI.yaml` configuration file in the OpenFLUID repository.
-* [![Build status](https://ci.appveyor.com/api/projects/status/6icywvsumu608uft/branch/develop?svg=true)](https://ci.appveyor.com/project/fabrejc/openfluid-hm6ac/branch/develop) 
-  **[Appveyor](https://ci.appveyor.com/project/fabrejc/openfluid-hm6ac/branch/develop)**  
-  Used for OpenFLUID test build for windows.  
-  See `.appveyor.yml` configuration file in the OpenFLUID repository.
+

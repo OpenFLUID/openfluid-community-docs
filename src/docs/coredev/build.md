@@ -20,6 +20,10 @@ sudo apt-get install build-essential lsb-release g++ gfortran git cmake \
                      p7zip-full gnuplot graphviz python2.7
 ```
 
+!!! warning
+    Since Ubuntu 22.04, the package `qt5-default` is neither recognized by the system nor necessary, so it is recommended to remove it from the package list to install
+
+
 Fedora 25 and higher
 ```sh
 sudo dnf install gcc-c++ gcc-gfortran make cmake git \
@@ -27,6 +31,7 @@ sudo dnf install gcc-c++ gcc-gfortran make cmake git \
                  qt5-qttools-devel qt5-qtbase-devel qt5-qtsvg-devel qt5-qtwebkit-devel qt5-qtsvg-devel \
                  p7zip gnuplot graphviz doxygen rpm-build redhat-lsb
 ```
+
 
 ### Configure the build
 
