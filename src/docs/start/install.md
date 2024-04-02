@@ -22,6 +22,11 @@ sudo apt-get install build-essential g++ cmake git debhelper pkg-config doxygen 
                      qt5-default qtbase5-dev-tools qttools5-dev-tools libqt5svg5-dev \
                      gnuplot p7zip-full graphviz
 ```
+
+!!! warning
+    Since Ubuntu 22.04, the package `qt5-default` is neither recognized by the system nor necessary, so it is recommended to remove it from the package list to install
+
+
 2) Download the [OpenFLUID package](http://www.openfluid-project.org/downloads/) corresponding to the Ubuntu version you are using and install it
 ```sh
 sudo dpkg -i </path/to/openfluid/debfile>
