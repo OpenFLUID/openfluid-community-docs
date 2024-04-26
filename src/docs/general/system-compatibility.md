@@ -62,6 +62,9 @@ This table show the levels of compatibility between OpenFLUID versions and sever
 <tr><td class="OSname">Ubuntu 19.10</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-s">S</td><td></td></tr>
 <tr><td class="OSname">Ubuntu 20.04</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-s">S</td><td class="status-s">S</td></tr>
 <tr><td class="OSname">Ubuntu 20.10</td><td class="status-x">x</td><td></td><td></td><td class="status-x">x</td><td></td><td class="status-x">x</td><td class="status-x">x</td><td class="status-c">c</td><td class="status-s">S</td></tr>
+<tr><td class="OSname">Ubuntu 21.04</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-e">e</td></tr>
+<tr><td class="OSname">Ubuntu 21.10</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-e">e</td></tr>
+<tr><td class="OSname">Ubuntu 22.04</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-s">S</td></tr>
 <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td class="OSname">Debian 8</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td class="OSname">Debian 9</td><td></td><td></td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td></tr>
