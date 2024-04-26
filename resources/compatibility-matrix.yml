@@ -137,6 +137,9 @@ native-compatibility:
     Ubuntu 18.04: supported
     Ubuntu 20.04: supported
     Ubuntu 20.10: supported
+    Ubuntu 21.04: experimental
+    Ubuntu 21.10: experimental
+    Ubuntu 22.04: supported
     Windows 7: theorical
     Windows 8: theorical
     Windows 10: supported
