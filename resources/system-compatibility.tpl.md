@@ -1,6 +1,6 @@
 
 ## System compatibility matrix
-This table show the levels of compatibility between OpenFLUID versions and several operating systems. (Last update: April 2024)
+This table show the levels of compatibility between OpenFLUID versions and several operating systems. (Last update: September 2024)
 
 <div class="compatibility-matrix">
   <table class="legend">

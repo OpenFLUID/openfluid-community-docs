@@ -8,7 +8,7 @@ message: |-
 
 
 ## System compatibility matrix
-This table show the levels of compatibility between OpenFLUID versions and several operating systems.  
+This table show the levels of compatibility between OpenFLUID versions and several operating systems. (Last update: September 2024)
 
 <div class="compatibility-matrix">
   <table class="legend">
@@ -65,6 +65,7 @@ This table show the levels of compatibility between OpenFLUID versions and sever
 <tr><td class="OSname">Ubuntu 21.04</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-e">e</td></tr>
 <tr><td class="OSname">Ubuntu 21.10</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-e">e</td></tr>
 <tr><td class="OSname">Ubuntu 22.04</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-s">S</td></tr>
+<tr><td class="OSname">Ubuntu 24.04</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-s">S</td></tr>
 <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td class="OSname">Debian 8</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td class="OSname">Debian 9</td><td></td><td></td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td></tr>
