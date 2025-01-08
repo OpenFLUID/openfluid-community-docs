@@ -76,6 +76,6 @@ nav:
     - FluidHub API : 'coredev/fluidhub.md'
     - Bugs and feature requests : 'coredev/issues.md'
   - Notes about models :
-    - WaresHub repository : 'models/wareshub.md'
+    - FLuidHub repository : 'models/fluidhub.md'
     - MHYDAS : 'models/mhydas.md'
     - MHYDAS-Pesticides : 'models/mhydas-pesticides.md'
