@@ -21,6 +21,8 @@ It it presented below.
 
 The WaresHub service was the predecessor of FluidHub. The LISAH-Wareshub instance is kept for conservation (https://dev.openfluid-project.org/lisah-wareshub/report/), but not maintained anymore.
 
+### Migration
+While repositories have been replicated from LISAH-Wareshub to OpenFLUID-FluidHub instance, users will have to update their local git settings to use new service. To do so, a custom shell script is provided: https://nextcloud.inrae.fr/s/BfZBS3LGaSk9xgn. It takes a path in argument (eg waresdev folder absolute path) and will convert all "origin" remotes from LISAH-Wareshub to OpenFLUID-fluidhub and keep previous remote url as "old_wareshub" remote.
 
 ## OpenFLUID-FluidHub
 
@@ -33,6 +35,10 @@ In particular, it hosts the MHYDAS and WATSFAR models, the Geo-MHYDAS geomatic t
 * Erosive transfer
 * Agronomy
 * ...
+
+### Changes from Wareshub
+* New categories: fragments and datasets
+* Display of signature and README online for wares in 2.2.+
 
 OpenFLUID-FluidHub can be accessed at [https://hub.openfluid-project.org/ui/](https://hub.openfluid-project.org/ui/).
 Access to source codes is allowed depending on users access rights.
