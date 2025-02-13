@@ -103,15 +103,15 @@ git clone https://username@github.com/username/openfluid.git
 git remote add upstream https://github.com/OpenFLUID/openfluid.git
 ```
 
-Update your  local repository from the reference repository
-```txt
+Update your local repository from the reference repository
+```sh
 git checkout develop
 git fetch upstream
-git merge upstream/develop
+git pull upstream develop
 ```
 
 Once updated, it is recommended to push your freshly updated private local repository to your public repository
-```txt
+```sh
 git checkout develop
 git push origin develop
 ```
@@ -132,7 +132,7 @@ For pushing your work to your public repository:
 ```txt
  git checkout develop
  git fetch upstream
- git merge upstream/develop
+ git pull upstream develop
  git checkout new-plugin-manager
  git rebase develop
  git push origin new-plugin-manager
@@ -165,7 +165,7 @@ Once the integration manager has merged it into the `develop` branch of the proj
 ```txt
 git checkout develop
 git fetch origin
-git merge origin/develop
+git pull origin develop
 ```
 
 * Create a local branch for the source code from the developer

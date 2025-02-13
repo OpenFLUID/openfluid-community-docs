@@ -28,6 +28,9 @@ _(presented at the DevLR workshop)_
 
 ### Highlights on features
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kDUvyPrxz6o" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Highlights for version 2.2.0*  
+<br/>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4sVMEOkYWGw" class="ytvideo" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> *Highlights for version 2.1.11*  
 <br/>
 

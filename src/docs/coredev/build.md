@@ -11,27 +11,28 @@ You may clone the repositories to work with the source code. More information ar
 
 Install the required libraries and tools using the following command:
 
-Ubuntu 16.04 and higher, Debian 8 and higher
+- ubuntu 22.04, Debian 12 and higher
 ```sh
-sudo apt-get install build-essential lsb-release g++ gfortran git cmake \
-                     texlive-latex-extra texlive-fonts-extra latex2html doxygen \
-                     libboost-all-dev libgdal-dev libgeos++-dev \
-                     qt5-default qtbase5-dev-tools qttools5-dev-tools libqt5svg5-dev \
-                     p7zip-full gnuplot graphviz python2.7
+sudo apt-get install -y build-essential lsb-release g++ gfortran git cmake \
+                     texlive-latex-extra texlive-fonts-extra latex2html doxygen pandoc pandoc-citeproc \
+                     libboost-all-dev libgdal-dev libgeos++-dev rapidjson-dev \
+                     python3-setuptools \
+                     mc nano bash-completion sudo \
+                     nodejs npm \
+                     p7zip-full gnuplot graphviz \
+                     r-base-dev libgl1-mesa-dev \
+                     qtchooser qt6-base-dev qt6-tools-dev libqt6svg6-dev \
+                     qt6-l10n-tools qt6-base-dev-tools qt6-tools-dev-tools \
+                     libqt6uitools6 linguist-qt6 libqt6core5compat6 libqt6gui6
 ```
-
-!!! warning
-    Since Ubuntu 22.04, the package `qt5-default` is neither recognized by the system nor necessary, so it is recommended to remove it from the package list to install
-
-
-Fedora 25 and higher
+- Fedora 39 and higher
 ```sh
-sudo dnf install gcc-c++ gcc-gfortran make cmake git \
-                 boost-devel gdal-devel geos-devel \
-                 qt5-qttools-devel qt5-qtbase-devel qt5-qtsvg-devel qt5-qtwebkit-devel qt5-qtsvg-devel \
-                 p7zip gnuplot graphviz doxygen rpm-build redhat-lsb
+dnf install -y gcc-c++ gcc-gfortran make cmake git curl-devel \
+		   boost-devel gdal-devel geos-devel \
+		   qtchooser qt6-qttools-devel qt6-qtbase-devel qt6-qtsvg-devel \
+		   qt6-qtwebengine-devel \
+	 	   p7zip gnuplot graphviz doxygen rpm-build redhat-lsb
 ```
-
 
 ### Configure the build
 

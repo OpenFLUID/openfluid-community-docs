@@ -41,7 +41,7 @@ Do not hesitate to view and review your source code to track errors, especially 
 
 ## Good documentation practices
 
-For easier production of scientific documentation, the sim2doc tool can extract documentation directly from the source code. See also [how to buil documentation from simulators source code](../scidev/simdoc.md).
+For easier production of scientific documentation, the docalyze tool can generate documentation from various inputs. See also [how to buil documentation from simulators source code](https://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.2.0-beta5/main/html/dev_sim2doc.html).
 
 ### Give scientific information
 
