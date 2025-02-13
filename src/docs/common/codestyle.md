@@ -4,9 +4,6 @@ The coding style conventions are often designed for a specific language. The fol
 !!! danger "Recommendation"
     **The major recommendation is to know and apply the following recommendations.**
 
-!!! note "Note for Eclipse IDE users"
-    The coding style can be automatically used in Eclipse IDE through the coding style configuration (_Window > Preferences, C/C++ > Coding style_). You can automatically set up this configuration using this [Eclipse coding style configuration file](http://www.openfluid-project.org/resources/eclipsepi/LISAH_eclipse_coding_style.xml) (_Right-click on link, Save As..._)  
-
 
 ## Naming conventions
 
@@ -396,19 +393,22 @@ bool getInfoAsString(const std::string& Key, std::string& Info) const
 
 ### C++ Standard
 
-Since version 2.1.7, OpenFLUID requires a C++14 compliant compiler to be built.  
-So, it is highly recommended to apply the C++14 and C++11 features, such as:
+Since version 2.2.0, OpenFLUID requires a C++17 compliant compiler to be built.  
+So, it is highly recommended to apply the C++17, C++14 and C++11 features, such as:
 
 * <code>nullptr</code> instead of <code>NULL</code>
 * range-based for loops combined with the <code>auto</code> specifier (instead of iterators based loops for example)
 * <code>enum class</code> instead of classic <code>enum</code>
 * smart pointers wherever it is possible (taking into account the small overhead introduced by smart pointers)
 * delegating constructors where possible
+* <code>nodiscard</code> function attribute when function return is expected to be used
+* <code>optional</code> for variable sometimes not set and <code>variant</code> for type-safe union
 * ...
 
 
 Older versions of OpenFLUID requires C++ compliant compilers
 
+* C++14 for versions from 2.1.7 to 2.1.11 (included)
 * C++11 for versions from 2.1.0 to 2.1.6 (included)
 * C++98 for previous versions
 
@@ -522,31 +522,3 @@ MyWidget::~MyWidget()
     * String manipulations : to and from numeric conversion, splitting, ...
     * Floating point comparison
     * Fortran integration in C++
-
-## Automatic tools for checking OpenFLUID source code
-
-### Static code analysis (cppcheck)
-
-This tool analyses the official OpenFLUID source code using the [cppcheck](http://cppcheck.sourceforge.net/) static analysis tool for C/C++. It helps to point out potential problems such as memory leaks, uninitialized variables, unused variables, ...  
-It does not automatically modify the source code.  
-
-To run this tool, once the CMake configuration is done, execute the following command from the build tree:
-```
-make cppcheck
-```
-
-Options passed to the cppcheck tool can be set through the `CPPCHECK_EXTRA_OPTIONS` CMake variable (in the `CMake.in.cmake` file or your `CMake.in.local.cmake` file)
-
-This tool requires an installed Python interpreter and the cppcheck tool.
-
-### Coding style
-
-This tool checks the official OpenFLUID source code for pointing out out potential coding style problems.  
-It does not automatically modify the source code.  
-
-To run this tool, once the CMake configuration is done, execute the following command from the build tree:
-```
-make stylecheck
-```
-
-This tool requires an installed Python interpreter.

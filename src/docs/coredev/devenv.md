@@ -10,13 +10,12 @@ The libraries are similar to those to build OpenFLUID : see [OpenFLUID build pag
 The main OpenFLUID dependencies are:
 
 * **Boost**
-* **Qt5**
-* **RapidJSON**
+* **Qt6**
 * **GDAL**
-* GEOS (optional)
 
 To build documentation:
 
+* **Pandoc**
 * **LaTeX**
 * **Doxygen**
 
@@ -53,8 +52,8 @@ And for form/UI design:
 
 ### Continuous integrations services
 
-* [![CI](https://github.com/OpenFLUID/openfluid/actions/workflows/CI.yaml/badge.svg)](https://github.com/OpenFLUID/openfluid/actions/workflows/CI.yaml) 
-  **[GitHub Actions](https://github.com/OpenFLUID/openfluid/actions/workflows/CI.yaml)**  
+* **[GitHub Actions](https://github.com/OpenFLUID/openfluid/actions/workflows/CI.yaml)**
+  [![Ubuntu](https://github.com/OpenFLUID/openfluid/actions/workflows/CI-ubuntu.yaml/badge.svg)](https://github.com/OpenFLUID/openfluid/actions/workflows/CI-ubuntu.yaml) [![macOs](https://github.com/OpenFLUID/openfluid/actions/workflows/CI-macos.yaml/badge.svg)](https://github.com/OpenFLUID/openfluid/actions/workflows/CI-macos.yaml) [![Windows](https://github.com/OpenFLUID/openfluid/actions/workflows/CI-windows.yaml/badge.svg)](https://github.com/OpenFLUID/openfluid/actions/workflows/CI-windows.yaml)  
   Used for OpenFLUID test on linux, windows and mac and package builds for linux and mac.  
-  See `.github/workflows/CI.yaml` configuration file in the OpenFLUID repository.
+  See `.github/workflows/*.yaml` configuration file in the OpenFLUID repository.
 

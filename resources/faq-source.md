@@ -17,7 +17,7 @@ See the [OpenFLUID license](../general/license.md) page for license text.
 
 ### On which operating systems OpenFLUID is available?
 
-OpenFLUID works on Linux, Windows and MacOS systems. It is developed on linux system, and has been tested under Linux 64 bits for Ubuntu, Debian and Fedora distributions, Windows 7 and Windows 8 (32bits). It should run on other compatibles operating systems.  
+OpenFLUID works on Linux, Windows and MacOS systems. It is developed on linux system, and has been tested under Linux 64 bits for Ubuntu, Debian and Fedora distributions, Windows 10 (64bits). It should run on other compatibles operating systems.  
 It is available on MacOSX as an HomeBrew package.  
 As far as possible, we recommend to run OpenFLUID on linux systems as it is the main development system.  
 See the [Downloads](http://www.openfluid-project.org/downloads/) page for a list of available packages and installers.

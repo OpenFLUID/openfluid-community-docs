@@ -40,7 +40,7 @@ OpenFLUIDjs:
 
 * Build and create packages in Release mode (see [how to build OpenFLUID](../coredev/build.md)) for the following platforms:
     * [ ] Linux 64bits
-    * [ ] Win 32bits
+    * [ ] Win 64bits
     * [ ] macOS 64bits
 * [ ] Build and create source code package
 
@@ -51,7 +51,7 @@ _Only if external model packages are provided separately with the release_
 
 * Build and create packages for the following platforms:
     * [ ] Linux 64bits
-    * [ ] Win 32bits
+    * [ ] Win 64bits
 * [ ] Build and create source code package
 
 

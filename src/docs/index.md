@@ -1,7 +1,5 @@
-**
 OpenFLUID-Community proposes resources to help the users in their works with the OpenFLUID software.  
-It also contains reference documentation for the platform core developers.  
-**
+It also contains reference documentation for the platform core developers.
 
 <p class='quick'>Quick access:</p>
 <div class="home-container">

@@ -81,7 +81,7 @@ def writeHtmlFromMatrix(Matrix, WithDate=True):
     VisualByStatus = {"supported": '<td class="status-s">S</td>',
                       "compatible": '<td class="status-c">c</td>',
                       "failing": '<td class="status-x">x</td>',
-                      "theorical": '<td class="status-t"><i>t</i></td>',
+                      "theoretical": '<td class="status-t"><i>t</i></td>',
                       "experimental": '<td class="status-e">e</td>'}
 
     Html = '<table class="compatibility-matrix">'

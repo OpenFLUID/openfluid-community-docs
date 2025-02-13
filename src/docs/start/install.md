@@ -9,7 +9,35 @@
 
 ## Linux
 
-### OpenFLUID 2.1.5+
+
+### OpenFLUID 2.2.0+
+
+_Since OpenFLUID 2.2.0, OpenFLUID also relies on Qt5/Qt6 for its UI_
+
+#### Ubuntu 22.04 and higher, Debian 12 and higher
+
+
+1) Download the [OpenFLUID package](http://www.openfluid-project.org/downloads/) corresponding to the Ubuntu version you are using and install it
+```sh
+sudo apt install </path/to/openfluid/debfile>
+# where </path/to/openfluid/debfile> is the path to the downloaded deb file for OpenFLUID.
+```
+
+2) Check the installation by typing the following command in a terminal
+```sh
+openfluid --version
+```
+
+`apt install` should install automatically following dependencies:
+```
+build-essential g++ cmake git debhelper pkg-config doxygen
+libboost-all-dev libgdal-dev libgeos++-dev
+qt6-base-dev, qt6-tools-dev, libqt6svg6-dev, qt6-tools-dev-tools, qt6-l10n-tools
+gnuplot p7zip-full graphviz
+```
+
+
+### OpenFLUID 2.1.5 to 2.1.11
 
 _Since OpenFLUID 2.1.5, OpenFLUID for Linux systems also relies on Qt5_
 
