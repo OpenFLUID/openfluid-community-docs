@@ -114,3 +114,18 @@ For your own simulators, you have to rebuild them for linking with newly install
 ### I installed a new OpenFLUID version on Linux and the OpenFLUID-Builder icon does not show, what should I do?
 
 Just restart your computer, and the OpenFLUID-Builder icon should reappear.  
+
+### I get a Qt version issue when trying to switch to a more recent version, how to fix it?
+
+It is probably related with a conflict between Qt5 and Qt6. We will consider here recent OS where Qt6 is the expected version.
+
+If  `qmake --version` targets Qt5 or displays an error like `qmake: could not exec '/usr/lib/qt5/bin/qmake': No such file or directory`
+
+1) Check `qmake` install: `sudo find /usr -name qmake 2>/dev/null`  
+2) Configure `qmake` with `update-alternatives`  (execute second line only if a version of `qmake` for Qt5 is found)
+```
+sudo update-alternatives --install /usr/bin/qmake qmake /usr/lib/qt6/bin/qmake 20 
+sudo update-alternatives --install /usr/bin/qmake qmake /usr/lib/qt5/bin/qmake 10 
+```
+3) Select `qmake` version by executing `sudo update-alternatives --config qmake` and chose **Qt6** in the list  
+4) Ensure qmake version is consistent: `qmake --version`
