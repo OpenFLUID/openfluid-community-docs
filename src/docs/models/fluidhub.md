@@ -22,7 +22,7 @@ It it presented below.
 The WaresHub service was the predecessor of FluidHub. The LISAH-Wareshub instance is kept for conservation (https://dev.openfluid-project.org/lisah-wareshub/report/), but not maintained anymore.
 
 ### Migration
-While repositories have been replicated from LISAH-Wareshub to OpenFLUID-FluidHub instance, users will have to update their local git settings to use new service. To do so, a custom shell script is provided: https://nextcloud.inrae.fr/s/BfZBS3LGaSk9xgn. It takes a path in argument (eg waresdev folder absolute path) and will convert all "origin" remotes from LISAH-Wareshub to OpenFLUID-fluidhub and keep previous remote url as "old_wareshub" remote.
+While repositories have been replicated from LISAH-Wareshub to OpenFLUID-FluidHub instance, users will have to update their local git settings to use new service. To do so, a [custom shell script](https://nextcloud.inrae.fr/s/BfZBS3LGaSk9xgn) is provided. It takes a path in argument (eg waresdev folder absolute path) and will convert all "origin" remotes from LISAH-Wareshub to OpenFLUID-fluidhub and keep previous remote url as "old_wareshub" remote.
 
 ## OpenFLUID-FluidHub
 
