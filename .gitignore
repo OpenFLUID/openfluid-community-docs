@@ -2,3 +2,5 @@ _*
 .*
 !.gitignore
 *.pyc
+
+src/site*
