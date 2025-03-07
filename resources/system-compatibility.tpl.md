@@ -23,14 +23,13 @@ Here are listed versions of OpenFLUID Docker images that can be pulled from [Doc
 
 <table class="compatibility-matrix">
 <thead>
-<tr><th>OpenFLUID version</th>
-{% for i in dockerhubTable.ofversions %}
-<th>{{i}}</th>
-{% endfor %}
+<tr><th>OpenFLUID version</th><th>Base OS</th>
 </thead>
-<tr><td>Base OS</td>
-{% for i in dockerhubTable.os %}
+<tr>
+{% for i in dockerhubTable %}
+<tr>
 <td>{{i}}</td>
-{% endfor %}
+<td>{{dockerhubTable[i]}}</td>
 </tr>
+{% endfor %}
 </table>

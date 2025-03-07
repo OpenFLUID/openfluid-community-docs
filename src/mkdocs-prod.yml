@@ -51,6 +51,7 @@ nav:
     - License : 'general/license.md'
     - Releases notes : 'general/changelog.md'
     - System compatibility : 'general/system-compatibility.md'
+    - Work with two versions : 'general/cohabitation.md'
     - Versions numbers : 'general/versionsnum.md'
     - Logo, icon and more: 'general/logoicon.md'
     - FAQ : 'general/faq.md'
@@ -78,4 +79,3 @@ nav:
     - FluidHub repository : 'models/fluidhub.md'
     - MHYDAS : 'models/mhydas.md'
     - MHYDAS-Pesticides : 'models/mhydas-pesticides.md'
-

@@ -43,6 +43,8 @@ def translateYamlToMatrix(Data, Source="native-compatibility"):
             if s.startswith(WantedSystem):
                 CustomOrderSystems += [s]
 
+    CustomOrderSystems.sort()
+
     # Unknown systems are added after the others
     CustomOrderSystems += list(set(Systems) - set(CustomOrderSystems))
     Systems = CustomOrderSystems
@@ -148,7 +150,7 @@ NativeMatrix = translateYamlToMatrix(Data_loaded, Source="native-compatibility")
 Vars['nativeMatrix'] = writeHtmlFromMatrix(NativeMatrix)
 
 DockerhubTable = generateDockerhubTable(Data_loaded["dockerhub-versions"])
-Vars['dockerhubTable'] = DockerhubTable
+Vars['dockerhubTable'] = Data_loaded["dockerhub-versions"]
 
 TplPath, TplFilename = os.path.split(os.path.join(Helpers.RessDir,
                                      "system-compatibility.tpl.md"))

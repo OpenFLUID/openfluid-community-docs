@@ -16,28 +16,45 @@ _Since OpenFLUID 2.2.0, OpenFLUID relies on Qt5 or Qt6 for its UI_
 
 #### Ubuntu 22.04 and higher, Debian 12 and higher
 
-
 1) Download the [OpenFLUID package](http://www.openfluid-project.org/downloads/) corresponding to the Ubuntu version you are using and install it
 ```sh
 sudo apt install </path/to/openfluid/debfile>
 # where </path/to/openfluid/debfile> is the path to the downloaded deb file for OpenFLUID.
 ```
 
+<small>
+`apt install` should install automatically following dependencies: `build-essential g++ cmake git debhelper pkg-config doxygen, libboost-all-dev libgdal-dev libgeos++-dev, qt6-base-dev, qt6-tools-dev, libqt6svg6-dev, qt6-tools-dev-tools, qt6-l10n-tools, gnuplot p7zip-full graphviz`
+</small>
+
 2) Check the installation by typing the following command in a terminal
 ```sh
 openfluid --version
 ```
 
-##### Notes
-`apt install` should install automatically following dependencies:
-```
-build-essential g++ cmake git debhelper pkg-config doxygen
-libboost-all-dev libgdal-dev libgeos++-dev
-qt6-base-dev, qt6-tools-dev, libqt6svg6-dev, qt6-tools-dev-tools, qt6-l10n-tools
-gnuplot p7zip-full graphviz
-```
+
+To build <strong>ware documentation</strong>, you will require following packages: `texlive-latex-base`, `texlive-fonts-extra`, `pandoc` (and `pandoc-citeproc` for Ubuntu 22.04 and below)
 
 If your system has issues by having both Qt5 and Qt6, see [related section in troubleshooting page](../general/faq.md#i-get-a-qt-version-issue-when-trying-to-switch-to-a-more-recent-version-how-to-fix-it).
+
+#### Linux Fedora 40 and higher
+
+
+1) Download the [OpenFLUID package](http://www.openfluid-project.org/downloads/) corresponding to the Fedora version you are using and install it
+```sh
+sudo rpm -i </path/to/openfluid/rpmfile>
+# where </path/to/openfluid/rpmfile> is the path to the downloaded rpm file for OpenFLUID.
+```
+
+<small>
+`rpm` should install automatically following dependencies: `make, gcc-c++, gcc-gfortran, cmake, boost-devel >= 1.54, gdal-devel, libcurl, p7zip, gnuplot, graphviz, git, qt6-qttools-devel, qt6-qtbase-devel, qt6-qtsvg-devel, qt6-qtwebengine-devel`
+</small>
+
+2) Check the installation by typing the following command in a terminal
+```sh
+openfluid --version
+```
+
+To build <strong>ware documentation</strong>, you will require following packages: `texlive-scheme-full`, `texlive-collection-fontsextra`, `pandoc`
 
 
 ### OpenFLUID 2.1.5 to 2.1.11

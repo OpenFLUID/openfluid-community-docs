@@ -51,6 +51,7 @@ nav:
     - License : 'general/license.md'
     - Releases notes : 'general/changelog.md'
     - System compatibility : 'general/system-compatibility.md'
+    - Work with two versions : 'general/cohabitation.md'
     - Versions numbers : 'general/versionsnum.md'
     - Logo, icon and more: 'general/logoicon.md'
     - FAQ : 'general/faq.md'
@@ -60,7 +61,6 @@ nav:
     - Conventions for naming simulators and data : 'scidev/simdatanaming.md'
     - Coding style : 'scidev/codestyle.md'
     - Good practices for simulators development : 'scidev/simgood.md'
-    - Simulators documentation : 'scidev/simdoc.md'
     - Requirements for simulators release : 'scidev/simrelease.md'
     - Updating the source code of simulators : 'scidev/simupdate.md'
   - OpenFLUID and R :
