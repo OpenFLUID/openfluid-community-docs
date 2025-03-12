@@ -148,6 +148,7 @@ native-compatibility:
     MacOS 10.15.x (Catalina): supported
     MacOS 11.x.x (Big Sur): compatible
   2.2.0:
+    Debian 11: supported
     Debian 12: supported
     Fedora 40: supported
     Fedora 41: supported
