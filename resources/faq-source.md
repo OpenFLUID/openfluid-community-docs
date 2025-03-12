@@ -129,3 +129,19 @@ sudo update-alternatives --install /usr/bin/qmake qmake /usr/lib/qt5/bin/qmake 1
 ```
 3) Select `qmake` version by executing `sudo update-alternatives --config qmake` and chose **Qt6** in the list  
 4) Ensure qmake version is consistent: `qmake --version`
+
+## Known issues
+
+### All systems
+
+- Potential crash when quitting Builder with an example project opened. (Qt5 systems)
+
+### Fedora
+
+- Examples projects and simulators cannot be installed.
+
+### Windows
+
+- A versioned ware cannot be deleted in DevStudio interface. To do so, delete it manually in file explorer.
+
+If you detect any bugs, please check for [Github issues](https://github.com/OpenFLUID/openfluid/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22confirmed%20bug%20%3Abug%3A%22) first. If it is not mentioned, you can [contact us](../start/support.md).

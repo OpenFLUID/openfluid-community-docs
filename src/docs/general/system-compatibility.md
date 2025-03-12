@@ -59,6 +59,7 @@ This table show the levels of compatibility between OpenFLUID versions and sever
 <tr><td class="OSname">Debian  8</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td class="OSname">Debian  9</td><td></td><td></td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td></td></tr>
 <tr><td class="OSname">Debian 10</td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-s">S</td><td class="status-s">S</td><td class="status-s">S</td><td></td></tr>
+<tr><td class="OSname">Debian 11</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-s">S</td></tr>
 <tr><td class="OSname">Debian 12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="status-s">S</td></tr>
 <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 <tr><td class="OSname">Fedora 22</td><td class="status-s">S</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
