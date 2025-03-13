@@ -3,6 +3,28 @@
     [Adobe Acrobat Reader](http://get.adobe.com/reader/) (9 or higher) is recommended for viewing the following PDF files, as they embed animations.
 
 
+## 2025
+
+The 2025 session is based on OpenFLUID 2.2.0.
+
+### Practical works (PW)
+
+* [PW0 - Start](http://www.openfluid-project.org/resources/docs/trainings/2025-02/pw0-startusingMhydas.pdf) (in french)
+* [PW1 - Creation of a simulator](http://www.openfluid-project.org/resources/docs/trainings/2025-02/pw1-simulator.pdf) (in french)
+* [PW2 - Production of variables](http://www.openfluid-project.org/resources/docs/trainings/2025-02/pw2-prodvar.pdf) (in french)
+* [PW3 - Use of variables](http://www.openfluid-project.org/resources/docs/trainings/2025-02/pw3-usevar.pdf) (in french)
+* [PW4 - Use of simulator parameters](http://www.openfluid-project.org/resources/docs/trainings/2025-02/pw4-simparams.pdf) (in french)
+* [PW5 - Use of spatial attributes](http://www.openfluid-project.org/resources/docs/trainings/2025-02/pw5-useattrs.pdf) (in french)
+* [PW6 - Use of spatial units connections](http://www.openfluid-project.org/resources/docs/trainings/2025-02/pw6-connect.pdf) (in french)
+* [PW7 - Use of discrete events](http://www.openfluid-project.org/resources/docs/trainings/2025-02/pw7-events.pdf) (in french)
+
+
+### Datasets
+
+* Datasets for practical works, available as either zip or tar.gz archive format:
+    * [zip archive format](http://www.openfluid-project.org/resources/docs/trainings/2025-02/training-datasets_2025-02.zip)
+    * [tar.gz archive format](http://www.openfluid-project.org/resources/docs/trainings/2025-02/training-datasets_2025-02.tar.gz)
+
 ## June 2019
 
 The june 2019 session is based on OpenFLUID 2.1.8.
