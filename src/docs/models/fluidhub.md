@@ -45,7 +45,7 @@ Access to source codes is allowed depending on users access rights.
 
 ### User guide
 #### Fragments
-*Metadata*: should be stored in a `openfluid-dataset.json` with content in this format:
+*Metadata*: should be stored in a `openfluid-fragment.json` with content in this format:
 ```json
 {
   "id": "h.k",
