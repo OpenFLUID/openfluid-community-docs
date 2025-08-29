@@ -7,18 +7,23 @@ The [FAQ](../general/faq.md) may be a good starting point for common questions.
 See the [OpenFLUID team](https://www.openfluid-project.org/who/) page of the OpenFLUID main site.
 
 
-## Chat - Slack
+## Chat - Mattermost / Slack
+Main discussion space is Mattermost INRAE service.
 
-An OpenFLUID workspace is available on Slack. Using this workspace, you can chat online with other users and the OpenFLUID team to get help.  
+### Mattermost INRAE
+Using this workspace, you can chat online with other users and the OpenFLUID team to get help.  
+Send an email to [contact at openfluid-project.org](mailto:contact@openfluid-project.org?subject=[OpenFLUID] Invite link to Mattermost workspace) and we will send you back an invite link for the workspace.  
+Then, you can log into this workspace at [OpenFLUID on Mattermost INRAE](https://chat.forge.inrae.fr/openfluid-software/)
+
+
+### Slack
+For users not in the ESR Federation, an OpenFLUID workspace is still available on Slack. Using this workspace, you can chat online with other users and the OpenFLUID team to get help.  
 Send an email to [contact at openfluid-project.org](mailto:contact@openfluid-project.org?subject=[OpenFLUID] Invite link to Slack workspace) and we will send you back an invite link for the workspace.  
 Then, you can log into this workspace at [https://openfluid.slack.com/](https://openfluid.slack.com/)
 
 
-## Twitter
-<a class="twitter-follow-button" href="https://twitter.com/OpenFLUID" data-size="large" data-show-count="false">Follow @OpenFLUID</a>
-<br/>
-<br/>
-<a class="twitter-timeline" href="https://twitter.com/OpenFLUID?ref_src=twsrc%5Etfw" data-width="400" data-height="600">Tweets by OpenFLUID</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+## LinkedIn
+[LinkedIn page of OpenFLUID](https://www.linkedin.com/company/openfluid)
 
 
 ## Mailing-list
