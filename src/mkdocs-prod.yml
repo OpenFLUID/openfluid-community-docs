@@ -58,6 +58,7 @@ nav:
   - Simulators development :
     - Development environment : 'scidev/scidevenv.md'
     - Create and build a simulator : 'scidev/simbuild.md'
+    - Test a simulator : 'scidev/simtest.md'
     - Conventions for naming simulators and data : 'scidev/simdatanaming.md'
     - Coding style : 'scidev/codestyle.md'
     - Good practices for simulators development : 'scidev/simgood.md'
