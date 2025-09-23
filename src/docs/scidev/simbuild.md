@@ -1,1 +1,1 @@
-cf ['Creation of a simulator' on OpenFLUID documentation](https://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.2.0-beta5/main/html/dev_createsim.html)
+cf ['Creation of a simulator' on OpenFLUID documentation](https://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.2.0/main/html/dev_createsim.html)
