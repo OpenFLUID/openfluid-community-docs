@@ -130,6 +130,9 @@ sudo update-alternatives --install /usr/bin/qmake qmake /usr/lib/qt5/bin/qmake 1
 3) Select `qmake` version by executing `sudo update-alternatives --config qmake` and chose **Qt6** in the list  
 4) Ensure qmake version is consistent: `qmake --version`
 
+### When i recompile a ware more than once, it fails. How to handle this?
+This is a known issue in OpenFLUID since release 2.2.0. If this happens you should clean the build directory (use "purge" option in CLI or DevStudio dashboard) and rerun the configuration and compilation steps.
+
 ## Known issues
 
 ### All systems
@@ -142,6 +145,7 @@ sudo update-alternatives --install /usr/bin/qmake qmake /usr/lib/qt5/bin/qmake 1
 
 ### Windows
 
-- A versioned ware cannot be deleted in DevStudio interface. To do so, delete it manually in file explorer.
+- Unable to install wares when Builder is open under Windows
+
 
 If you detect any bugs, please check for [Github issues](https://github.com/OpenFLUID/openfluid/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22confirmed%20bug%20%3Abug%3A%22) first. If it is not mentioned, you can [contact us](../start/support.md).

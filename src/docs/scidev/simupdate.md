@@ -59,12 +59,12 @@ In case the revert migration action fails, you can manually recover your files i
 
 These recommended updates are for deprecated datatypes, methods, functions, or macros. Not doing these recommended updates will not prevent your simulators from building and running. You just get compiler warnings when you will build your simulators. However it is recommended to apply these updates as the deprecated items will be completely removed in a later version of OpenFLUID.
 
-The recommendations below are for usual datatypes, methods, functions and macros. For others, consult the deprecated list in the [OpenFLUID API documentation](https://community.openfluid-project.org/start/manuals/) for version 2.2.0.
+The recommendations below are for usual datatypes, methods, functions and macros. For others, consult the [deprecated list](https://www.openfluid-project.org/resources/docs/manuals/en/openfluid/2.2.1/main/html/deprecated.html) in the OpenFLUID API documentation for version 2.2.0 and above.
 #### Methods
 
 | Description             | Old                                                                                  | New                          |
 | ----------------------- | ------------------------------------------------------------------------------------ | ---------------------------- |
-| convert value to string | `openfluid::tools::convertValue(const T& ValueToConvert, std::string* StrConverted)` | `std::to_string()`           |
+| convert value to string (when not double) | `openfluid::tools::convertValue(const T& ValueToConvert, std::string* StrConverted)` | `std::to_string()`           |
 | get ware parameter      | `OPENFLUID_GetSimulatorParameter`                                                    | `OPENFLUID_GetWareParameter` |
 
 #### Filesystem operations 
