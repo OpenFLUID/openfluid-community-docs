@@ -9,6 +9,7 @@ openfluid-release-months:
   2.1.10: 2020/09
   2.1.11: 2021/03
   2.2.0: 2025/03
+  2.2.1: 2025/12
 
 
 native-compatibility:
@@ -162,6 +163,21 @@ native-compatibility:
     MacOS 13: theoretical
     MacOS 14: theoretical
     MacOS 15: theoretical
+  2.2.1:
+    Debian 11: supported
+    Debian 12: supported
+    Debian 13: supported
+    Fedora 41: supported
+    Fedora 42: supported
+    Ubuntu 22.04: supported
+    Ubuntu 24.04: supported
+    Ubuntu 24.10: supported
+    Ubuntu 25.04: supported
+    Ubuntu 25.10: failing
+    Windows  7: theoretical
+    Windows  8: theoretical
+    Windows 10: supported
+    Windows 11: theoretical
 
 
 dockerhub-versions:
@@ -175,3 +191,4 @@ dockerhub-versions:
   2.1.10: Ubuntu 20.04
   2.1.11: Ubuntu 20.04
   2.2.0: Ubuntu 22.04
+  2.2.1: Ubuntu 24.04
