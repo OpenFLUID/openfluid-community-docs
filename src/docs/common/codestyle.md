@@ -76,7 +76,7 @@ Example for a MyFilename.hpp file:
 
 | Identifier | Rule | Example |
 | ------------ | ------------- | ------------ |
-| Local variable | use pascalCase  | MyVariable
+| Local variable | use PascalCase  | MyVariable
 | Variable in a macro | begins with a `_` (underscore), followed by an upper case 'M', followed by a `_` (underscore), followed by the name of the variable  | _M_Variable
 | Constant value | use UPPERCASE, every sub-part of the name are separated by a `_` (underscore) |  MY_CONSTANT
 | Type name | use PascalCase, followed by a '_' (underscore), followed by a 't' | Type_t

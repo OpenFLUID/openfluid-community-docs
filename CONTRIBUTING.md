@@ -21,7 +21,7 @@ As the OpenFLUID community documentation is adressed to the users, we ❤️ the
 1. Let us know you want to make a contribution, it is always better to know each others for later interactions. For that, you can use our [support tools](http://community.openfluid-project.org/start/support/)
 1. Fork the documentation repository
 1. Clone your fork locally and create a dedicated branch for your contributions
-1. Update the documentation with your contributions by committing it locally. Check that your contributed documentation builds without problem usink mkdocs (see [next part](#writing-using-mkdocs))
+1. Update the documentation with your contributions by committing it locally. Check that your contributed documentation builds without problem using mkdocs (see [next part](#writing-using-mkdocs))
 1. Push it to your forked repository in the dedicated branch
 1. Make a pull request for your contributions
 
