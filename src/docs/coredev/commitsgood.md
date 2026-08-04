@@ -20,7 +20,7 @@ A commit message should be made of 3 parts:
 * A **summary title**
 * A list of **things done** in this commit, each item must start with the `*` character
 * If exists, a **reference to the issue** to which the commit is linked to, writent inside brackets. It is made of the id of the issue, prefixed by the OpenFLUID/openfluid  repository reference and a `#` character. It is introduced by the _references_ word if the commit is a contribution to solve the issue, or by the _closes_ word if the commit closes the issue.  
-The issue tracking system is available on GitHub in the [OpenFLUID/openfluid repository](https://github.com/OpenFLUID/openfluid/issues). This tracking system holds issues tickets for all OpenFLUID repositories (main OpenFLUID framework and applications, ROpenFLUID, PyOpenFLUID, ...).  
+The issue tracking system is available on INRAE forge in the [OpenFLUID/openfluid repository](https://forge.inrae.fr/openfluid/openfluid/-/work_items). This tracking system holds issues tickets for all OpenFLUID repositories (main OpenFLUID framework and applications, ROpenFLUID, PyOpenFLUID, ...). For non-academic users, a mirror is available on GitHub allowing ticket creation.
 
 The 3 parts are separated by a blank line.  
 <br/>

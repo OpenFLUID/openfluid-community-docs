@@ -68,7 +68,7 @@ You can also get help from the OpenFLUID community using the mailing-list or the
 
 ### I found a bug or I would like to suggest a feature, what should I do?
 
-You can report a bug or suggest a new feature by filling a New Issue on the [issues ticket system](http://github.com/OpenFLUID/openfluid).
+You can report a bug or suggest a new feature by filling a New Issue on the [issues ticket system](https://forge.inrae.fr/openfluid/openfluid).
 
 ## Installation
 
@@ -78,9 +78,9 @@ The latest OpenFLUID packages are available from the [OpenFLUID downloads page](
 
 ### How do I get the current source code and build OpenFLUID?
 
-You can get the current OpenFLUID source code from our git repository on GitHub, using the following command:
+You can get the current OpenFLUID source code from our git repository on INRAE Forge, using the following command:
 ```sh
-git clone https://github.com/OpenFLUID/openfluid
+git clone https://forge.inrae.fr/openfluid/openfluid.git
 ```
 
 This source code can be built following the [build instructions](../coredev/build.md).
@@ -187,4 +187,4 @@ This is a known issue in OpenFLUID since release 2.2.0. If this happens you shou
 - Unable to install wares when Builder is open under Windows
 
 
-If you detect any bugs, please check for [Github issues](https://github.com/OpenFLUID/openfluid/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22confirmed%20bug%20%3Abug%3A%22) first. If it is not mentioned, you can [contact us](../start/support.md).
+If you detect any bugs, please check for [INRAE Forge issues](https://forge.inrae.fr/openfluid/openfluid/-/work_items?label_name%5B%5D=confirmed%20bug%20%3Abug%3A) first. If it is not mentioned, you can [contact us](../start/support.md).

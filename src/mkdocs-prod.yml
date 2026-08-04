@@ -13,7 +13,7 @@ extra_javascript:
   - js/cookie-banner.js
 
 site_url: https://community.openfluid-project.org/
-repo_url: https://github.com/OpenFLUID/openfluid-community-docs
+repo_url: https://forge.inrae.fr/openfluid/ressources/openfluid-community-docs
 edit_uri: blob/master/src/docs
 
 extra:

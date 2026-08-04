@@ -1,6 +1,6 @@
 ## Getting the sources
 
-The OpenFLUID source code is available on our [GitHub organization](https://github.com/OpenFLUID).
+The OpenFLUID source code is available on our [INRAE Forge organization](https://forge.inrae.fr/openfluid).
 You may clone the repositories to work with the source code. More information are available on the [Working with source code](srccodework.md) page.
 
 
@@ -104,7 +104,7 @@ This example shows how to get the current sources from the OpenFLUID git reposit
 The previously mentioned [prerequisites](#prerequisites) should be satisfied.
 
 ```sh
-git clone https://github.com/OpenFLUID/openfluid
+git clone https://forge.inrae.fr/openfluid/openfluid.git
 cd openfluid
 mkdir _build
 cd _build

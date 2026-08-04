@@ -13,7 +13,7 @@ extra_javascript:
   - js/cookie-banner.js
 
 site_url: $siteURL
-repo_url: https://github.com/OpenFLUID/openfluid-community-docs
+repo_url: https://forge.inrae.fr/openfluid/ressources/openfluid-community-docs
 edit_uri: blob/master/src/docs
 
 extra:
@@ -22,7 +22,7 @@ extra:
   twitter_account: "@OpenFLUID"
   image_og : "ofcommunity_og.png"
 
-copyright: 'Copyright INRA-Montpellier SupAgro - <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>'
+copyright: 'Copyright(c) INRAE - <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>'
 
 markdown_extensions:
   - admonition

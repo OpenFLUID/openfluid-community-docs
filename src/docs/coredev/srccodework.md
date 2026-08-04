@@ -1,11 +1,11 @@
 
-The OpenFLUID source code is hosted on [GitHub](https://github.com/OpenFLUID), and is made of several Git repositories.  
+The OpenFLUID source code is hosted on [INRAE Forge](hhttps://forge.inrae.fr/openfluid), and is made of several Git repositories.  
 They can be cloned with read and/or write access depending on your granted rights _(replace username by you registered user name in the following URLs)_:
 
-* OpenFLUID framework and applications : [https://username@github.com/OpenFLUID/openfluid.git](https://username@github.com/OpenFLUID/openfluid.git)
-* ROpenFLUID package for R : [https://username@github.com/OpenFLUID/ropenfluid.git](https://username@github.com/OpenFLUID/ropenfluid.git)
-* PyOpenFLUID package for Python : [https://username@github.com/OpenFLUID/pyopenfluid.git](https://username@github.com/OpenFLUID/pyopenfluid.git)
-* OpenFLUIDjs module for node.js : [https://username@github.com/OpenFLUID/openfluidjs.git](https://username@github.com/OpenFLUID/openfluidjs.git)
+* OpenFLUID framework and applications : [https://username@forge.inrae.fr/openfluid/openfluid.git](https://username@forge.inrae.fr/openfluid/openfluid.git)
+* ROpenFLUID package for R : [https://username@forge.inrae.fr/openfluid/ropenfluid.git](https://username@forge.inrae.fr/openfluid/ropenfluid.git)
+* PyOpenFLUID package for Python : [https://username@forge.inrae.fr/openfluid/pyopenfluid.git](https://username@forge.inrae.fr/openfluid/pyopenfluid.git)
+* OpenFLUIDjs module for node.js : [https://username@forge.inrae.fr/openfluid/openfluidjs.git](https://username@forge.inrae.fr/openfluid/openfluidjs.git)
 * FluidHub services : [https://username@github.com/OpenFLUID/openfluid-fluidhub.git](https://username@github.com/OpenFLUID/openfluid-fluidhub.git)
 
 
@@ -57,11 +57,11 @@ The OpenFLUID branching model is inspired from the [Vincent Driessen](http://nvi
 ### Overview
 
 
-* The `master` and `develop` branches are hosted on the [reference Git repository on GitHub](http://github.com/OpenFLUID/).
+* The `master` and `develop` branches are hosted on the [reference Git repository on INRAE Forge](https://forge.inrae.fr/openfluid/OpenFLUID/).
 
 * The feature branches are hosted on _developers_ repositories. These _developers_ repositories must be public with read-only access to _integration manager(s)_.
 
-* For contributing to the OpenFLUID project, it is recommended for _developers_ to have an account on [GitHub](https://github.com/) in order to host their own public repositories and use the fork system provided by this service. However, other hosting is possible so far as it provides read-only access to _integration manager(s)_
+* For contributing to the OpenFLUID project, it is recommended for _developers_ to have an account either on [INRAE Forge](https://forge.inrae.fr) or on [GitHub](https://github.com/) in order to host their own public repositories and use the fork system provided by this service. However, other hosting is possible so far as it provides read-only access to _integration manager(s)_
 
 <center>
 ![OpenFLUID git workflow](OpenFLUID_git_workflow.png)  

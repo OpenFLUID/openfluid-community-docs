@@ -75,10 +75,10 @@ ROpenFLUID:
 
 * [ ] Upload OpenFLUID packages
 * [ ] Upload models packages (if any)
-* [ ] Update containers configurations on GitHub
+* [ ] Update containers configurations on INRAE Forge
 * [ ] Upload Docker image on DockerHub
 * [ ] Update README on DockerHub
-* [ ] Update brew cask configuration on Github
+* [ ] Update brew cask configuration on INRAE Forge
 * [ ] Upload "highlights on version" video on YouTube (if any)
 
 
@@ -114,9 +114,9 @@ ROpenFLUID:
     * [ ] openfluid
     * [ ] ropenfluid
     * [ ] homebrew-openfluid
-* [ ] Update master branch to develop branch and push it on GitHub
-* [ ] Push tags on GitHub (if not already done)
-* Create releases on GitHub
+* [ ] Update master branch to develop branch and push it on INRAE Forge
+* [ ] Push tags on INRAE Forge (if not already done)
+* Create releases on INRAE Forge
     * [ ] openfluid
     * [ ] ropenfluid
 * [ ] Push to secondary repositories, including tags

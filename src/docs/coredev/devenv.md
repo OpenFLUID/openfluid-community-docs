@@ -1,6 +1,6 @@
 ## Source code repositories
 
-Code and tickets are hosted on GitHub in the [OpenFLUID Project](https://github.com/OpenFLUID/openfluid). A more 
+Code and tickets are hosted on INRAE Forge in the [OpenFLUID Project](https://forge.inrae.fr/openfluid/openfluid) with a mirroring on GitHub. A more 
 comprehensive description of the versionning strategy is available [here](srccodework.md).
 
 ## Dependencies

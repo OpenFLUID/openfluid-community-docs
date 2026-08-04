@@ -49,5 +49,5 @@ It also contains reference documentation for the platform core developers.
 !!! tip "Contributions are welcome!"
     **Feel free to contribute to the community documentation!**
 
-    More informations on how to contribute are available in the **[CONTRIBUTING](https://github.com/OpenFLUID/openfluid-community-docs/blob/master/CONTRIBUTING.md)** file of the documentation sources. 
+    More informations on how to contribute are available in the **[CONTRIBUTING](https://forge.inrae.fr/openfluid/ressources/openfluid-community-docs/-/blob/master/CONTRIBUTING.md?ref_type=heads)** file of the documentation sources. 
 <br/>
