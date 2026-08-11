@@ -219,6 +219,7 @@ std::string Vehicle::getColor()
 ### CMake variables, functions and macros
 
 The CMake variables, functions and macros related to OpenFLUID must be prefixed by either the `OFBUILD_` or `OPENFLUID_` string, applying the following rules as strictly as possible:
+
 * Use `OFBUILD_` for items which are internal to the OpenFLUID build system
 * Use `OPENFLUID_` for items which may be publicly available through the SDK (i.e. items that may be used in config.hpp file or CMake modules for wares development)
 
@@ -287,9 +288,9 @@ In the `#include` part at the top of sources files, group files by category from
 
 ### Namespaces opening and closing
 
-* Namespace content should begin on the next line after namespace opening bracket. The closing brancket should be on the next line after the namespace content.
+* Namespace content should begin on the next line after namespace opening bracket. The closing brancket should be on the next line after the namespace content, with namespace name as comment.
 * Nested namespaces should be opened on the same line
-* Nested namespaces should be closed on the same line, with namespace name as comment
+* Nested namespaces should be closed on the same line, with "namespaces" as comment
 
 ```cpp
 namespace foo {
@@ -383,8 +384,8 @@ The API documentation should be written following the [Doxygen](https://www.doxy
 ```cpp
 /*
   Returns an information as a string
-  @param[Key the requested information key
-  @param[out](in]) Info the value corresponding to the requested key
+  @param[in] Key the requested information key
+  @param[in,out] Info the value corresponding to the requested key
   @return true if the key exists and the conversion to string type runs successfully
 */
 bool getInfoAsString(const std::string& Key, std::string& Info) const
@@ -451,7 +452,7 @@ int doThis()
 ### Qt UI Components
 
 * Qt UI components should be designed using QtCreator designing tool.
-* Qt UI components should be integrated in the source code using the [single inheritence method with a pointer membre variable](http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html#using-a-pointer-member-variable).
+* Qt UI components should be integrated in the source code using the [single inheritence method with a pointer membre variable](https://doc.qt.io/qt-6/designer-using-a-ui-file.html#using-a-pointer-member-variable).
 * For a more explicit source code of Qt UI components, avoid using the auto-connect system for signals and slots
 
 

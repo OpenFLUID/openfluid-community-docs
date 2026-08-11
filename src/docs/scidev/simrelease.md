@@ -30,6 +30,7 @@ The form for **Experimental** status is available [here](http://www.openfluid-pr
 The **Beta** status corresponds to a level where the simulator core is quite stable and developments are more focused on source code stability and errors management. Few tests have been made on several datasets.
 
 In order to match the beta status requirements, at least the main following items must be checked:
+
 * must be compliant with Experimental status,
 * the source code must be built on two operating systems,
 * more complete documentation must be provided,

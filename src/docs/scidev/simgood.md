@@ -7,7 +7,7 @@ In order to produce clean code, read and apply coding style guidelines. Followin
 You can adopt the [OpenFLUID coding style](../scidev/codestyle.md).
 
 
-### Raise warnings an errors
+### Raise warnings and errors
 
 While checking possible errors or warnings, give information about these failed tests using the `OPENFLUID_RaiseWarning` and `OpenFLUID_RaiseError` methods.
 
@@ -49,7 +49,7 @@ Scientific information is really important for an adapted use of the simulator y
 
 ### Give usage information
 
-Usage information will explain how to use the simulators, the input and output variables, the used attributes, the used parameters. A good usage information will increase the useness of the simulator and the modelling work efficiency.
+Usage information will explain how to use the simulators, the input and output variables, the used attributes, the used parameters. A good usage information will increase the usefulness of the simulator and the modelling work efficiency.
 
 ## Good practices for simulator signature
 

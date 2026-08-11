@@ -4,7 +4,7 @@
 ### OpenFLUID framework and applications, and related documentation
 
 * [ ] All modifications are commited
-* [ ] All tests passes in Debug build mode
+* [ ] All tests pass in Debug build mode
 * [ ] Version number is correct in CMake.in.cmake
 * [ ] CHANGELOG file is up-to-date
 * [ ] Version number is correct in user manual

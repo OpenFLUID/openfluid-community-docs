@@ -38,15 +38,15 @@ They are public with read-only access for contributing _developers_.
 
 The features branches are for developers and each branch supports the work in progress of a single new feature or a single bugfix:
 
-* A feature branch should be named using a shot definition of the work (i.e. fix-wrong-data-id), and should be prefixed by the ticket number if any (i.e. t147-fix-wrong-data-id)
+* A feature branch should be named using a short definition of the work (i.e. fix-wrong-data-id), and should be prefixed by the ticket number if any (i.e. t147-fix-wrong-data-id)
 * When created, the source code must come from the `develop` branch
 * During the branch life, the source code should be updated from the `develop` branch updates
 * Once completed, they are merged in the `develop` branch by _integration manager(s)_.
 * A `feature` branch must not be deleted until it is merged in the `develop` branch<br/>
 
 <center>
-![OpenFLUID branching model](OpenFLUID_branching_workflow.png)  
-_OpenFLUID branching model using the Git scm_
+<img alt="penFLUID branching model" src="../OpenFLUID_branching_workflow.png"><br>
+<i>OpenFLUID branching model using the Git scm</i>
 </center>
 <br/>
 
@@ -64,8 +64,8 @@ The OpenFLUID branching model is inspired from the [Vincent Driessen](http://nvi
 * For contributing to the OpenFLUID project, it is recommended for _developers_ to have an account either on [INRAE Forge](https://forge.inrae.fr) or on [GitHub](https://github.com/) in order to host their own public repositories and use the fork system provided by this service. However, other hosting is possible so far as it provides read-only access to _integration manager(s)_
 
 <center>
-![OpenFLUID git workflow](OpenFLUID_git_workflow.png)  
-_OpenFLUID development workflow using the Git scm (inspired from Scott Chacon's Pro Git Book)_
+<img src="../OpenFLUID_git_workflow.png" alt="OpenFLUID git workflow" style="margin-bottom:10px;border: 1px solid lightgray;"><br/>
+<i>OpenFLUID development workflow using the Git scm (inspired from Scott Chacon's Pro Git Book)</i>
 </center>
 <br/>
 
@@ -73,7 +73,7 @@ _OpenFLUID development workflow using the Git scm (inspired from Scott Chacon's 
 
 ### Practical example
 
-In this example, the the developer username is "username", and he uses the GitHub forking and hosting facilities for his public repository.
+In this example, the developer username is "username", and he uses the GitHub forking and hosting facilities for his public repository.
 The example feature to develop is a new plugin manager for the OpenFLUID platform that will be integrated when it will be fully developed.
 
 
@@ -82,7 +82,7 @@ The example feature to develop is a new plugin manager for the OpenFLUID platfor
 
 <center>
 <img src="../Github_openfluid_fork_2021-03.png" style="width: 75% ;margin-bottom:10px;border: 1px solid lightgray;"><br/>
-_Fork button on the OpenFLUID repository page on GitHub_
+<i>Fork button on the OpenFLUID repository page on GitHub</i>
 </center>
 <br/>
 <br/>
@@ -91,9 +91,11 @@ _Fork button on the OpenFLUID repository page on GitHub_
 **Prerequisite:** Prepare your developer repository (should be done only once)
 
 * Fork the reference OpenFLUID repository into your own public repository
+
     Go on the [OpenFLUID source code repository on GitHub](https://github.com/OpenFLUID/openfluid), and click on the Fork button (top left of the page)  
     Note that the Fork button performs a copy of the OpenFLUID repository into the developer's public repository and do not keep repositories in sync. 
     It is the responsability of the developer to maintain his repositories up-to-date (see below).
+
 * Clone your public repository in your private local repository
 ```txt
 git clone https://username@github.com/username/openfluid.git
@@ -103,7 +105,7 @@ git clone https://username@github.com/username/openfluid.git
 git remote add upstream https://github.com/OpenFLUID/openfluid.git
 ```
 
-Update your local repository from the reference repository
+* Update your local repository from the reference repository
 ```sh
 git checkout develop
 git fetch upstream
@@ -116,7 +118,7 @@ git checkout develop
 git push origin develop
 ```
 
-Create your local branch for new feature, named `new-plugin-manager` in th examples below
+Create your local branch for new feature, named `new-plugin-manager` in the examples below
 ```txt
 git checkout -b new-plugin-manager develop
 ```
@@ -196,7 +198,7 @@ git push origin develop
 Git basics:
 
 * [Pro Git Book by Scott Chacon](http://git-scm.com/book) (also available [in french](http://git-scm.com/book/fr))
-* [Git SCM documentation](http://git-scm.com/documentation)
+* [Git SCM documentation](https://git-scm.com/docs)
 * [Git Immersion](http://gitimmersion.com)
 * [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/)
 
@@ -206,4 +208,4 @@ Git branching model and workflow:
 * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 * [My Git branching model, by William Durand](http://williamdurand.fr/2012/01/17/my-git-branching-model/)
 * [How to GitHub: Fork, Branch, Track, Squash and Pull Request](http://gun.io/blog/how-to-github-fork-branch-and-pull-request/)
-* [Scott Chacon's Git flow](http://scottchacon.com/2011/08/31/github-flow.html)
+* [Scott Chacon's Git flow](https://scottchacon.com/2011/08/31/github-flow/)

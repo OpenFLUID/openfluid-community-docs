@@ -27,7 +27,7 @@ While repositories have been replicated from LISAH-Wareshub to OpenFLUID-FluidHu
 ## OpenFLUID-FluidHub
 
 OpenFLUID-FluidHub is the repository for simulators, observers and builder-extensions designed and developed at LISAH research unit.  
-In particular, it hosts the MHYDAS and WATSFAR models, the Geo-MHYDAS geomatic tool, and also models coming from reseach works lead at LISAH:
+In particular, it hosts the MHYDAS and WATSFAR models, the Geo-MHYDAS geomatic tool, and also models coming from research works lead at LISAH:
 
 * Surface hydrology
 * Groundwater hydrology
